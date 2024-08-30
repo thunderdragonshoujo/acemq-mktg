@@ -5,6 +5,7 @@
 
 html {
   font-size: 0.6944444444vw;
+  scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 600px) {
@@ -23,7 +24,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #0D1117;
+  background-color: #040812;
   overflow-x: hidden;
   color: #ffff;
 }
@@ -83,4 +84,13 @@ button{
 
 .react-multi-carousel-dot--active button {
   background: #9B86FE !important;
+}
+
+
+.filter{
+  filter: brightness(1.2);
+}
+
+.blend{
+  mix-blend-mode: color-dodge;
 }

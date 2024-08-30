@@ -30,11 +30,11 @@ const FooterMobile = () => {
                     <div className="w-[100%]">
                         <ul className="mb-[4rem] flex flex-col gap-y-[1.3rem]">
                             <li className="flex gap-[1rem] items-center">
-                                <img className="w-[1.9rem]" src="/footer_message.svg" alt="" />
+                                <img className="w-[1.9rem]" src="/footer_message.png" alt="" />
                                 <Link href='mailto:info@ace-8.io' className="text-[1.3rem]">info@ace-8.io</Link>
                             </li>
                             <li className="flex gap-[1rem] items-center">
-                                <img className="w-[1.9rem]" src="/footer_telephone.png" alt="" />
+                                <img className="w-[1.9rem]" src="/footer_telephone..svg" alt="" />
                                 <p className="text-[1.3rem]">305-981-6475</p>
                             </li>
                             <li className="flex gap-[1rem] items-center">
@@ -95,13 +95,9 @@ const FooterDesktop = () => {
                     <div className="flex px-[10rem] w-[100%] justify-between py-[10rem]">
                         <div className="">
                             <Image src='/ace_logo.png' className="w-[12rem] mb-[2rem]" width={150} height={120} />
-                            <ul className="mb-[4rem] flex flex-col gap-y-[1.3rem]">
+                            <ul className="mb-[4rem] flex flex-col gap-y-[1.3rem] sm:gap-y-[3rem]">
                                 <li className="flex gap-[1rem] items-center">
-                                    <img className="w-[3rem]" src="/footer_message.svg" alt="" />
-                                    <Link href='mailto:info@ace-8.io' className="text-[1.5rem]">info@ace-8.io</Link>
-                                </li>
-                                <li className="flex gap-[1rem] items-center">
-                                    <img className="w-[3rem]" src="/footer_telephone.png" alt="" />
+                                    <img className="w-[3rem]" src="/footer_telephone..svg" alt="" />
                                     <p className="text-[1.5rem]">305-981-6475</p>
                                 </li>
                                 <li className="flex gap-[1rem] items-center">
@@ -118,16 +114,16 @@ const FooterDesktop = () => {
                                     <li className="text-[1.5rem]  mb-[1.5rem]">Home</li>
                                 </Link>
                                 <Link href='' className="">
-                                    <li className="text-[1.5rem]  mb-[1.5rem]">About Us</li>
+                                    <li className="text-[1.5rem]  mb-[1.5rem]">RabbitMQ</li>
                                 </Link>
                                 <Link href='' className="">
-                                    <li className="text-[1.5rem]  mb-[1.5rem]">Services</li>
+                                    <li className="text-[1.5rem]  mb-[1.5rem]">FIPS</li>
                                 </Link>
                                 <Link href='' className="">
-                                    <li className="text-[1.5rem]  mb-[1.5rem]">Blog</li>
+                                    <li className="text-[1.5rem]  mb-[1.5rem]">Middleware Services</li>
                                 </Link>
                                 <Link href='' className="">
-                                    <li className="text-[1.5rem]  mb-[1.5rem]">Customer Stories</li>
+                                    <li className="text-[1.5rem]  mb-[1.5rem]">Development Services</li>
                                 </Link>
                             </ul>
                         </div>
@@ -141,7 +137,10 @@ const FooterDesktop = () => {
                         </div>
                         <div className="">
                             <p className="text-[1.9rem] font-[600] w-[100%] mb-[1.5rem]">Connect With Us</p>
-                            <img src="/in.svg" className="mb-[1.5rem] w-[4rem]" alt="" />
+                            <div className="flex gap-x-[2rem]">
+                                <img src="/in.svg" className="mb-[1.5rem] w-[2rem]" alt="" />
+                                <Link href='' className="text-[1.4rem] ">https://www.linkedin.com/company/acemq/</Link>
+                            </div>
                         </div>
                     </div>
                     <div className="absolute left-0 right-0 bottom-0 bg-black">
