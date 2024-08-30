@@ -2,32 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+html {
+  font-size: 0.6944444444vw;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 2.66vw;
+  }
+}
+
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 10px;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  background-color: #0D1117;
+  overflow-x: hidden;
+  color: #ffff;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+::-webkit-scrollbar {
+  width: 0;
+}
+
+
+p{
+  font-size: 1.4rem;
+}
+
+.react-multi-carousel-track {
+  align-items: center;
+  padding-bottom: 4rem !important;
+}
+
+button{
+  padding-inline: 2rem;
+  border-radius: .7rem;
+  padding-block: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.react-multi-carousel-item {
+  display: grid;
+  place-content: center;
+  align-self: center;
+}
+
+
+
+@media screen and (min-width: 600px) {
+  .responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
   }
+
+  p{
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+  }
+
+  button{
+    padding-inline: 2.5rem;
+  }
+}
+
+.mask{
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+}
+
+
+.react-multi-carousel-dot--active button {
+  background: #9B86FE !important;
 }
