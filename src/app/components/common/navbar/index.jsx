@@ -22,22 +22,44 @@ const Index = () => {
         };
     }, [open]);
 
-    const NavItems = ['Home', 'RabbitMQ', 'FIPS', 'Support & Services ']
+    // const NavItems = ['Home', 'RabbitMQ', 'FIPS', 'Support & Services ']
 
-    const dictionary =  {
-        Home: '/',
-        RabbitMQ: '/RabbitMq',
-        FIPS:  '/FIPS',
-    }
+    const navItems = [
+        {
+            name: 'Home',
+            path: '/'
+        },
+        {
+            name: 'RabbitMQ',
+            path: '/RabbitMQ'
+        },
+        {
+            name: 'FIPS',
+            path: '/FIPS'
+        },
+        {
+            name: 'Support & Services',
+            path: '/Services'
+        },
+        {
+            name: 'MQ Services',
+            path: '/MQServices'
+        },
+        {
+            name: 'Customer Stories',
+            path: '/CustomerStories'
+        },
+    ]
+
     return (
         <nav className={` bg-black `}>
             <MaxContainer>
                 <div className="flex items-center px-[3rem] lg:px-[4rem] py-[1.5rem] lg:py-[2.5rem] justify-between">
                     <div className="lg:flex lg:items-center">
-                        <img src="/ace_logo.png" className="w-[7.6rem] lg:w-[10rem] lg:mr-[10rem]" alt="logo" />
+                        <img src="/ace_logo.png" className="w-[7.6rem] sm:w-[14rem] sm:mr-[1rem]" alt="logo" />
                         <div className={`fixed lg:static z-20 w-[100vw] lg:w-auto h-[100vh] lg:h-auto bg-black inset-0 lg:inset-auto px-[2rem] sm:px-0 transition-all duration-500  ease-[cubic-bezier(0.65, 0, 0.35, 1)] ${open ? 'translate-x-0' : 'translate-x-[100%] lg:translate-x-0'}`}>
-                            <ul className="mt-[7rem] lg:mt-0 lg:flex">
-                                {NavItems.map((item, i) => (<Link key={i} href={`/${item === 'Home'? '/' : item}`} className="py-[1rem] lg:px-[1rem] lg:ml-[2rem] block"><li className="text-[1.5rem] lg:text-[1.3] lg:font-normal font-medium">{item}</li></Link>))}
+                            <ul className="mt-[7rem] sm:mt-0 sm:flex">
+                                {navItems.map((item, i) => (<Link key={i} href={item.path} className="py-[1rem] sm:px-[1rem] sm:ml-[.5rem] block"><li className={`text-[1.5rem] lg:text-[1.3] ${pathName === item.path ? 'text-accent-100 border-b border-accent-100' : ''} lg:font-normal font-medium`}>{item.name}</li></Link>))}
                             </ul>
                         </div>
 

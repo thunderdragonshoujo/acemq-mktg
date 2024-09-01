@@ -1,7 +1,12 @@
+import MaxContainer from '../components/common/maxContainer'
+import Hero from '../components/rabbitMQ/hero'
+
 const RabbitMQ = () => {
     return (
-        <h1>this is rabbits page</h1>
+        <MaxContainer>
+            <Hero />
+        </MaxContainer>
     );
 }
- 
+
 export default RabbitMQ;

@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
       <body className={monaSans.className}>
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
