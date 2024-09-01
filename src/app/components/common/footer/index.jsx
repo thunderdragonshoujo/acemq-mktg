@@ -18,14 +18,14 @@ const FooterMobile = () => {
     function scrollToTop() {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth' // Optional: for a smooth scrolling effect
+            behavior: 'smooth'
         });
     }
 
     return (
         <footer className="bg-[#0D111C] px-[3rem] sm:hidden pt-[4rem] pb-[7rem] relative">
             <MaxContainer>
-                <Image src='/ace_logo.png' className="w-[12rem] mb-[2rem]" width={150} height={120} />
+                <Image src='/ace_logo.png' className="w-[12rem] mb-[2rem]" width={150} alt="logo" height={120} />
                 <div className="flex justify-between">
                     <div className="w-[100%]">
                         <ul className="mb-[4rem] flex flex-col gap-y-[1.3rem]">
@@ -94,7 +94,7 @@ const FooterDesktop = () => {
                 <div className="relative">
                     <div className="flex px-[10rem] w-[100%] justify-between py-[10rem]">
                         <div className="">
-                            <Image src='/ace_logo.png' className="w-[12rem] mb-[2rem]" width={150} height={120} />
+                            <Image src='/ace_logo.png' className="w-[12rem] mb-[2rem]" alt="logo" width={150} height={120} />
                             <ul className="mb-[4rem] flex flex-col gap-y-[1.3rem] sm:gap-y-[3rem]">
                                 <li className="flex gap-[1rem] items-center">
                                     <img className="w-[3rem]" src="/footer_telephone..svg" alt="" />

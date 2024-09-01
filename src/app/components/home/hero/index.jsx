@@ -10,9 +10,9 @@ const Index = () => {
             <Image src='/hero_flare_bottom_lg.png' width={1920} className="absolute w-[100vw] h-[100%] hidden  sm:block z-[-2] inset-0 " height={1000} alt="background image" />
             <Image src='/hero_flare_side_lg.png' width={1920} className="absolute  w-[100vw] h-[100%] hidden  sm:block z-[-1] inset-0 " height={1000} alt="background image" />
             <img src="/mille_1.png" className="hidden mt-[2rem] absolute sm:block w-[4rem]" alt="mile stone" />
-            <div className="relative w-[100%] sm:ml-[4.5rem]">
-                <h1 className="font-[300] text-[5.3rem] sm:text-[12rem] sm:w-[58rem] leading-[5.5rem] sm:leading-[12rem]">Message <span className="font-[700] text-accent-100">Queuing</span></h1>
-                <h2 className="text-[2rem] sm:text-[5.2rem] sm:leading-[9rem] leading-[6.2rem] font-[700]">Technology <span className="font-[400]">Experts</span></h2>
+            <div className="relative w-[100%] sm:ml-[7rem]">
+                <h1 className="font-[300] text-[5.3rem] sm:text-[9rem] sm:w-[58rem] leading-[5.5rem] sm:leading-[9rem]">Message <span className="font-[700] text-accent-100">Queuing</span></h1>
+                <h2 className="text-[2rem] sm:text-[4rem] sm:leading-[9rem] leading-[6.2rem] font-[700]">Technology <span className="font-[400]">Experts</span></h2>
                 <p className="mb-[2rem] sm:hidden sm:mb-0">AceMQ is a firm built on delivering excellence on all Message Queuing and Streaming Solutions. We have expertise in Queueing tools and Streaming tools, their Architecture, and how they integrate in various environments.</p>
                 <p className="sm:hidden">Let us assist you with your planned deployment or assess your current environment.</p>
 

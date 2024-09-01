@@ -73,6 +73,9 @@ button{
 
   button{
     padding-inline: 2.5rem;
+    font-size: 1.7rem;
+    padding-block: 1.3rem;
+    border-width: 2px !important;
   }
 }
 

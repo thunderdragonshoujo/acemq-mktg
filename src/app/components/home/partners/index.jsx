@@ -31,11 +31,11 @@ const Index = () => {
                 <h4 className="font-[700] text-[2.3rem] sm:text-[3rem] sm:w-[48rem] text-center sm:text-start sm:p-[5rem]">Strategically Aligned With <span className="text-[#FF6600]">Industry Leaders</span></h4>
 
                 <div className="sm:flex hidden items-center gap-[3rem]">
-                    {partners.map((item, i) => <Image src={item.image} key={i} className={`${item.width}`} width={150} height={200} />)}
+                    {partners.map((item, i) => <Image src={item.image} key={i} className={`${item.width}`} width={150} height={200} alt="partner icon" />)}
                 </div>
                 <div className="mt-[3rem] sm:hidden">
                     <Carousel showDots={true} autoPlay={true} autoPlaySpeed={1000} infinite={true} removeArrowOnDeviceType={["tablet", "mobile", 'desktop']} responsive={responsive}>
-                    {partners.map((item, i) => <Image src={item.image} key={i} className={`${item.width}`} width={150} height={200} />)}
+                    {partners.map((item, i) => <Image src={item.image} key={i} className={`${item.width}`} width={150} height={200} alt='partner icon' />)}
                     </Carousel>
                 </div>
             </div>

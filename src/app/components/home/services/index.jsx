@@ -45,7 +45,7 @@ const Index = () => {
         <section className="px-[3rem] sm:px-[10rem] sm:mt-[8rem]">
             <div className="relative sm:flex">
                 <img src="/mille_2.svg" className="w-[4rem] hidden absolute sm:block mt-[9rem]" alt="" />
-                <div className="sm:flex sm:ml-[4.5rem] sm:justify-between sm:w-[100%]">
+                <div className="sm:flex sm:ml-[7rem] sm:justify-between sm:w-[100%]">
                     <div className="">
                         <h2 className="text-center text-[2.5rem] sm:text-[6.5rem] mt-[5rem] mb-[1rem] sm:text-left font-[700]"><span className="text-[#8FD5CC] font-[400]">MQ</span> Services</h2>
                         <p className="hidden sm:block w-[54rem]">We offer a range of services to address all your messaging and queuing requirements.Our team of seasoned professionals excels in delivering top-notch solutions to enhance the reliability, scalability, and performance of your MQ systems” </p>
@@ -56,7 +56,7 @@ const Index = () => {
                 </div>
             </div>
 
-            <div className="sm:ml-[4.5rem] sm:flex hidden mt-[2.3rem] justify-between">
+            <div className="sm:ml-[7rem] sm:flex hidden mt-[2.3rem] justify-between">
                 {cardsLG.map((card, index) => <Cards card={card} key={index} width={'sm:w-[32rem]'} />)}
             </div>
 

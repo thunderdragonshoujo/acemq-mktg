@@ -7,7 +7,7 @@ import MaxContainer from './components/common/maxContainer'
 import Technologies from './components/home/technologies'
 import Partners from './components/home/partners'
 import About  from './components/home/about'
-import Contact from './components/home/contact'
+import Contact from './components/common/contact'
 
 export default function Home() {
   return (

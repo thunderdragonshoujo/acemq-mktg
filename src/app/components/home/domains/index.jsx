@@ -93,7 +93,7 @@ const DomainsDesktop = ({ domains }) => (
     <section className="hidden sm:flex px-[3rem] sm:px-[10rem] gap-x-[4rem]">
         <div className="flex relative">
             <img src="/mille_3.svg" alt="arrow" className="hidden absolute mt-[4rem] sm:w-[4rem] sm:block" />
-            <div className="flex flex-col sm:ml-[4.5rem] ">
+            <div className="flex flex-col sm:ml-[7rem] ">
                 <div className="">
                     <h3 className="font-[700] text-[2rem] mt-[1.2rem]">Ace8’s</h3>
                     <div className="w-[12rem] h-[4rem] rounded-[.8rem] opacity-[.8] grid place-content-center bg-[#FF6600]">
@@ -104,7 +104,7 @@ const DomainsDesktop = ({ domains }) => (
                 </div>
 
                 <div className="h-[93rem] grid place-content-center relative">
-                    <Image src='/center_logo.png' className="w-[45rem]" width={550} height={178} />
+                    <Image src='/center_logo.png' className="w-[45rem]" width={550} alt="logo" height={178} />
                     {domains.map((domain, index) => <DomainDesktop domain={domain} key={index} id={index} />)}
                 </div>
                 <button className="px-[2.5rem] border border-[#FF6600] self-center mt-[4rem]">Ace8 Services</button>
@@ -160,9 +160,8 @@ const DomainDesktop = ({ domain, id }) => {
 
 const Banner = () => (
     <div className="border border-[#FF6600] p-[1rem] sm:p-[3rem] rounded-[.8rem] mt-[3rem] sm:flex sm:justify-between sm:mt-[9rem]">
-        <div className="flex flex-col  sm:w-[58rem]">
+        <div className="flex flex-col sm:w-[58rem]">
             <h3 className="font-[400] text-[1.4rem] text-center sm:text-left mb-[1.3rem]"><span className="font-[700] text-[#FF6600]">RabbitMQ</span> Enterprise <span className="font-[700]">support</span></h3>
-
             <h3 className="text-center text-[2.7rem] sm:text-[3.5rem]  font-[700] sm:text-left">How we <span className="font-[400]">Saved Millions</span> in <span className="text-[#FF6600]">Downtime</span> for a <span className="text-[#FF6600]">Global</span> <span className="font-[400]">Retail Giant</span></h3>
             <p className="hidden sm:block">Learn how AceMQ’s RabbitMQ Enterprise support saved a global Retail Giant millions of dollars in downtime, while saving them thousands in hiring costs.</p>
 
