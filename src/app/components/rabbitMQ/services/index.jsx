@@ -73,8 +73,8 @@ const Index = () => {
         },
     ];
     return (
-        <section className="px-[3rem] sm:px-[10rem] mt-[6rem] sm:py-[10rem] sm:mb-[50rem] relative">
-            <div className="flex flex-col gap-y-[2rem] sm:w-[85%] sm:justify-between z-[7] sm:flex-row sm:absolute">
+        <section className="px-[3rem] sm:px-[10rem] mt-[6rem] relative">
+            <div className="flex flex-col gap-y-[2rem] sm:justify-between sm:flex-row w-[100%]">
                 {cards.map((card, i) => <Card id={i} card={card} key={i} />)}
             </div>
         </section>
