@@ -32,8 +32,8 @@ export default Index;
 const Card = ({ card }) => (
     <div className="relative sm:ml-[7rem] sm:w-[45%] h-[24rem] sm:h-[40rem]">
         <p className="text-center relative font-[700] text-[1.7rem] sm:text-[1.9rem] top-[1.5rem] z-[3]">Customer story</p>
-        <img className="absolute inset-0 top-0 h-[24rem] sm:h-auto bottom-0 z-[0]`" src={card.image} alt="" />
-        <img src="/image_overlay.png" className="absolute z-2 bottom-0" alt="overlay" />
+        <img className="absolute inset-0 top-0 h-[24rem] sm:h-[100%] bottom-0 z-[0]`" src={card.image} alt="" />
+        <img src="/image_overlay.png" className="absolute z-2 bottom-0 h-[100%]" alt="overlay" />
 
         <div className="absolute z-[3] bottom-[.7rem] sm:bottom-[2.5rem] w-[20rem] sm:w-[35rem] flex flex-col items-center mx-[17%] sm:mx-[22%]">
             <h3 className="font-[700] sm:text-[1.5rem] sm:w-[22rem] sm:mb-[2rem] text-center">{card.header}</h3>

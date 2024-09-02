@@ -10,16 +10,18 @@ import Contact from '../components/common/contact'
 
 const RabbitMQ = () => {
     return (
-        <MaxContainer>
-            <Hero />
-            <Brands />
-            <Info />
-            <Achievement />
-            <Services />
-            <Impact />
-            <Capabilities />
-            <Contact  />
-        </MaxContainer>
+        <>
+            <MaxContainer>
+                <Hero />
+                <Brands />
+                <Info />
+                <Achievement />
+                <Services />
+                <Impact />
+                <Capabilities />
+                <Contact />
+            </MaxContainer>
+        </>
     );
 }
 
