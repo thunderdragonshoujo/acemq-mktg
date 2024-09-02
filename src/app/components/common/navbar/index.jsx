@@ -6,10 +6,13 @@ import { usePathname } from "next/navigation";
 const Index = () => {
     const [open, setOpen] = useState(false)
     const pathName = usePathname()
-    console.log(pathName)
     const toggleNav = () => {
         setOpen(prevOpen => !prevOpen)
     }
+
+    useEffect(() => {
+        setOpen(false)
+    }, [pathName])
 
     useEffect(() => {
         if (open) {
