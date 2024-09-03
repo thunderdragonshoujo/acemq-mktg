@@ -108,3 +108,20 @@ button {
 .service_card_shadow {
   box-shadow: 0px 0px 6px 0px #FB881780;
 }
+
+
+.multiply {
+  mix-blend-mode: multiply;
+}
+
+.header {
+  @apply text-[3rem] sm:text-[6.5rem] font-[700]
+}
+
+.sub-header{
+  @apply text-[2.8rem] font-[700] sm:text-[3.5rem]
+}
+
+.hard-light{
+  mix-blend-mode: hard-light;
+}

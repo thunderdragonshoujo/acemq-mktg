@@ -38,7 +38,7 @@ const Index = () => {
         },
         {
             name: 'FIPS',
-            path: '/FIPS'
+            path: '/FIPs'
         },
         {
             name: 'Support & Services',
