@@ -42,7 +42,7 @@ const Index = () => {
         },
         {
             name: 'Support & Services',
-            path: '/Services'
+            path: '/Support'
         },
         {
             name: 'MQ Services',
