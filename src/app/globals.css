@@ -125,3 +125,7 @@ button {
 .hard-light{
   mix-blend-mode: hard-light;
 }
+
+.difference {
+  mix-blend-mode: difference;
+}
