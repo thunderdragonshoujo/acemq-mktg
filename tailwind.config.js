@@ -14,7 +14,7 @@ module.exports = {
         'hero-background-mobile': "url('/bg_mobile.png')",
         'hero-background-desktop': "url('/hero_bg.png')",
         'conner-gradient': 'linear-gradient(180deg, #FF88C3 0%, #9B86FE 100%)',
-        'management-bg': "url('/management_bg.png')"
+        'management-bg': "url('/management_bg.png')",
       },
       colors: {
         'bg-100': '#0D1117',
