@@ -50,7 +50,7 @@ const Index = () => {
         },
         {
             name: 'Customer Stories',
-            path: '/CustomerStories'
+            path: '/Stories'
         },
     ]
 
