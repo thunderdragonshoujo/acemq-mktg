@@ -17,6 +17,28 @@ const Index = () => {
             text: 'Configuring RabbitMQ in Kubernetes for success',
             link: ''
         },
+        {
+            image: '/credit_card.png',
+            ceo: '/CEO_1.svg',
+            header: 'Critical Web Launch',
+            text: 'Migrating from C++ to Java for a Time-Critical Web Launch',
+            link: ''
+        },
+        {
+            image: '/rabbit_mq.png',
+            ceo: '/CEO_2.svg',
+            header: 'Microservices Migration',
+            text: 'Accelerated Migration of Custom Microservices to AWS Lambda',
+            link: ''
+        },
+        {
+            image: '/rabbit_mq.png',
+            ceo: '/CEO_2.svg',
+            header: 'Web Launch',
+            text: 'Rapid Web Launch with Infrastructure as Code (IaC)',
+            link: ''
+        },
+        
     ]
 
     return (
