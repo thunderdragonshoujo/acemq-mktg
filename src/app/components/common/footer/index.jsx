@@ -71,7 +71,7 @@ const FooterMobile = () => {
                 <div className="w-[100%]">
                     <p className="text-[1.5rem] font-[700] w-[100%]">Newsletter</p>
                     <div className="flex items-center justify-between">
-                        <input type="text" placeholder="Enter Your Email" className="h-[2.8rem] w-[60%] mb-[1.5rem] pl-[1.3rem] rounded-[.3rem]" />
+                        <input type="text" placeholder="Enter Your Email" className="h-[2.8rem] w-[60%] mb-[1.5rem] text-black pl-[1.3rem] rounded-[.3rem]" />
                         <button onClick={scrollToTop}>
                             <img src="/CTA_button.png" alt="" />
                         </button>
@@ -130,7 +130,7 @@ const FooterDesktop = () => {
                         <div className="">
                             <p className="text-[1.9rem] mb-[3rem] font-[600] w-[100%]">Newsletter</p>
                             <div className="flex items-center justify-between">
-                                <input type="text" placeholder="Enter Your Email" className="h-[3.5rem] w-[28rem] mb-[1.5rem] pl-[1.3rem] rounded-[.3rem]" />
+                                <input type="text" placeholder="Enter Your Email" className="h-[3.5rem] w-[28rem] mb-[1.5rem] pl-[1.3rem] text-[1.2rem] text-black  rounded-[.3rem]" />
                             </div>
 
                             <button className="border border-accent-100 px-[1.5rem] mb-[3rem] py-[.7rem] font-[700] text-[1.2rem]">Submit</button>

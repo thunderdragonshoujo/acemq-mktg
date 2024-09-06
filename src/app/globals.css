@@ -135,3 +135,40 @@ button {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 7rem;
 }
+
+
+.Toastify__toast-container {
+  @media screen and (max-width: 800px) {
+      width: 60vw !important;
+      left: auto !important;
+      margin-top: 1rem !important;
+      margin-left: 1rem !important;
+  }
+}
+
+.Toastify__toast {
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-size: 1.6rem !important;
+
+  @media screen and (max-width: 800px) {
+      font-size: 1.2rem !important;
+  }
+}
+
+.react-tel-input .form-control{
+  border: none !important;
+  font-size: 1.2rem !important;
+  padding-left: 4rem !important;
+  width: auto !important;
+}
+
+.react-tel-input .flag-dropdown{
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.react-tel-input .selected-flag{
+  padding-left: 0 !important;
+  width: 20px !important;
+}

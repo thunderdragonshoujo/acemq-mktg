@@ -1,3 +1,6 @@
+'use client'
+import PhoneInput from "react-phone-input-2";
+import 'react-phone-input-2/lib/style.css'
 const Index = () => {
     return (
         <section className="bg-white relative px-[3rem] sm:px-[0] pt-[3rem] sm:pt-[0] sm:flex sm:pb-[10rem] pb-[5rem] sm:pr-[10rem]  justify-between">
@@ -35,8 +38,7 @@ const Form = () => {
                         <input type="text" className="sm:w-full w-auto text-black focus:outline-none text-[1.2rem]" placeholder="Email Address" />
                     </div>
                     <div className="flex py-[.8rem] gap-x-[1rem] border-b border-b-black mb-[3rem] sm:flex-1">
-                        <img src="/name.svg" className="w-[1.6rem]" alt="name" />
-                        <input type="tel" className="sm:w-full w-auto text-black focus:outline-none text-[1.2rem]" placeholder="Phone Number" />
+                        <PhoneInput country={'us'} type="tel" className="sm:w-full phone-input w-auto text-black focus:outline-none text-[1.2rem]" placeholder="Phone Number" />
                     </div>
                 </div>
                 <div className="sm:flex justify-between gap-[2rem]">

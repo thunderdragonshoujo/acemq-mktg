@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 const Index = () => {
     return (
         <section className="px-[3rem] mt-[3rem] flex flex-col items-center sm:px-[10rem]">
@@ -134,7 +135,9 @@ const Supports = () => {
                     ))
                 }
             </div>
-            <button className="border border-[#8FD5CC] mt-[3rem]">Learn More</button>
+            <Link href='/Support'>
+                <button className="border border-[#8FD5CC] mt-[3rem]">Learn More</button>
+            </Link>
         </div>
     );
 }

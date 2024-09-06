@@ -14,10 +14,12 @@ const Index = ({ header, firstParagraph, secondParagraph, image, imageWidth, sub
                         <img src={orangeTick ? '/orange_tick.svg' : "/tick.svg"} className="w-[2rem]" alt="mark icon" />
                         <p className="w-[85%]">{secondParagraph}</p>
                     </div>
-                    <div className="gap-[1rem] translate-x-[8rem] w-[100%] hidden sm:flex">
-                        <img src={orangeTick ? '/orange_tick.svg' : "/tick.svg"} className="w-[2rem]" alt="mark icon" />
-                        <p className="w-[85%]">{thirdParagraph}</p>
-                    </div>
+                    {
+                        thirdParagraph && (<div className="gap-[1rem] translate-x-[8rem] w-[100%] hidden sm:flex">
+                            <img src={orangeTick ? '/orange_tick.svg' : "/tick.svg"} className="w-[2rem]" alt="mark icon" />
+                            <p className="w-[85%]">{thirdParagraph}</p>
+                        </div>)
+                    }
                 </div>
             </div>
             <Image className={`${imageWidth} mt-[3rem] sm:mt-[0]`} src={image} width={667} height={629} alt="code snippet picture" />

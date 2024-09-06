@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 const Index = () => {
     const domains = [
         {
@@ -165,7 +166,9 @@ const Banner = () => (
             <h3 className="text-center text-[2.7rem] sm:text-[3.5rem]  font-[700] sm:text-left">How we <span className="font-[400]">Saved Millions</span> in <span className="text-[#FF6600]">Downtime</span> for a <span className="text-[#FF6600]">Global</span> <span className="font-[400]">Retail Giant</span></h3>
             <p className="hidden sm:block">Learn how AceMQ’s RabbitMQ Enterprise support saved a global Retail Giant millions of dollars in downtime, while saving them thousands in hiring costs.</p>
 
-            <button className="border border-[#FF6600] self-center sm:self-start mt-[2rem]">Learn More</button>
+            <Link href='#contact'>
+                <button className="border border-[#FF6600] self-center sm:self-start mt-[2rem]">Learn More</button>
+            </Link>
         </div>
         <Image src="/room.png" className="w-[40rem] hidden sm:block" width={491} height={384} alt="store" />
     </div>
