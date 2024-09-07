@@ -29,15 +29,16 @@ const Index = () => {
             const json = await fetch('https://76h86gyo24.execute-api.us-west-2.amazonaws.com/prod/contactUs', {
                 method: 'POST',
                 headers: {
-                    'Content-type': 'Application/json'
+                    "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
                     subject: 'This is a ContactUS email from ACEMQ',
                     message: { fullName: name, email, description: message },
                     toaddress: "randall.mcclure@acemq.com",
-                    toaddress2: "info@ace8.io"
-                })
-            })
+                    toaddress2: "info@acemq.com",
+                }),
+            });
+
             const response = await json.json()
             if (response) {
                 setLoading(false)
