@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  font-size: 0.6944444444vw;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 2.66vw;
+  }
+}
+
+
+@media screen and (min-width: 2000px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0D1117;
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  color: #ffff;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+
+p {
+  font-size: 1.4rem;
+}
+
+.react-multi-carousel-track {
+  align-items: center;
+  padding-bottom: 4rem !important;
+}
+
+button {
+  padding-inline: 2rem;
+  border-radius: .7rem;
+  padding-block: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.react-multi-carousel-item {
+  display: grid;
+  place-content: center;
+  align-self: center;
+}
+
+
+
+@media screen and (min-width: 600px) {
+  .responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+  }
+
+  button {
+    padding-inline: 2.5rem;
+    font-size: 1.7rem;
+    padding-block: 1.3rem;
+    border-width: 2px !important;
+  }
+}
+
+.mask {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);
+}
+
+
+.react-multi-carousel-dot--active button {
+  background: #9B86FE !important;
+}
+
+
+.filter {
+  filter: brightness(1.2);
+}
+
+.blend {
+  mix-blend-mode: color-dodge;
+}
+
+
+.blend2 {
+  mix-blend-mode: overlay;
+}
+
+.service_card_shadow {
+  box-shadow: 0px 0px 6px 0px #FB881780;
+}
+
+
+.multiply {
+  mix-blend-mode: multiply;
+}
+
+.header {
+  @apply text-[3rem] sm:text-[6.5rem] font-[700]
+}
+
+.sub-header{
+  @apply text-[2.8rem] font-[700] sm:text-[3.5rem]
+}
+
+.hard-light{
+  mix-blend-mode: hard-light;
+}
+
+.difference {
+  mix-blend-mode: difference;
+}
+
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 7rem;
+}
+
+
+.Toastify__toast-container {
+  @media screen and (max-width: 800px) {
+      width: 60vw !important;
+      left: auto !important;
+      margin-top: 1rem !important;
+      margin-left: 1rem !important;
+  }
+}
+
+.Toastify__toast {
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-size: 1.6rem !important;
+
+  @media screen and (max-width: 800px) {
+      font-size: 1.2rem !important;
+  }
+}
+
+.react-tel-input .form-control{
+  border: none !important;
+  font-size: 1.2rem !important;
+  padding-left: 4rem !important;
+  width: auto !important;
+}
+
+.react-tel-input .flag-dropdown{
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.react-tel-input .selected-flag{
+  padding-left: 0 !important;
+  width: 20px !important;
+}
