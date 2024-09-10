@@ -14,7 +14,7 @@ export const metadata = {
   description:
     "AceMQ Consulting specializes in RabbitMQ solutions, including consulting, support, and professional services. Optimize your systems with our expert RabbitMQ services.",
   alternates: {
-    canonical: "https://acemq.com",
+    canonical: "https://acemq.com/",
   },
   openGraph: {
     title: "AceMQ Consulting | Expert RabbitMQ Messaging & Queuing Solutions",
