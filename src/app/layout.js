@@ -3,6 +3,7 @@ import localFont from "@next/font/local";
 import "./globals.css";
 import Footer from "./components/common/footer";
 import Navbar from "./components/common/navbar";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 const monaSans = localFont({
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-PGY6QL9T4H" />
     </html>
   );
 }
