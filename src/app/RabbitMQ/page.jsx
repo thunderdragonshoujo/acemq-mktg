@@ -8,6 +8,9 @@ import Impact from '../components/common/impact'
 import Capabilities from '../components/rabbitMQ/capabilities'
 import Contact from '../components/common/contact'
 
+
+
+
 const RabbitMQ = () => {
     return (
         <>
