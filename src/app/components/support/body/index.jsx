@@ -63,31 +63,31 @@ const Performance = () => {
 const Technologies = () => {
     const technologies = [
         {
-            src: 'tech_1.svg',
+            src: '/tech_1.svg',
             align: 'self-center'
         },
         {
-            src: 'tech_2.svg',
+            src: '/tech_2.svg',
             align: 'self-end'
         },
         {
-            src: 'tech_3.svg',
+            src: '/tech_3.svg',
             align: 'self-start'
         },
         {
-            src: 'tech_4.svg',
+            src: '/tech_4.svg',
             align: 'self-center'
         },
         {
-            src: 'tech_5.svg',
+            src: '/tech_5.svg',
             align: 'self-start'
         },
         {
-            src: 'tech_6.svg',
+            src: '/tech_6.svg',
             align: 'self-end'
         },
         {
-            src: 'tech_7.svg',
+            src: '/tech_7.svg',
             align: 'self-center'
         },
     ]
