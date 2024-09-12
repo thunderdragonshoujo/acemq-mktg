@@ -45,7 +45,7 @@ const Banner1 = () => {
                 <button className="sm:block hidden border-[#8FD5CC] text-[1.4rem] bg-[#232323] mt-[3rem]">Learn More</button>
             </div>
 
-            <Image alt="An image of a store" className="hidden sm:block w-[50rem]" width={608} height={496} src='/store.png' />
+            <Image alt="An image of a store" className="hidden sm:block w-[50rem]"  width={608} height={496} src='/store.png' />
         </div>
     )
 }

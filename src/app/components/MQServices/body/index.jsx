@@ -33,7 +33,7 @@ const Services = () => {
                 <p className="hidden sm:block"> Our consultants have encountered and successfully resolved a wide range of challenges related to message brokers. With years of experience in supporting message broker products and environments, our engineers are well-prepared to tackle any issue you may face.</p>
             </div>
 
-            <Image src='/flow.webp' className="mt-[2rem] sm:w-[70rem] self-start" width={700} height={400} alt="" />
+            <Image src='/flow.webp' className="mt-[2rem] sm:w-[70rem] self-start" width={700} height={400} alt="flow chat" />
         </div>
     )
 }
@@ -41,14 +41,14 @@ const Services = () => {
 const SevicesItems = () => {
     return (
         <div className="">
-            <div className="flex justify-between">
-                <Image width={640} className="w-[60rem]" height={440} src='MQ_service_1.svg' alt="service" />
-                <Image width={730} className="hidden sm:block w-[60rem]" height={350} src='MQ_service_1_flowchart.svg' alt="service" />
+            <div className="flex justify-between mb-[3rem]">
+                <Image width={640} className="w-[60rem]" height={440} src='/MQ_service_1.svg' alt="service" />
+                <Image width={730} className="hidden sm:block w-[60rem]" height={350} src='/MQ_service_1_flowchart.svg' alt="service" />
             </div>
             <div className="flex justify-between flex-row-reverse">
-                <Image width={640} height={440} className="hidden sm:block w-[70rem] sm:mt-[10rem]" src='MQ_service_2.svg' alt="service" />
+                <Image width={640} height={440} className="sm:block w-[70rem] sm:mt-[10rem]" src='/MQ_service_2.svg' alt="service" />
                 <div className="flex-1 flex items-end justify-center">
-                    <Image width={300} className="hidden sm:block" height={300} src='MQ_service_2_flowchart.svg' alt="service" />
+                    <Image width={300} className="hidden sm:block" height={300} src='/MQ_service_2_flowchart.svg' alt="service" />
                 </div>
             </div>
         </div>
