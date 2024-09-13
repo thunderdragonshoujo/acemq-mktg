@@ -38,7 +38,7 @@ const Card = ({ card }) => (
         <div className="absolute z-[3] bottom-[.7rem] sm:bottom-[2.5rem] w-[20rem] sm:w-[35rem] flex flex-col items-center mx-[17%] sm:mx-[22%]">
             <h3 className="font-[700] sm:text-[1.5rem] sm:w-[22rem] sm:mb-[2rem] text-center">{card.header}</h3>
             <p className="text-center text-[1rem] sm:text-[1.3rem] sm:leading-[2rem]">{card.role}</p>
-            <Link href={card.link} className="flex items-center font-[500] mt-[2rem] gap-[1.5rem]"><p>Read Story</p> <img className="w-[2rem]" src="/Arrow.svg" alt="arrow icon" /></Link>
+            <Link href={card.link} className="flex items-center font-[500] mt-[2rem] gap-[1.5rem]"><p>Read Story</p> <img className="w-[2rem]" src="/arrow.svg" alt="arrow icon" /></Link>
         </div>
     </div>
 )
