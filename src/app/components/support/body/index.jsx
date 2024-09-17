@@ -111,7 +111,6 @@ const Features = () => {
             <img src="/service_features.webp" className="hidden sm:block" alt="features" />
             <img src="/service_features_sm.svg" className="sm:hidden" alt="features" />
 
-            <h4 className="font-[700] sm:text-[5rem] text-center hidden sm:block mt-[8rem]"><span className="text-[#8FD5CC]">The</span> AceMQ <span className="font-[400]">Assurance</span></h4>
             <p className="text-center mt-[1rem] w-[65%] hidden sm:block self-center">At AceMQ we pledge that our Enterprise support not only provides insurance against costly downtime but also proves to be a more cost-effective solution compared to the expenses associated with hiring expert talent</p>
         </div>
     )

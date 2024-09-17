@@ -110,20 +110,23 @@ const FooterDesktop = () => {
                         <div className="h-fit">
                             <h3 className="text-[1.9rem] font-[600] mb-[1.5rem]">Navigate</h3>
                             <ul className="">
-                                <Link href='' className="">
+                                <Link href='/' className="">
                                     <li className="text-[1.5rem]  mb-[1.5rem]">Home</li>
                                 </Link>
-                                <Link href='' className="">
+                                <Link href='/RabbitMQ' className="">
                                     <li className="text-[1.5rem]  mb-[1.5rem]">RabbitMQ</li>
                                 </Link>
-                                <Link href='' className="">
+                                <Link href='/FIPs' className="">
                                     <li className="text-[1.5rem]  mb-[1.5rem]">FIPS</li>
                                 </Link>
-                                <Link href='' className="">
-                                    <li className="text-[1.5rem]  mb-[1.5rem]">Middleware Services</li>
+                                <Link href='/Support' className="">
+                                    <li className="text-[1.5rem]  mb-[1.5rem]">Support Service</li>
                                 </Link>
-                                <Link href='' className="">
-                                    <li className="text-[1.5rem]  mb-[1.5rem]">Development Services</li>
+                                <Link href='/MQServices' className="">
+                                    <li className="text-[1.5rem]  mb-[1.5rem]">MQ Services</li>
+                                </Link>
+                                <Link href='/Stories' className="">
+                                    <li className="text-[1.5rem]  mb-[1.5rem]">Customer Stories</li>
                                 </Link>
                             </ul>
                         </div>

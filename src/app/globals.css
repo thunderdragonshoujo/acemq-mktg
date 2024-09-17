@@ -172,3 +172,18 @@ button {
   padding-left: 0 !important;
   width: 20px !important;
 }
+
+.line{
+  /* display: inline-block; */
+  overflow: hidden;
+
+  /* .word{
+    display: inline-block;
+  } */
+
+
+}
+
+[data-animation-id = 'paragraph']{
+  opacity: 0;
+}
