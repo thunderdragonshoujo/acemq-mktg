@@ -11,12 +11,28 @@ export default function milestone() {
         })
         IO(item, { threshold: .7 }).then(() => {
             gsap.to(item, {
-                delay: .5,
+                delay: .7,
                 transition: 'ease-in',
-                duration: 1,
+                duration: 1.2,
                 css: {
                     height: 'auto'
                 }
+            })
+        })
+    })
+}
+
+export const fadeIn = () => {
+    const fadeIn = document.querySelectorAll("[data-animation-id='fadeIn']")
+
+    fadeIn.forEach((item) => {
+        IO(item, { threshold: .7 }).then(() => {
+            gsap.to(item, {
+                css: {
+                    opacity: 1,
+                    transform: 'translateX(0)'
+                },
+                duration: .5,
             })
         })
     })

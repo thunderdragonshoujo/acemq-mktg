@@ -187,3 +187,8 @@ button {
 [data-animation-id = 'paragraph']{
   opacity: 0;
 }
+
+[data-animation-id='fadeIn']{
+  transform: translateX(30px);
+  opacity: 0;
+}

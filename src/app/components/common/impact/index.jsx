@@ -1,5 +1,15 @@
+'use client';
 import Link from "next/link";
+import { useEffect } from "react";
+import split from "@/app/Animations/text";
+import { fadeIn } from "@/app/Animations/common";
+
 const Index = () => {
+    useEffect(() => {
+        split()
+        fadeIn()
+    }, [])
+
     const cards = [
         {
             header: 'Real-Time Payment Processor Production Issues',
@@ -18,10 +28,12 @@ const Index = () => {
     ]
     return (
         <section className="px-[3rem] md:px-[10rem] sm:mb-[0] mt-[6.5rem]">
-            <h3 className="text-center text-[2.7rem] sm:text-[4.5rem] font-[700]"><span className="text-[#FF6600]">Among</span> The Best</h3>
-            <p className="text-center mb-[3rem] sm:mb-[4rem]">Ace8 has helped the World's premiere companies reach exceptional outcomes</p>
-            <div className="sm:flex-row flex flex-col gap-[5rem] sm:gap-[0] w-[100%] sm:h-[42rem] justify-between">
-                {cards.map((card, index) => <Card card={card} key={index} />)}
+            <div className="" data-animation-id='fadeIn'>
+                <h3 className="text-center text-[2.7rem] sm:text-[4.5rem] font-[700]"><span className="text-[#FF6600]">Among</span> The Best</h3>
+                <p className="text-center mb-[3rem] sm:mb-[4rem]">Ace8 has helped the World's premiere companies reach exceptional outcomes</p>
+                <div className="sm:flex-row flex flex-col gap-[5rem] sm:gap-[0] w-[100%] sm:h-[42rem] justify-between">
+                    {cards.map((card, index) => <Card card={card} key={index} />)}
+                </div>
             </div>
         </section>
     );

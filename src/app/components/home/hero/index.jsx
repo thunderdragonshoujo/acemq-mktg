@@ -2,12 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
-import milestone from "@/app/Animations/common";
+import milestone, { fadeIn } from "@/app/Animations/common";
 import split from "@/app/Animations/text";
 const Index = () => {
     useEffect(() => {
         milestone()
         split()
+        fadeIn()
     }, [])
     return (
         <section className="relative flex pt-[6.3rem] px-[2.5rem] sm:px-[10rem] pb-[2rem] sm:pb-[8rem] gap-[4rem]">
@@ -22,13 +23,13 @@ const Index = () => {
                 <img src="/mille_1.png" className="mt-[2rem] w-[4rem]" alt="mile stone" />
             </div>
 
-            <div className="relative w-[100%] sm:ml-[7rem]">
-                <h1 data-animation-id = 'paragraph'  className="font-[300] text-[5.3rem] sm:text-[9rem] sm:w-[58rem] leading-[5.5rem] sm:leading-[9rem]">Message <span className="font-[700] text-accent-100">Queuing</span></h1>
-                <h2 data-animation-id = 'paragraph' className="text-[2rem] sm:text-[4rem] sm:leading-[9rem] leading-[6.2rem] font-[700]">Technology <span className="font-[400]">Experts</span></h2>
-                <p data-animation-id = 'paragraph' className="mb-[2rem] sm:hidden sm:mb-0">AceMQ is a firm built on delivering excellence on all Message Queuing and Streaming Solutions. We have expertise in Queueing tools and Streaming tools, their Architecture, and how they integrate in various environments.</p>
-                <p data-animation-id = 'paragraph' className="sm:hidden">Let us assist you with your planned deployment or assess your current environment.</p>
+            <div className="relative sm:w-fit sm:ml-[7rem]" data-animation-id='fadeIn'>
+                <h1 className="font-[300] text-[5.3rem] sm:text-[9rem] sm:w-[58rem] leading-[5.5rem] sm:leading-[9rem]">Message <span className="font-[700] text-accent-100">Queuing</span></h1>
+                <h2 className="text-[2rem] sm:text-[4rem] sm:leading-[9rem] leading-[6.2rem] font-[700]">Technology <span className="font-[400]">Experts</span></h2>
+                <p data-animation-id='paragraph' className="mb-[2rem] sm:hidden sm:mb-0">AceMQ is a firm built on delivering excellence on all Message Queuing and Streaming Solutions. We have expertise in Queueing tools and Streaming tools, their Architecture, and how they integrate in various environments.</p>
+                <p className="sm:hidden">Let us assist you with your planned deployment or assess your current environment.</p>
 
-                <p data-animation-id = 'paragraph' className="sm:block hidden sm:w-[58rem]">AceMQ is a firm built on delivering excellence on all Messaging Queuing Solutions. We have exclude tools and streaming Tools, in Streaming, Architecture, and how they integrate in various environments. Let us assist you with your Message brokers deployment or assess your current environment.</p>
+                <p className="sm:block hidden sm:w-[58rem]">AceMQ is a firm built on delivering excellence on all Messaging Queuing Solutions. We have exclude tools and streaming Tools, in Streaming, Architecture, and how they integrate in various environments. Let us assist you with your Message brokers deployment or assess your current environment.</p>
 
                 <Link href='/#contact'>
                     <button className="border border-accent-100 mt-[2.8rem] relative">Contact Us</button>
