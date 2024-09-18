@@ -128,7 +128,7 @@ const DomainsDesktop = ({ domains }) => (
 )
 
 const DomainMobile = ({ domain, id }) => (
-    <div className={`w-[230px] flex flex-col ${id % 2 ? 'self-end' : 'self-start'}`}>
+    <div className={`w-[230px] flex flex-col ${id % 2 ? 'self-end' : 'self-start'}`} data-animation-id='fadeIn'>
         <Image src={domain.image} width={115} height={90} className={`${id % 2 ? 'self-end' : 'self-start'} w-[5rem] mb-[.5rem]`} alt="icon" />
         <p className={`text-[1.4rem] font-[700] ${id % 2 ? 'text-right' : 'text-left'}`}>{domain.name}</p>
         <p className={`text-[1.6rem] font-[700] text-[#FF6600] ${id % 2 ? 'text-right' : 'text-left'}`}>{domain.title}</p>
@@ -178,8 +178,8 @@ const Banner = () => (
             <h3 className="text-center text-[2.7rem] sm:text-[3.5rem]  font-[700] sm:text-left">How we <span className="font-[400]">Saved Millions</span> in <span className="text-[#FF6600]">Downtime</span> for a <span className="text-[#FF6600]">Global</span> <span className="font-[400]">Retail Giant</span></h3>
             <p className="hidden sm:block">Learn how AceMQ’s RabbitMQ Enterprise support saved a global Retail Giant millions of dollars in downtime, while saving them thousands in hiring costs.</p>
 
-            <Link href='#contact'>
-                <button className="border border-[#FF6600] self-center sm:self-start mt-[2rem]">Learn More</button>
+            <Link href='#contact' className="mx-auto">
+                <button className="border border-[#FF6600] self-center mt-[2rem]">Learn More</button>
             </Link>
         </div>
         <Image src="/room.png" className="w-[40rem] hidden sm:block" width={491} height={384} alt="store" />
