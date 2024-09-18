@@ -161,13 +161,13 @@ const FooterDesktop = () => {
                                 <Link href='/RabbitMQ' className="">
                                     <li className="text-[1.5rem]  mb-[1.5rem]">RabbitMQ</li>
                                 </Link>
-                                <Link href='/FIPs' className="">
+                                <Link href='/fipsmq' className="">
                                     <li className="text-[1.5rem]  mb-[1.5rem]">FIPS</li>
                                 </Link>
                                 <Link href='/Support' className="">
                                     <li className="text-[1.5rem]  mb-[1.5rem]">Support Service</li>
                                 </Link>
-                                <Link href='/MQServices' className="">
+                                <Link href='/mq-services' className="">
                                     <li className="text-[1.5rem]  mb-[1.5rem]">MQ Services</li>
                                 </Link>
                                 <Link href='/Stories' className="">

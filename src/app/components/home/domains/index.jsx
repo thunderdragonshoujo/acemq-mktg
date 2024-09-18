@@ -80,31 +80,31 @@ const Index = () => {
 export default Index;
 
 const DomiansMobile = ({ domains }) => (
-  <section className="sm:hidden mt-[5rem]">
-    <div className="px-[3rem] sm:px-[10rem] flex flex-col">
-      <div className="">
-        <h3 className="font-[700] text-[3rem] mt-[1.2rem]">Ace8’s</h3>
-        <div className="w-[12rem] h-[4rem] rounded-[.8rem] opacity-[.8] grid place-content-center bg-[#FF6600]">
-          <p className="text-[2rem]">Full Stack</p>
+    <section className="sm:hidden mt-[5rem]">
+        <div className="px-[3rem] sm:px-[10rem] flex flex-col">
+            <div className="">
+                <h3 className="font-[700] text-[3rem] mt-[1.2rem]">Ace8’s</h3>
+                <div className="w-[12rem] h-[4rem] rounded-[.8rem] opacity-[.8] grid place-content-center bg-[#FF6600]">
+                    <p className="text-[2rem]">Full Stack</p>
+                </div>
+                <h3 className="text-[3rem] font-[700] mb-[1.7rem]">Capabilities</h3>
+                <p className="">
+                    AceMQ is a subsidiary of a larger, highly specialized full-stack
+                    services company, Ace8, therefore we understand how your Message
+                    Queing tool fits into your environment as a whole.
+                </p>
+            </div>
+            <div className="flex flex-col mt-[3rem]">
+                {domains.map((domain, index) => (
+                    <DomainMobile domain={domain} id={index} key={index} />
+                ))}
+            </div>
+            <button className="bg-[#FF6600] self-center mt-[4rem]">
+                Ace8’s Services
+            </button>
+            <Banner />
         </div>
-        <h3 className="text-[3rem] font-[700] mb-[1.7rem]">Capabilities</h3>
-        <p className="">
-          AceMQ is a subsidiary of a larger, highly specialized full-stack
-          services company, Ace8, therefore we understand how your Message
-          Queing tool fits into your environment as a whole.
-        </p>
-      </div>
-      <div className="flex flex-col mt-[3rem]">
-        {domains.map((domain, index) => (
-          <DomainMobile domain={domain} id={index} key={index} />
-        ))}
-      </div>
-      <button className="bg-[#FF6600] self-center mt-[4rem]">
-        Ace8’s Services
-      </button>
-      <Banner />
-    </div>
-  </section>
+    </section>
 );
 
 const DomainsDesktop = ({ domains }) => (
@@ -143,73 +143,74 @@ const DomainMobile = ({ domain, id }) => (
 )
 
 const DomainDesktop = ({ domain, id }) => {
-  const returnAbsoluteValue = (index) => {
-    switch (index) {
-      case 0:
-        return "top-[10rem] left-[0]";
-      case 1:
-        return "top-[0] left-[30rem]";
-      case 2:
-        return "top-[0] right-[30rem]";
-      case 3:
-        return "top-[10rem] right-[0]";
-      case 4:
-        return "top-[47rem] left-[0]";
-      case 5:
-        return "top-[57rem] left-[30rem]";
-      case 6:
-        return "top-[57rem] right-[30rem]";
-      case 7:
-        return "top-[47rem] right-[0]";
-      default:
-        break;
-    }
-  };
-  return (
-    <div
-      className={`w-[25rem] flex flex-col absolute ${returnAbsoluteValue(
-        id
-      )} mt-[3rem]`}
-    >
-      <div className="flex gap-x-[3rem] mb-[2rem] items-center">
-        <Image
-          src={domain.image}
-          width={115}
-          height={90}
-          className="w-[7rem]"
-          alt="icon"
-        />
-        <h3 className="text-[6rem] font-[700] text-[#FF6600] opacity-[.4]">
-          {domain.number}
-        </h3>
-      </div>
-      <p className={`text-[1.8rem] w-[23rem] font-[700]`}>
-        {domain.name} <span className="text-[#FF6600]">{domain.title}</span>
-      </p>
-      <p className="mt-[.8rem] text-[1.4rem]">{domain.role}</p>
-    </div>
-  );
+    const returnAbsoluteValue = (index) => {
+        switch (index) {
+            case 0:
+                return "top-[10rem] left-[0]";
+            case 1:
+                return "top-[0] left-[30rem]";
+            case 2:
+                return "top-[0] right-[30rem]";
+            case 3:
+                return "top-[10rem] right-[0]";
+            case 4:
+                return "top-[47rem] left-[0]";
+            case 5:
+                return "top-[57rem] left-[30rem]";
+            case 6:
+                return "top-[57rem] right-[30rem]";
+            case 7:
+                return "top-[47rem] right-[0]";
+            default:
+                break;
+        }
+    };
+    return (
+        <div
+            className={`w-[25rem] flex flex-col absolute ${returnAbsoluteValue(
+                id
+            )} mt-[3rem]`}
+        >
+            <div className="flex gap-x-[3rem] mb-[2rem] items-center">
+                <Image
+                    src={domain.image}
+                    width={115}
+                    height={90}
+                    className="w-[7rem]"
+                    alt="icon"
+                />
+                <h3 className="text-[6rem] font-[700] text-[#FF6600] opacity-[.4]">
+                    {domain.number}
+                </h3>
+            </div>
+            <p className={`text-[1.8rem] w-[23rem] font-[700]`}>
+                {domain.name} <span className="text-[#FF6600]">{domain.title}</span>
+            </p>
+            <p className="mt-[.8rem] text-[1.4rem]">{domain.role}</p>
+        </div>
+    );
 };
 
 const Banner = () => (
-    <div className="border border-[#FF6600] p-[1rem] sm:p-[3rem] rounded-[.8rem] mt-[3rem] sm:flex sm:justify-between sm:mt-[9rem]" data-animation-id='fadeIn'>
-        <div className="flex flex-col sm:w-[58rem]">
-            <h3 className="font-[400] text-[1.4rem] text-center sm:text-left mb-[1.3rem]"><span className="font-[700] text-[#FF6600]">RabbitMQ</span> Enterprise <span className="font-[700]">support</span></h3>
-            <h3 className="text-center text-[2.7rem] sm:text-[3.5rem]  font-[700] sm:text-left">How we <span className="font-[400]">Saved Millions</span> in <span className="text-[#FF6600]">Downtime</span> for a <span className="text-[#FF6600]">Global</span> <span className="font-[400]">Retail Giant</span></h3>
-            <p className="hidden sm:block">Learn how AceMQ’s RabbitMQ Enterprise support saved a global Retail Giant millions of dollars in downtime, while saving them thousands in hiring costs.</p>
+    <div className="">
+        <div className="border border-[#FF6600] p-[1rem] sm:p-[3rem] rounded-[.8rem] mt-[3rem] sm:flex sm:justify-between sm:mt-[9rem]" data-animation-id='fadeIn'>
+            <div className="flex flex-col sm:w-[58rem]">
+                <h3 className="font-[400] text-[1.4rem] text-center sm:text-left mb-[1.3rem]"><span className="font-[700] text-[#FF6600]">RabbitMQ</span> Enterprise <span className="font-[700]">support</span></h3>
+                <h3 className="text-center text-[2.7rem] sm:text-[3.5rem]  font-[700] sm:text-left">How we <span className="font-[400]">Saved Millions</span> in <span className="text-[#FF6600]">Downtime</span> for a <span className="text-[#FF6600]">Global</span> <span className="font-[400]">Retail Giant</span></h3>
+                <p className="hidden sm:block">Learn how AceMQ’s RabbitMQ Enterprise support saved a global Retail Giant millions of dollars in downtime, while saving them thousands in hiring costs.</p>
 
-            <Link href='#contact' className="mx-auto">
-                <button className="border border-[#FF6600] self-center mt-[2rem]">Learn More</button>
-            </Link>
+                <Link href='#contact' className="mx-auto sm:mx-0">
+                    <button className="border border-[#FF6600] self-center mt-[2rem]">Learn More</button>
+                </Link>
+            </div>
+            <Image
+            src="/room.webp"
+            className="w-[40rem] hidden sm:block"
+            width={491}
+            height={384}
+            alt="store"
+        />
         </div>
-        <Image src="/room.png" className="w-[40rem] hidden sm:block" width={491} height={384} alt="store" />
+      
     </div>
-    <Image
-      src="/room.webp"
-      className="w-[40rem] hidden sm:block"
-      width={491}
-      height={384}
-      alt="store"
-    />
-  </div>
 );

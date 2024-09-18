@@ -1,6 +1,7 @@
 'use client';
 import Link from "next/link";
 import { useEffect } from "react";
+import Image from "next/image";
 import split from "@/app/Animations/text";
 import { fadeIn } from "@/app/Animations/common";
 
