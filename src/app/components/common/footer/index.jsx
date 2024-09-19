@@ -152,34 +152,44 @@ const FooterDesktop = () => {
               </ul>
             </div>
 
-                        <div className="h-fit">
-                            <h3 className="text-[1.9rem] font-[600] mb-[1.5rem]">Navigate</h3>
-                            <ul className="">
-                                <Link href='/' className="">
-                                    <li className="text-[1.5rem]  mb-[1.5rem]">Home</li>
-                                </Link>
-                                <Link href='/RabbitMQ' className="">
-                                    <li className="text-[1.5rem]  mb-[1.5rem]">RabbitMQ</li>
-                                </Link>
-                                <Link href='/fipsmq' className="">
-                                    <li className="text-[1.5rem]  mb-[1.5rem]">FIPS</li>
-                                </Link>
-                                <Link href='/Support' className="">
-                                    <li className="text-[1.5rem]  mb-[1.5rem]">Support Service</li>
-                                </Link>
-                                <Link href='/mq-services' className="">
-                                    <li className="text-[1.5rem]  mb-[1.5rem]">MQ Services</li>
-                                </Link>
-                                <Link href='/Stories' className="">
-                                    <li className="text-[1.5rem]  mb-[1.5rem]">Customer Stories</li>
-                                </Link>
-                            </ul>
-                        </div>
-                        <div className="">
-                            <p className="text-[1.9rem] mb-[3rem] font-[600] w-[100%]">Newsletter</p>
-                            <div className="flex items-center justify-between">
-                                <input type="text" placeholder="Enter Your Email" className="h-[3.5rem] w-[28rem] mb-[1.5rem] pl-[1.3rem] text-[1.2rem] text-black  rounded-[.3rem]" />
-                            </div>
+            <div className="h-fit">
+              <h3 className="text-[1.9rem] font-[600] mb-[1.5rem]">Navigate</h3>
+              <ul className="">
+                <Link href="/" className="">
+                  <li className="text-[1.5rem]  mb-[1.5rem]">Home</li>
+                </Link>
+                <Link href="/rabbitmq/" className="">
+                  <li className="text-[1.5rem]  mb-[1.5rem]">RabbitMQ</li>
+                </Link>
+                <Link href="/fipsmq/" className="">
+                  <li className="text-[1.5rem]  mb-[1.5rem]">FIPS</li>
+                </Link>
+                <Link href="/support/" className="">
+                  <li className="text-[1.5rem]  mb-[1.5rem]">
+                    Support Service
+                  </li>
+                </Link>
+                <Link href="/mq-services/" className="">
+                  <li className="text-[1.5rem]  mb-[1.5rem]">MQ Services</li>
+                </Link>
+                <Link href="/stories/" className="">
+                  <li className="text-[1.5rem]  mb-[1.5rem]">
+                    Customer Stories
+                  </li>
+                </Link>
+              </ul>
+            </div>
+            <div className="">
+              <p className="text-[1.9rem] mb-[3rem] font-[600] w-[100%]">
+                Newsletter
+              </p>
+              <div className="flex items-center justify-between">
+                <input
+                  type="text"
+                  placeholder="Enter Your Email"
+                  className="h-[3.5rem] w-[28rem] mb-[1.5rem] pl-[1.3rem] text-[1.2rem] text-black  rounded-[.3rem]"
+                />
+              </div>
 
               <button className="border border-accent-100 px-[1.5rem] mb-[3rem] py-[.7rem] font-[700] text-[1.2rem]">
                 Submit
