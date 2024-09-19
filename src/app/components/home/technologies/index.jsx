@@ -1,11 +1,11 @@
 'use client';
-import milestone, { fadeIn } from "@/app/Animations/common";
+import milestone, { slideIn } from "@/app/Animations/common";
 import { useEffect } from "react";
 import Image from "next/image";
 const Index = () => {
     useEffect(() => {
         milestone()
-        fadeIn()
+        slideIn()
     })
     return (
         <section className="mt-[3rem] sm:flex sm:px-[10rem] px-[3rem] relative">
@@ -14,7 +14,7 @@ const Index = () => {
             <div className="absolute hidden sm:block mt-[3rem] overflow-hidden" data-animation-id='milestone'>
                 <img src="/mille_4.webp" className="w-[4rem]" alt="line" />
             </div>
-            <div className="" data-animation-id='fadeIn'>
+            <div className="" data-animation-id='slideIn'>
                 <div className="flex">
                     <div className="sm:ml-[7rem] sm:mt-[4rem]">
                         <h4 className="text-center text-[2.5rem] font-[700] mb-[1rem] sm:text-left sm:text-[4.5rem]">Technologies</h4>

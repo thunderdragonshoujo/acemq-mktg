@@ -2,13 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
-import milestone, { fadeIn } from "@/app/Animations/common";
+import milestone, { slideIn } from "@/app/Animations/common";
 
 
 const Index = () => {
     useEffect(() => {
         milestone()
-        fadeIn()
+        slideIn()
     }, [])
 
     const domains = [
@@ -114,7 +114,7 @@ const DomainsDesktop = ({ domains }) => (
         </div>
         <div className="">
             <div className="flex flex-col sm:ml-[7rem]" >
-                <div className="" data-animation-id='fadeIn'>
+                <div className="" data-animation-id='slideIn'>
                     <h3 className="font-[700] text-[2rem] mt-[1.2rem]">Ace8’s</h3>
                     <div className="w-[12rem] h-[4rem] rounded-[.8rem] opacity-[.8] grid place-content-center bg-[#FF6600]">
                         <p className="text-[2rem]">Full Stack</p>
@@ -123,11 +123,11 @@ const DomainsDesktop = ({ domains }) => (
                     <p className="">AceMQ is a subsidiary of a larger, highly specialized full-stack services company,  Ace8,  therefore we understand how your Message Queing tool fits into your environment as a whole and thus we can advise and support you beyond the scope of your tool of choice.</p>
                 </div>
 
-                <div className="h-[93rem] grid place-content-center relative" data-animation-id='fadeIn'>
+                <div className="h-[93rem] grid place-content-center relative" data-animation-id='slideIn'>
                     <Image src='/center_logo.png' className="w-[45rem]" width={550} alt="logo" height={178} />
                     {domains.map((domain, index) => <DomainDesktop domain={domain} key={index} id={index} />)}
                 </div>
-                <button data-animation-id='fadeIn' className="px-[2.5rem] border border-[#FF6600] self-center mt-[4rem]">Ace8 Services</button>
+                <button data-animation-id='slideIn' className="px-[2.5rem] border border-[#FF6600] self-center mt-[4rem]">Ace8 Services</button>
                 <Banner />
             </div>
         </div>
@@ -135,7 +135,7 @@ const DomainsDesktop = ({ domains }) => (
 )
 
 const DomainMobile = ({ domain, id }) => (
-    <div className={`w-[230px] flex flex-col ${id % 2 ? 'self-end' : 'self-start'}`} data-animation-id='fadeIn'>
+    <div className={`w-[230px] flex flex-col ${id % 2 ? 'self-end' : 'self-start'}`} data-animation-id='slideIn'>
         <Image src={domain.image} width={115} height={90} className={`${id % 2 ? 'self-end' : 'self-start'} w-[5rem] mb-[.5rem]`} alt="icon" />
         <p className={`text-[1.4rem] font-[700] ${id % 2 ? 'text-right' : 'text-left'}`}>{domain.name}</p>
         <p className={`text-[1.6rem] font-[700] text-[#FF6600] ${id % 2 ? 'text-right' : 'text-left'}`}>{domain.title}</p>
@@ -193,7 +193,7 @@ const DomainDesktop = ({ domain, id }) => {
 
 const Banner = () => (
     <div className="">
-        <div className="border border-[#FF6600] p-[1rem] sm:p-[3rem] rounded-[.8rem] mt-[3rem] sm:flex sm:justify-between sm:mt-[9rem]" data-animation-id='fadeIn'>
+        <div className="border border-[#FF6600] p-[1rem] sm:p-[3rem] rounded-[.8rem] mt-[3rem] sm:flex sm:justify-between sm:mt-[9rem]" data-animation-id='slideIn'>
             <div className="flex flex-col sm:w-[58rem]">
                 <h3 className="font-[400] text-[1.4rem] text-center sm:text-left mb-[1.3rem]"><span className="font-[700] text-[#FF6600]">RabbitMQ</span> Enterprise <span className="font-[700]">support</span></h3>
                 <h3 className="text-center text-[2.7rem] sm:text-[3.5rem]  font-[700] sm:text-left">How we <span className="font-[400]">Saved Millions</span> in <span className="text-[#FF6600]">Downtime</span> for a <span className="text-[#FF6600]">Global</span> <span className="font-[400]">Retail Giant</span></h3>

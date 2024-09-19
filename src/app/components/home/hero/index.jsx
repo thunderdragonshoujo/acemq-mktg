@@ -2,13 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
-import milestone, { fadeIn } from "@/app/Animations/common";
+import milestone, { slideIn } from "@/app/Animations/common";
 import split from "@/app/Animations/text";
 const Index = () => {
     useEffect(() => {
         milestone()
         split()
-        fadeIn()
+        slideIn()
     }, [])
     return (
         <section className="relative flex pt-[6.3rem] px-[2.5rem] sm:px-[10rem] pb-[2rem] sm:pb-[8rem] gap-[4rem]">
@@ -23,7 +23,7 @@ const Index = () => {
                 <img src="/mille_1.png" className="mt-[2rem] w-[4rem]" alt="mile stone" />
             </div>
 
-            <div className="relative sm:w-fit sm:ml-[7rem]" data-animation-id='fadeIn'>
+            <div className="relative sm:w-fit sm:ml-[7rem]" data-animation-id='slideIn'>
                 <h1 className="font-[300] text-[5.3rem] sm:text-[9rem] sm:w-[58rem] leading-[5.5rem] sm:leading-[9rem]">Message <span className="font-[700] text-accent-100">Queuing</span></h1>
                 <h2 className="text-[2rem] sm:text-[4rem] sm:leading-[9rem] leading-[6.2rem] font-[700]">Technology <span className="font-[400]">Experts</span></h2>
                 <p className="mb-[2rem] sm:hidden sm:mb-0">AceMQ is a firm built on delivering excellence on all Message Queuing and Streaming Solutions. We have expertise in Queueing tools and Streaming tools, their Architecture, and how they integrate in various environments.</p>

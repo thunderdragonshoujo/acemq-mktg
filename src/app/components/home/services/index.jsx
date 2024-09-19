@@ -1,12 +1,12 @@
 'use client';
 import Image from "next/image";
-import milestone, { fadeIn } from "@/app/Animations/common";
+import milestone, { slideIn } from "@/app/Animations/common";
 import split from "@/app/Animations/text";
 import { useEffect } from "react";
 const Index = () => {
     useEffect(() => {
         milestone()
-        fadeIn()
+        slideIn()
     }, [])
     const cards = [
         {
@@ -53,10 +53,10 @@ const Index = () => {
             <div className="hidden h-[0] overflow-hidden absolute sm:block mt-[15rem]" data-animation-id='milestone'>
                 <img src="/mille_2.svg" className="w-[4rem]" alt="arrow" />
             </div>
-            <div data-animation-id='fadeIn' className="">
+            <div className="">
                 <div className="sm:flex">
                     <div className="sm:flex sm:ml-[7rem] sm:mt-[6rem] sm:justify-between sm:w-[100%]">
-                        <div className="">
+                        <div className="" data-animation-id='slideIn'>
                             <h2 className="text-center text-[2.5rem] sm:text-[6.5rem] mt-[5rem] mb-[1rem] sm:text-left font-[700]"><span className="text-[#8FD5CC] font-[400]">MQ</span> Services</h2>
                             <p className="hidden sm:block w-[54rem]">We offer a range of services to address all your messaging and queuing requirements.Our team of seasoned professionals excels in delivering top-notch solutions to enhance the reliability, scalability, and performance of your MQ systems” </p>
                         </div>

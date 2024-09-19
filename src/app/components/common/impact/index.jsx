@@ -3,12 +3,12 @@ import Link from "next/link";
 import { useEffect } from "react";
 import Image from "next/image";
 import split from "@/app/Animations/text";
-import { fadeIn } from "@/app/Animations/common";
+import { slideIn } from "@/app/Animations/common";
 
 const Index = () => {
   useEffect(() => {
     split();
-    fadeIn();
+    slideIn();
   }, []);
 
   const cards = [
@@ -29,7 +29,7 @@ const Index = () => {
   ];
   return (
     <section className="px-[3rem] md:px-[10rem] sm:mb-[0] mt-[6.5rem]">
-      <div className="" data-animation-id="fadeIn">
+      <div className="" data-animation-id="slideIn">
         <h3 className="text-center text-[2.7rem] sm:text-[4.5rem] font-[700]">
           <span className="text-[#FF6600]">Among</span> The Best
         </h3>

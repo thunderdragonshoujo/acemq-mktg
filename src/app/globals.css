@@ -188,7 +188,11 @@ button {
   opacity: 0;
 }
 
+[data-animation-id='slideIn']{
+  transform: translateX(50px);
+  opacity: 0;
+}
+
 [data-animation-id='fadeIn']{
-  transform: translateX(30px);
   opacity: 0;
 }

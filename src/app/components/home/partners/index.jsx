@@ -2,11 +2,11 @@
 import Image from "next/image";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { fadeIn } from "@/app/Animations/common";
+import { slideIn } from "@/app/Animations/common";
 import { useEffect } from "react";
 const Index = () => {
     useEffect(() => {
-        fadeIn()
+        slideIn()
     }, [])
     const responsive = {
         mobile: {
@@ -31,7 +31,7 @@ const Index = () => {
 
     return (
         <section className="px-[3rem] pb-[5rem] sm:px-[10rem] mt-[8rem]  sm:mt-[10rem]">
-            <div className="sm:bg-black bg-[#080A0C] p-[1rem] sm:flex sm:pr-[5rem] sm:justify-between" data-animation-id='fadeIn'>
+            <div className="sm:bg-black bg-[#080A0C] p-[1rem] sm:flex sm:pr-[5rem] sm:justify-between" data-animation-id='slideIn'>
                 <h4 className="font-[700] text-[2.3rem] sm:text-[3rem] sm:w-[48rem] text-center sm:text-start sm:p-[5rem]">Strategically Aligned With <span className="text-[#FF6600]">Industry Leaders</span></h4>
 
                 <div className="sm:flex hidden items-center gap-[3rem]">

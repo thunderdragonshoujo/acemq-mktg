@@ -3,10 +3,10 @@ import Image from "next/image";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { useEffect } from "react";
-import { fadeIn } from "@/app/Animations/common";
+import { slideIn } from "@/app/Animations/common";
 const Index = () => {
     useEffect(() => {
-        fadeIn()
+        slideIn()
     }, [])
     const brands = [
         {
@@ -47,7 +47,7 @@ const Index = () => {
         }
     }
     return (
-        <section data-animation-id='fadeIn' className="px-[3rem] sm:px-[10rem] mt-[7rem] sm:pt-[10rem] pb-[5.2rem] sm:pb-[0] flex gap-x-[4rem] w-[100%]">
+        <section data-animation-id='slideIn' className="px-[3rem] sm:px-[10rem] mt-[7rem] sm:pt-[10rem] pb-[5.2rem] sm:pb-[0] flex gap-x-[4rem] w-[100%]">
             <div className="w-[100%] relative z-[1] bg-[#11151A] sm:px-[5.3rem] px-[0] rounded-[2rem] border-[#FF6600] border sm:py-[5rem] py-[2rem]">
                 <h2 className="text-[2.4rem] hidden sm:block sm:text-[3.2rem] text-center sm:text-left font-[700] mb-[3rem]">Trusted By The <span className="text-[#FF6600]">global brands </span>including:</h2>
                 <h2 className="text-[2.7rem] sm:hidden sm:text-[3.2rem] text-center sm:text-left font-[700] mb-[3rem]">Trusted by <span className="text-[#FF6600]">Brands  Global:</span></h2>

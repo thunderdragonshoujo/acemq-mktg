@@ -22,10 +22,10 @@ export default function milestone() {
     })
 }
 
-export const fadeIn = () => {
-    const fadeIn = document.querySelectorAll("[data-animation-id='fadeIn']")
+export const slideIn = () => {
+    const slideIn = document.querySelectorAll("[data-animation-id='slideIn']")
 
-    fadeIn.forEach((item) => {
+    slideIn.forEach((item) => {
         IO(item, { threshold: .7 }).then(() => {
             gsap.to(item, {
                 css: {
@@ -34,6 +34,24 @@ export const fadeIn = () => {
                 },
                 duration: .5,
             })
+        })
+    })
+}
+
+
+export const fadeIn = () => {
+    const fadeIn = document.querySelectorAll("[data-animation-id='fadeIn']")
+
+    fadeIn.forEach((item) => {
+        gsap.fromTo(item, {
+            css: {
+                opacity: 0
+            }
+        }, {
+            css: {
+                opacity: 1,
+            },
+            delay: .5
         })
     })
 }
