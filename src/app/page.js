@@ -6,7 +6,7 @@ import Domians from './components/home/domains'
 import MaxContainer from './components/common/maxContainer'
 import Technologies from './components/home/technologies'
 import Partners from './components/home/partners'
-import About  from './components/home/about'
+import About from './components/home/about'
 import Contact from './components/common/contact'
 
 export const metadata = {
@@ -30,16 +30,18 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <MaxContainer>
+    <>
       <Hero />
-      <Brands />
-      <Services />
-      <Impact />
-      <Domians />
-      <Technologies />
-      <Partners />
-      <About />
-      <Contact />
-    </MaxContainer>
+        <Brands />
+        <Services />
+        <Impact />
+        <Domians />
+        <Technologies />
+      <MaxContainer>
+        <Partners />
+        <About />
+        <Contact />
+      </MaxContainer>
+    </>
   );
 }

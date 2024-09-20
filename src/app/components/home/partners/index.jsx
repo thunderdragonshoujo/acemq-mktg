@@ -31,8 +31,8 @@ const Index = () => {
 
     return (
         <section className="px-[3rem] pb-[5rem] sm:px-[10rem] mt-[8rem]  sm:mt-[10rem]">
-            <div className="sm:bg-black bg-[#080A0C] p-[1rem] sm:flex sm:pr-[5rem] sm:justify-between" data-animation-id='slideIn'>
-                <h4 className="font-[700] text-[2.3rem] sm:text-[3rem] sm:w-[48rem] text-center sm:text-start sm:p-[5rem]">Strategically Aligned With <span className="text-[#FF6600]">Industry Leaders</span></h4>
+            <div className="sm:bg-black rounded-[2rem] bg-[#080A0C] p-[1rem] sm:flex sm:pr-[5rem] sm:justify-between" data-animation-id='slideIn'>
+                <h4 className="font-[700] text-[2.3rem] sm:text-[3rem] sm:w-[48rem] text-center sm:text-start sm:p-[5rem]">Strategically Aligned with <span className="text-[#FF6600]">Industry Leaders</span></h4>
 
                 <div className="sm:flex hidden items-center gap-[3rem]">
                     {partners.map((item, i) => <Image src={item.image} key={i} className={`${item.width}`} width={150} height={200} alt="partner icon" />)}

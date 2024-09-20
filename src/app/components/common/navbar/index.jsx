@@ -41,7 +41,7 @@ const Index = () => {
       path: "/fipsmq/",
     },
     {
-      name: "Support & Services",
+      name: "Support Services",
       path: "/support/",
     },
     {

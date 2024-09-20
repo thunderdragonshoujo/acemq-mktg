@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import milestone, { slideIn } from "@/app/Animations/common";
-
+import MaxContainer from '../../common/maxContainer'
 
 const Index = () => {
     useEffect(() => {
@@ -109,28 +109,32 @@ const DomiansMobile = ({ domains }) => (
 
 const DomainsDesktop = ({ domains }) => (
     <section className="hidden sm:flex relative px-[3rem] sm:px-[10rem] gap-x-[4rem]">
-        <div className="absolute hidden sm:block overflow-hidden" data-animation-id='milestone'>
-            <img src="/mille_3.svg" alt="arrow" className="mt-[2rem] sm:w-[4rem]" />
-        </div>
-        <div className="">
-            <div className="flex flex-col sm:ml-[7rem]" >
-                <div className="" data-animation-id='slideIn'>
-                    <h3 className="font-[700] text-[2rem] mt-[1.2rem]">Ace8’s</h3>
-                    <div className="w-[12rem] h-[4rem] rounded-[.8rem] opacity-[.8] grid place-content-center bg-[#FF6600]">
-                        <p className="text-[2rem]">Full Stack</p>
-                    </div>
-                    <h3 className="text-[3rem] font-[700] my-[.5rem]">Capabilities</h3>
-                    <p className="">AceMQ is a subsidiary of a larger, highly specialized full-stack services company,  Ace8,  therefore we understand how your Message Queing tool fits into your environment as a whole and thus we can advise and support you beyond the scope of your tool of choice.</p>
+        <MaxContainer>
+            <div className="">
+                <div className="absolute hidden sm:block overflow-hidden" data-animation-id='milestone'>
+                    <img src="/mille_3.svg" alt="arrow" className="mt-[2rem] sm:w-[4rem]" />
                 </div>
+                <div className="">
+                    <div className="flex flex-col sm:ml-[7rem]" >
+                        <div className="" data-animation-id='slideIn'>
+                            <h3 className="font-[700] text-[2rem] mt-[1.2rem]">Ace8’s</h3>
+                            <div className="w-[12rem] h-[4rem] rounded-[.8rem] opacity-[.8] grid place-content-center bg-[#FF6600]">
+                                <p className="text-[2rem]">Full Stack</p>
+                            </div>
+                            <h3 className="text-[3rem] font-[700] my-[.5rem]">Capabilities</h3>
+                            <p className="">AceMQ is a subsidiary of a larger, highly specialized full-stack services company,  Ace8,  therefore we understand how your Message Queing tool fits into your environment as a whole and thus we can advise and support you beyond the scope of your tool of choice.</p>
+                        </div>
 
-                <div className="h-[93rem] grid place-content-center relative" data-animation-id='slideIn'>
-                    <Image src='/center_logo.png' className="w-[45rem]" width={550} alt="logo" height={178} />
-                    {domains.map((domain, index) => <DomainDesktop domain={domain} key={index} id={index} />)}
+                        <div className="h-[93rem] grid place-content-center relative" data-animation-id='slideIn'>
+                            <Image src='/center_logo.png' className="w-[45rem]" width={550} alt="logo" height={178} />
+                            {domains.map((domain, index) => <DomainDesktop domain={domain} key={index} id={index} />)}
+                        </div>
+                        <button data-animation-id='slideIn' className="px-[2.5rem] border border-[#FF6600] self-center mt-[4rem]">Ace8 Services</button>
+                        <Banner />
+                    </div>
                 </div>
-                <button data-animation-id='slideIn' className="px-[2.5rem] border border-[#FF6600] self-center mt-[4rem]">Ace8 Services</button>
-                <Banner />
             </div>
-        </div>
+        </MaxContainer>
     </section>
 )
 
@@ -171,7 +175,7 @@ const DomainDesktop = ({ domain, id }) => {
                 id
             )} mt-[3rem]`}
         >
-            <div className="flex gap-x-[3rem] mb-[2rem] items-center">
+            <div className="flex gap-x-[1rem] mb-[2rem] items-center">
                 <Image
                     src={domain.image}
                     width={115}
@@ -183,9 +187,8 @@ const DomainDesktop = ({ domain, id }) => {
                     {domain.number}
                 </h3>
             </div>
-            <p className={`text-[1.8rem] w-[23rem] font-[700]`}>
-                {domain.name} <span className="text-[#FF6600]">{domain.title}</span>
-            </p>
+            <p className={`text-[1.8rem] w-[23rem] font-[700]`}>{domain.name}</p>
+            <p className="text-[#FF6600] text-[1.8rem] font-[700]">{domain.title}</p>
             <p className="mt-[.8rem] text-[1.4rem]">{domain.role}</p>
         </div>
     );
@@ -195,22 +198,22 @@ const Banner = () => (
     <div className="">
         <div className="border border-[#FF6600] p-[1rem] sm:p-[3rem] rounded-[.8rem] mt-[3rem] sm:flex sm:justify-between sm:mt-[9rem]" data-animation-id='slideIn'>
             <div className="flex flex-col sm:w-[58rem]">
-                <h3 className="font-[400] text-[1.4rem] text-center sm:text-left mb-[1.3rem]"><span className="font-[700] text-[#FF6600]">RabbitMQ</span> Enterprise <span className="font-[700]">support</span></h3>
+                <h3 className="font-[400] capitalize text-[1.4rem] text-center sm:text-left mb-[1.3rem]"><span className="font-[700] text-[#FF6600]">RabbitMQ</span> Enterprise <span className="font-[700]">support</span></h3>
                 <h3 className="text-center text-[2.7rem] sm:text-[3.5rem]  font-[700] sm:text-left">How we <span className="font-[400]">Saved Millions</span> in <span className="text-[#FF6600]">Downtime</span> for a <span className="text-[#FF6600]">Global</span> <span className="font-[400]">Retail Giant</span></h3>
                 <p className="hidden sm:block">Learn how AceMQ’s RabbitMQ Enterprise support saved a global Retail Giant millions of dollars in downtime, while saving them thousands in hiring costs.</p>
 
-                <Link href='#contact' className="mx-auto sm:mx-0">
+                <Link href='/support' className="mx-auto sm:mx-0">
                     <button className="border border-[#FF6600] self-center mt-[2rem]">Learn More</button>
                 </Link>
             </div>
             <Image
-            src="/room.webp"
-            className="w-[40rem] hidden sm:block"
-            width={491}
-            height={384}
-            alt="store"
-        />
+                src="/room.webp"
+                className="w-[40rem] hidden sm:block"
+                width={491}
+                height={384}
+                alt="store"
+            />
         </div>
-      
+
     </div>
 );
