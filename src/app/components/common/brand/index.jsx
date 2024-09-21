@@ -48,10 +48,10 @@ const Index = () => {
         }
     }
     return (
-        <section data-animation-id='slideIn' className="px-[3rem] sm:px-[10rem] mt-[7rem] sm:pt-[10rem] pb-[5.2rem] sm:pb-[0] flex gap-x-[4rem] w-[100%]">
+        <section data-animation-id='slideIn' className="px-[3rem] sm:px-[10rem] mt-[8rem] sm:pt-[10rem] pb-[5.2rem] sm:pb-[0] flex gap-x-[4rem] w-[100%]">
             <MaxContainer>
                 <div className="">
-                    <div className="w-[100%] relative z-[1] bg-[#11151A] sm:px-[5rem] px-[0] rounded-[2rem] border-[#FF6600] border sm:py-[4rem] py-[2rem]">
+                    <div className="w-[100%] relative z-[5] bg-[#11151A] sm:px-[5rem] px-[0] rounded-[2rem] border-[#FF6600] border sm:py-[4rem] py-[2rem]">
                         <h2 className="text-[2.4rem] capitalize hidden sm:block sm:text-[3.2rem] text-center sm:text-left font-[700] mb-[3rem]">Trusted By <span className="text-[#FF6600]">brands globally</span></h2>
                         <h2 className="text-[2.7rem] sm:hidden sm:text-[3.2rem] text-center sm:text-left font-[700] mb-[3rem]">Trusted by <span className="text-[#FF6600]">Brands  Global:</span></h2>
                         <div className="hidden sm:flex items-center justify-between w-[100%]">
