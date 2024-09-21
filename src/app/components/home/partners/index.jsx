@@ -27,6 +27,10 @@ const Index = () => {
             image: '/aws.png',
             width: 'w-[9rem] h-[6rem]'
         },
+        {
+            image: '/redis.png',
+            width: 'w-[8rem] h-[8rem]'
+        },
     ]
 
     return (

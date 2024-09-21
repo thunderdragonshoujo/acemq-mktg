@@ -139,6 +139,7 @@ const FooterDesktop = () => {
                   />
                   <p className="text-[1.5rem]">305-981-6475</p>
                 </li>
+
                 <li className="flex gap-[1rem] items-center">
                   <img
                     className="w-[3rem]"
@@ -148,6 +149,17 @@ const FooterDesktop = () => {
                   <p className="w-[30rem] text-[1.5rem]">
                     66 W. Flagler St. 9th Floor Miami, FL 33130
                   </p>
+                </li>
+
+                <li className="flex gap-[1rem] items-center">
+                  <div className="w-[2.5rem] aspect-square bg-[#8FD5CC] grid place-content-center rounded-full">
+                    <img
+                      className="w-[1.7rem] aspect-square"
+                      src="/mail.png"
+                      alt="mail"
+                    />
+                  </div>
+                  <p className="w-[30rem] text-[1.5rem]">info@acemq.com</p>
                 </li>
               </ul>
             </div>
@@ -200,20 +212,19 @@ const FooterDesktop = () => {
                 Connect With Us
               </p>
               <div className="flex gap-x-[2rem]">
-                <img
-                  src="/in.svg"
-                  className="mb-[1.5rem] w-[2rem]"
-                  alt="Linkedin"
-                />
-                <Link href="" className="text-[1.4rem] ">
-                  https://www.linkedin.com/company/acemq/
+                <Link href="https://www.linkedin.com/company/acemq/" className="text-[1.4rem] ">
+                  <img
+                    src="/in.svg"
+                    className="mb-[1.5rem] w-[3rem]"
+                    alt="Linkedin"
+                  />
                 </Link>
               </div>
             </div>
           </div>
           <div className="absolute left-0 right-0 bottom-0 bg-black">
             <p className="text-center text-[1.5rem] py-[2rem]">
-              © CopyRight AceITtechnologies.com
+              © Copyright AceMQ {new Date().getFullYear()}
             </p>
           </div>
         </div>

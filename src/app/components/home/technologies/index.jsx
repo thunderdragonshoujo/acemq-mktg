@@ -2,12 +2,64 @@
 import milestone, { slideIn } from "@/app/Animations/common";
 import { useEffect } from "react";
 import Image from "next/image";
-import MaxContainer from '../../common/maxContainer'
+import MaxContainer from '../../common/maxContainer';
+import { useState } from "react";
+
+
 const Index = () => {
     useEffect(() => {
         milestone()
         slideIn()
     })
+
+    const technologies = [
+        {
+            icon: '/tech_0.png',
+            text: 'Rabbit MQ',
+            style: '',
+        },
+        {
+            icon: '/tech_1.svg',
+            text: 'AWS SQS',
+            style: 'mt-[15rem]',
+        },
+        {
+            icon: '/redis.webp',
+            text: 'Redis',
+            style: '',
+        },
+        {
+            icon: '/tech_2.svg',
+            text: 'Google PubSub',
+            style: 'mt-[15rem]',
+        },
+        {
+            icon: '/tech_3.svg',
+            text: 'Apache Pulsar',
+            style: 'mt-[15rem]',
+        },
+        {
+            icon: '/tech_4.svg',
+            text: 'Kafka',
+            style: 'mt-auto mb-[15rem]',
+        },
+        {
+            icon: '/tech_5.svg',
+            text: 'IBM ActiveMQ',
+            style: 'mt-auto',
+        },
+        {
+            icon: '/tech_6.svg',
+            text: 'AWS',
+            style: 'mt-auto mb-[15rem]',
+        },
+        {
+            icon: '/tech_7.svg',
+            text: 'Others',
+            style: 'mt-auto',
+        },
+    ]
+
     return (
         <section className="mt-[3rem] sm:flex sm:px-[10rem] px-[3rem] relative">
             <MaxContainer>
@@ -18,9 +70,12 @@ const Index = () => {
                 </div>
                 <div className="" data-animation-id='slideIn'>
                     <div className="flex">
-                        <div className="sm:ml-[7rem] sm:mt-[4rem]">
+                        <div className="sm:ml-[7rem] sm:w-full sm:mt-[4rem]">
                             <h4 className="text-center text-[2.5rem] font-[700] mb-[1rem] sm:text-left sm:text-[4.5rem]">Technologies</h4>
-                            <Image src='/technologies.png' alt="tech icons" className="w-[100%] hidden sm:block sm:w-[90rem]" width={1346} height={652} />
+                            {/* <Image src='/technologies.png' alt="tech icons" className="w-[100%] hidden sm:block sm:w-[90rem]" width={1346} height={652} /> */}
+                            <div className="sm:flex h-[60rem] justify-between w-[100%] hidden">
+                                {technologies.map(tech => <Technology key={tech.text} tech={tech} />)}
+                            </div>
                             <Image src='/technologies_sm.png' alt="tech icons" className="w-[100%] sm:hidden" width={358} height={409} />
                         </div>
                     </div>
@@ -31,3 +86,22 @@ const Index = () => {
 }
 
 export default Index;
+
+
+const Technology = ({ tech }) => {
+    const [isHovered, setIshovered] = useState(false)
+    return (
+        <div className={`${tech.style} w-[10rem] aspect-square`}>
+            <Image
+                src={tech.icon}
+                width={150}
+                onMouseEnter={() => setIshovered(true)}
+                onMouseLeave={() => setIshovered(false)}
+                height={150}
+                className="cursor-pointer rounded-[2rem] hover:translate-y-[10px] transition-all duration-700"
+                alt="tech icon"
+            />
+           <p className={`text-center mt-[2rem] font-[700] transition-all duration-500 ${isHovered ? 'opacity-1'  : 'opacity-0'}`}>{tech.text}</p>
+        </div>
+    )
+}
