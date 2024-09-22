@@ -109,7 +109,6 @@ const DomiansMobile = ({ domains }) => (
 
 const DomainsDesktop = ({ domains }) => (
     <section className="hidden sm:flex relative px-[3rem] sm:px-[10rem] gap-x-[4rem]">
-        <MaxContainer>
             <div className="">
                 <div className="absolute hidden sm:block overflow-hidden" data-animation-id='milestone'>
                     <img src="/mille_3.svg" alt="arrow" className="mt-[2rem] sm:w-[4rem]" />
@@ -134,7 +133,6 @@ const DomainsDesktop = ({ domains }) => (
                     </div>
                 </div>
             </div>
-        </MaxContainer>
     </section>
 )
 
