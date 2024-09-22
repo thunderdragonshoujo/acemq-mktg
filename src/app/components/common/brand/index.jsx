@@ -12,7 +12,7 @@ const Index = () => {
     const brands = [
         {
             image: '/square.png',
-            width: 'sm:w-[6rem]',
+            width: 'sm:w-[6rem] w-[7rem] aspect-square',
         },
         {
             image: '/enbridge.png',
