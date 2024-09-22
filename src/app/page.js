@@ -31,12 +31,14 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Hero />
+      <MaxContainer>
+        <Hero />
         <Brands />
         <Services />
         <Impact />
         <Domians />
         <Technologies />
+      </MaxContainer>
       <MaxContainer>
         <Partners />
         <About />

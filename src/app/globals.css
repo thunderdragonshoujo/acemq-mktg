@@ -25,7 +25,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #0D1117;
+  background-color: #040812;
   overflow-x: hidden;
   font-size: 1.6rem;
   color: #ffff;
@@ -195,4 +195,9 @@ button {
 
 [data-animation-id='fadeIn']{
   opacity: 0;
+}
+
+
+.hero_main_mask_image{
+  mask-image: linear-gradient(90deg, transparent, #000 20%, #000 80%, transparent);;
 }

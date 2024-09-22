@@ -63,12 +63,12 @@ const Index = () => {
     return (
         <section className="mt-[3rem] sm:flex sm:px-[10rem] px-[3rem] relative">
             <MaxContainer>
-                <img src="/faceL.png" className="filter absolute opacity-[.5]  blend top-[0rem] hidden sm:block z-[-1] right-0 w-[20rem]" alt="" />
-                <img src="/BrainB.webp" className="opacity-[.5] mix-blend-lighten absolute top-[17rem] z-[-1] left-0 w-[20rem] hidden sm:block" alt="" />
                 <div className="absolute hidden sm:block mt-[3rem] overflow-hidden" data-animation-id='milestone'>
                     <img src="/mille_4.webp" className="w-[4rem]" alt="line" />
                 </div>
-                <div className="" data-animation-id='slideIn'>
+                <div className="relative" data-animation-id='slideIn'>
+                    {/* <img src="/faceL.png" className="filter absolute opacity-[.5]  blend top-[0rem] hidden sm:block z-[-1] right-0 w-[20rem]" alt="" />
+                    <img src="/BrainB.webp" className="opacity-[.5] mix-blend-lighten absolute top-[17rem] z-[-1] left-0 w-[20rem] hidden sm:block" alt="" /> */}
                     <div className="flex">
                         <div className="sm:ml-[7rem] sm:w-full sm:mt-[4rem]">
                             <h4 className="text-center text-[2.5rem] font-[700] mb-[1rem] sm:text-left sm:text-[4.5rem]">Technologies</h4>
@@ -101,7 +101,7 @@ const Technology = ({ tech }) => {
                 className="cursor-pointer rounded-[2rem] hover:translate-y-[10px] transition-all duration-700"
                 alt="tech icon"
             />
-           <p className={`text-center mt-[2rem] font-[700] transition-all duration-500 ${isHovered ? 'opacity-1'  : 'opacity-0'}`}>{tech.text}</p>
+            <p className={`text-center mt-[2rem] font-[700] transition-all duration-500 ${isHovered ? 'opacity-1' : 'opacity-0'}`}>{tech.text}</p>
         </div>
     )
 }
