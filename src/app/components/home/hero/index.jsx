@@ -13,7 +13,7 @@ const Index = () => {
     }, [])
     return (
         <section className="relative w-[100%] px-[3rem] sm:px-[10rem]">
-            <Image src='/hero_bg_sm.png' width={520} className="absolute right-0 border z-[-3] sm:hidden inset-0 " height={669} alt="background image" />
+            <Image src='/hero_bg_sm.png' width={520} className="absolute right-0 z-[-3] sm:hidden inset-0 " height={669} alt="background image" />
             <Image src='/hero_flare_bottom_sm.png' width={520} className="absolute z-[-2]  sm:hidden inset-0 " height={669} alt="background image" />
             <Image src='/hero_flare_side_sm.png' width={520} className="absolute z-[-1] sm:hidden inset-0 " height={669} alt="background image" />
             <Image src='/hero_bg_lg.png' width={1920} className="absolute hero_main_mask_image w-[100vw] h-[100%] hidden  sm:block z-[-1] inset-0 " height={1000} alt="background image" />
