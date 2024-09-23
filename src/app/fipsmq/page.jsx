@@ -25,12 +25,18 @@ export const metadata = {
 
 const FIPs = () => {
   return (
-    <MaxContainer>
-      <Hero />
-      <Body />
-      <Banner />
-      <Contact />
-    </MaxContainer>
+    <>
+      <section className="bg-black">
+        <MaxContainer>
+          <Hero />
+        </MaxContainer>
+      </section>
+      <MaxContainer>
+        <Body />
+        <Banner />
+        <Contact />
+      </MaxContainer>
+    </>
   );
 };
 

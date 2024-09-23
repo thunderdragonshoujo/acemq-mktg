@@ -1,5 +1,5 @@
+'use client'
 import Image from "next/image";
-
 const Index = () => {
   return (
     <section className="px-[3rem] sm:px-[10rem]">
@@ -19,7 +19,7 @@ const Index = () => {
         secondParagraph={
           "Our experts implement fault tolerance mechanisms to ensure uninterrupted message processing, even in the event of system failures, while maintaining FIPS compliance."
         }
-        imageWidth={"sm:w-[40rem] w-[30rem] mt-[2.5rem] sm:mt-[0]"}
+        imageWidth={"sm:w-[55rem] w-[30rem] mt-[2.5rem] sm:mt-[0]"}
         inverse={true}
       />
       <Patterns />
@@ -32,16 +32,8 @@ export default Index;
 
 const Info = () => {
   return (
-    <div className="py-[4rem] sm:pt-[10rem] sm:flex sm:flex-col sm:items-center">
-      <p className="text-center mb-[2rem] sm:w-[70rem]">
-        At{" "}
-        <span className="bg-[#8FD5CC] px-[1rem] py-[.5rem] rounded-[1.5rem] text-[#0D1117] font-[700]">
-          AceMQ
-        </span>
-        , Our team of experts is well-versed in leveraging our FIPSMQ solution,
-        to enable secure and scalable messaging solutions for businesses that
-        require compliance with FIPS (Federal Information Processing Standards)
-        guidelines.
+    <div className="py-[4rem] sm:pt-[10rem] sm:flex sm:flex-col sm:items-center" data-animation-id='slideIn'>
+      <p className="text-center mb-[2rem] sm:w-[70rem]">At<span className="bg-[#8FD5CC] px-[1rem] py-[.5rem] rounded-[1.5rem] text-[#0D1117] font-[700]"> AceMQ</span>, we specialize in providing comprehensive support services for FIPS, the leading FIPS- compliant message broker. Our team of experts is well-versed in leveraging our FIPSMQ solution, to enable secure and scalable messaging solutions for businesses that require compliance with FIPS (Federal Information Processing Standards) guidelines..
       </p>
       <Image
         src="/encriptiion.webp"
@@ -53,7 +45,7 @@ const Info = () => {
       <Image
         src="/encription_sm.webp"
         width={1552}
-        className="sm:block hidden w-[110rem]"
+        className="sm:block hidden w-[100rem]"
         height={700}
         alt="encyption"
       />
@@ -63,7 +55,7 @@ const Info = () => {
 
 const Compliance = () => {
   return (
-    <div className="sm:flex sm:gap-[7rem] mt-[3rem] sm:mb-[10rem] mb-[4rem]">
+    <div className="sm:flex sm:gap-[7rem] mt-[3rem] sm:mb-[10rem] mb-[4rem]" data-animation-id='slideIn'>
       <div className="flex-1">
         <div className="bg-[#10151D] p-[1rem] sm:w-fit sm:p-[1.5rem] rounded-[2rem] sm:mt-[10rem]">
           <h1 className="sub-header py-[.7rem] rounded-[3rem] mb-[.5rem] px-[2.5rem] border w-fit">
@@ -121,17 +113,14 @@ const PlaceTextBesideImage = ({
 }) => {
   return (
     <div
-      className={`sm:flex sm:justify-between ${
-        inverse ? "sm:flex-row-reverse" : "flex-row"
-      }  sm:mt-[3rem] sm:mb-[5rem] mb-[7rem] sm:w-[100%] sm:items-center`}
-    >
+      className={`sm:flex sm:justify-between ${inverse ? "sm:flex-row-reverse" : "flex-row"
+        }  sm:mt-[3rem] sm:mb-[5rem] mb-[7rem] sm:w-[100%] sm:items-center`} data-animation-id='slideIn'>
       <div className="sm:w-[50%] overflow-hidden flex flex-col items- sm:items-start">
         {header}
         <div className="mt-[2rem]">
           <div
-            className={`flex bg-[#232323] border mb-[2rem] ${
-              borderColor ? borderColor : "border-[#8FD5CC]"
-            }  gap-[1rem] p-[.5rem] rounded-[1rem]`}
+            className={`flex bg-[#232323] border mb-[2rem] ${borderColor ? borderColor : "border-[#8FD5CC]"
+              }  gap-[1rem] p-[.5rem] rounded-[1rem]`}
           >
             <img
               src={orangeTick ? "/orange_tick.svg" : "/tick.svg"}
@@ -163,12 +152,12 @@ const PlaceTextBesideImage = ({
 
 const Patterns = () => {
   return (
-    <div className="sm:flex sm:flex-col sm:items-center sm:mb-[12rem] mb-[4rem]">
-      <h4 className="text-[2.2rem] sm:text-[3rem] sm:w-[50rem] font-[700] text-center">
-        Advanced <span className="font-[400]">Messaging</span>{" "}
-        <span className="text-[#8FD5CC]">Patterns</span> and Optimization
+    <div className="sm:flex sm:flex-col sm:items-center sm:mb-[12rem] mb-[4rem]" data-animation-id='slideIn'>
+      <h4 className="sm:text-[4rem] text-[2.2rem] sm:w-[55rem] font-[700] text-center">
+        Advanced <span className="text-[#8FD5CC]">Messaging</span>
+        <span className="text-[#8FD5CC]"> Patterns</span> and <span className="">Optimization</span>
       </h4>
-      <p className="text-center my-[1.4rem] max-w-[90rem]">
+      <p className="text-center my-[1.4rem] max-w-[60rem]">
         Unlock the full potential of RabbitMQ with our advanced messaging
         patterns and optimization techniques. We go beyond basic messaging
         functionality to help you build robust and scalable messaging
@@ -176,7 +165,7 @@ const Patterns = () => {
       </p>
       <Image
         src="/advanced_down.svg"
-        className="w-[40rem] mt-[2rem]"
+        className="w-[45rem] mt-[2rem]"
         width={376}
         height={296}
         alt="patterns image"

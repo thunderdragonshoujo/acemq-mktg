@@ -16,7 +16,7 @@ const Index = () => {
         {
             icon: '/tech_0.png',
             text: 'Rabbit MQ',
-            style: '',
+            style: 'h-fit',
         },
         {
             icon: '/tech_1.svg',
@@ -26,7 +26,7 @@ const Index = () => {
         {
             icon: '/redis.webp',
             text: 'Redis',
-            style: '',
+            style: 'h-fit',
         },
         {
             icon: '/tech_2.svg',
@@ -76,7 +76,13 @@ const Index = () => {
                             <div className="sm:flex h-[60rem] justify-between w-[100%] hidden">
                                 {technologies.map(tech => <Technology key={tech.text} tech={tech} />)}
                             </div>
-                            <Image src='/technologies_sm.png' alt="tech icons" className="w-[100%] sm:hidden" width={358} height={409} />
+                            <Image
+                                src='/technologies_sm.png'
+                                alt="tech icons"
+                                className="w-[100%] sm:hidden"
+                                width={358}
+                                height={409}
+                            />
                         </div>
                     </div>
                 </div>
@@ -92,7 +98,7 @@ const Technology = ({ tech }) => {
     const [isHovered, setIshovered] = useState(false)
     return (
         <div className={`${tech.style} w-[10rem] aspect-square`}>
-            <Image
+            <img
                 src={tech.icon}
                 width={150}
                 onMouseEnter={() => setIshovered(true)}

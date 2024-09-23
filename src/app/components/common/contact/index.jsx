@@ -13,7 +13,7 @@ const Index = () => {
     const [message, setMessage] = useState('')
     const EMAIL_REGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const pathName = usePathname()
-    console.log(pathName)
+    
     useEffect(() => {
         setEmailError(EMAIL_REGEX.test(email))
     }, [email])

@@ -1,7 +1,7 @@
 import Link from "next/link";
 const Index = () => {
   return (
-    <section className="mt-[6rem] pt-[2rem] sm:pt-[0] pb-[3rem] sm:pb-[0] px-[3rem] sm:px-[10rem] relative">
+    <section className="mt-[6rem] pt-[2rem] sm:pt-[0] pb-[3rem] sm:pb-[0] px-[3rem] sm:px-[10rem] relative" data-animation-id='slideIn'>
       <img
         src="/banner_bg.webp"
         className="hard-light w-[100%] h-[100%] absolute inset-0 z-[-1]  sm:hidden"
@@ -9,7 +9,7 @@ const Index = () => {
       />
       <img
         src="/ace_logo_white.svg"
-        className="w-[12rem] absolute top-[-2rem] sm:left-[15rem]"
+        className="w-[12rem] sm:w-[18rem] absolute top-[-2rem] sm:left-[15rem]"
         alt="Acemq Logo"
       />
       <div className="sm:pl-[5rem] sm:py-[3rem] relative">
