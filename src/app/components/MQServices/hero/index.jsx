@@ -1,5 +1,11 @@
+'use client'
 import Image from "next/image";
+import { useEffect } from "react";
+import { fadeIn, slideIn } from "@/app/Animations/common";
 const Index = () => {
+  useEffect(() => {
+    slideIn()
+  }, [])
   return (
     <section className="py-[5.5rem] sm:pt-[12rem] sm:pb-[12rem] px-[1.5rem] sm:px-[10rem] relative">
       <Image
@@ -16,8 +22,8 @@ const Index = () => {
         height={940}
         alt="wheel"
       />
-      <div className="flex flex-col items-center relative">
-        <h1 className="header sm:w-[60rem] text-center">
+      <div className="items-center relative" data-animation-id='slideIn'>
+        <h1 className="header mx-auto sm:w-[60rem]  text-center">
           Your Trusted <span className="font-[400]">Message</span>{" "}
           <span className="text-[#8FD5CC]">Queuing Services</span> Partner
         </h1>
