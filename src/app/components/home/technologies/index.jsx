@@ -19,12 +19,13 @@ const Index = () => {
             style: 'h-fit',
         },
         {
-            icon: '/tech_1.svg',
-            text: 'AWS SQS',
+            icon: '/tech_4.svg',
+            text: 'Kafka',
             style: 'mt-[15rem]',
         },
+      
         {
-            icon: '/redis.webp',
+            icon: '/redis.png',
             text: 'Redis',
             style: 'h-fit',
         },
@@ -39,10 +40,11 @@ const Index = () => {
             style: 'mt-[15rem]',
         },
         {
-            icon: '/tech_4.svg',
-            text: 'Kafka',
+            icon: '/tech_1.svg',
+            text: 'AWS SQS',
             style: 'mt-auto mb-[15rem]',
         },
+
         {
             icon: '/tech_5.svg',
             text: 'IBM ActiveMQ',
@@ -97,14 +99,14 @@ export default Index;
 const Technology = ({ tech }) => {
     const [isHovered, setIshovered] = useState(false)
     return (
-        <div className={`${tech.style} w-[10rem] aspect-square`}>
+        <div className={`${tech.style} `}>
             <img
                 src={tech.icon}
                 width={150}
                 onMouseEnter={() => setIshovered(true)}
                 onMouseLeave={() => setIshovered(false)}
                 height={150}
-                className="cursor-pointer rounded-[2rem] hover:translate-y-[10px] transition-all duration-700"
+                className={`cursor-pointer w-[10rem] h-[10rem] service_card_shadow rounded-[2rem] hover:translate-y-[10px] transition-all duration-700`}
                 alt="tech icon"
             />
             <p className={`text-center mt-[2rem] font-[700] transition-all duration-500 ${isHovered ? 'opacity-1' : 'opacity-0'}`}>{tech.text}</p>

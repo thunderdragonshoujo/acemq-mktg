@@ -36,7 +36,7 @@ const Index = () => {
             <span className="text-[#FF6600]">Among</span> The Best
           </h3>
           <p className="text-center mb-[3rem] sm:mb-[4rem]">
-            Ace8 has helped the World's premiere companies reach exceptional
+            AceMQ has helped the World's premiere companies reach exceptional
             outcomes
           </p>
           <div className="sm:flex-row flex flex-col  gap-[5rem] sm:gap-[0] w-[100%] sm:h-[42rem] justify-between">

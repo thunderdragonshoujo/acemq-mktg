@@ -28,8 +28,8 @@ const Index = () => {
             width: 'w-[9rem] h-[6rem]'
         },
         {
-            image: '/redis.png',
-            width: 'w-[8rem] h-[8rem]'
+            image: '/redis_text_trans.png',
+            width: 'w-[15rem] h-[5rem]'
         },
     ]
 
@@ -38,7 +38,7 @@ const Index = () => {
             <div className="sm:bg-black rounded-[2rem] bg-[#080A0C] p-[1rem] sm:flex sm:pr-[5rem] sm:justify-between" data-animation-id='slideIn'>
                 <h4 className="font-[700] text-[2.3rem] sm:text-[3rem] sm:w-[48rem] text-center sm:text-start sm:p-[5rem]">Strategically Aligned with <span className="text-[#FF6600]">Industry Leaders</span></h4>
 
-                <div className="sm:flex hidden items-center gap-[3rem]">
+                <div className="sm:flex hidden items-center gap-[2rem]">
                     {partners.map((item, i) => <Image src={item.image} key={i} className={`${item.width}`} width={150} height={200} alt="partner icon" />)}
                 </div>
                 <div className="mt-[3rem] sm:hidden">

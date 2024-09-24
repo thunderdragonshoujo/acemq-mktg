@@ -109,30 +109,32 @@ const DomiansMobile = ({ domains }) => (
 
 const DomainsDesktop = ({ domains }) => (
     <section className="hidden sm:flex relative px-[3rem] sm:px-[10rem] gap-x-[4rem]">
+        <div className="">
+            <div className="absolute hidden sm:block overflow-hidden" data-animation-id='milestone'>
+                <img src="/mille_3.svg" alt="arrow" className="mt-[2rem] sm:w-[4rem]" />
+            </div>
             <div className="">
-                <div className="absolute hidden sm:block overflow-hidden" data-animation-id='milestone'>
-                    <img src="/mille_3.svg" alt="arrow" className="mt-[2rem] sm:w-[4rem]" />
-                </div>
-                <div className="">
-                    <div className="flex flex-col sm:ml-[7rem]" >
-                        <div className="" data-animation-id='slideIn'>
-                            <h3 className="font-[700] text-[2rem] mt-[1.2rem]">Ace8’s</h3>
-                            <div className="w-[12rem] h-[4rem] rounded-[.8rem] opacity-[.8] grid place-content-center bg-[#FF6600]">
-                                <p className="text-[2rem]">Full Stack</p>
-                            </div>
-                            <h3 className="text-[3rem] font-[700] my-[.5rem]">Capabilities</h3>
-                            <p className="">AceMQ is a subsidiary of a larger, highly specialized full-stack services company,  Ace8,  therefore we understand how your Message Queing tool fits into your environment as a whole and thus we can advise and support you beyond the scope of your tool of choice.</p>
+                <div className="flex flex-col sm:ml-[7rem]" >
+                    <div className="" data-animation-id='slideIn'>
+                        <h3 className="font-[700] text-[2rem] mt-[1.2rem]">Ace8’s</h3>
+                        <div className="w-[12rem] h-[4rem] rounded-[.8rem] opacity-[.8] grid place-content-center bg-[#FF6600]">
+                            <p className="text-[2rem]">Full Stack</p>
                         </div>
-
-                        <div className="h-[93rem] grid place-content-center relative" data-animation-id='slideIn'>
-                            <Image src='/center_logo.png' className="w-[45rem]" width={550} alt="logo" height={178} />
-                            {domains.map((domain, index) => <DomainDesktop domain={domain} key={index} id={index} />)}
-                        </div>
-                        <button data-animation-id='slideIn' className="px-[2.5rem] border border-[#FF6600] self-center mt-[4rem]">Ace8 Services</button>
-                        <Banner />
+                        <h3 className="text-[3rem] font-[700] my-[.5rem]">Capabilities</h3>
+                        <p className="">AceMQ is a subsidiary of a larger, highly specialized full-stack services company,  Ace8,  therefore we understand how your Message Queing tool fits into your environment as a whole and thus we can advise and support you beyond the scope of your tool of choice.</p>
                     </div>
+
+                    <div className="h-[93rem] grid place-content-center relative" data-animation-id='slideIn'>
+                        <Image src='/center_logo.png' className="w-[45rem]" width={550} alt="logo" height={178} />
+                        {domains.map((domain, index) => <DomainDesktop domain={domain} key={index} id={index} />)}
+                    </div>
+                    <Link href={'https://www.ace8.io/'} className="mx-auto hover:scale-[.9] transition-all duration-500">
+                        <button data-animation-id='slideIn' className="px-[2.5rem] hover:scale-[1.1] transition-all duration-500 border border-[#FF6600] self-center mt-[4rem]">Ace8’s Services</button>
+                    </Link>
+                    <Banner />
                 </div>
             </div>
+        </div>
     </section>
 )
 

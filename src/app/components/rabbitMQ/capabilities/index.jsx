@@ -53,8 +53,8 @@ const Index = () => {
 
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[2.2rem] leading-[5rem] sm:leading-[6rem] w-[30rem] sm:w-[50rem] sm:text-[3.1rem] font-[700]">
-            <span className="p-[1.2rem] bg-[#8FD5CC] rounded-[1rem]">
+          <h3 className="text-[2.2rem] leading-[5rem] sm:leading-[4.5rem] w-[30rem] sm:w-[35rem] sm:text-[3.1rem] font-[700]">
+            <span className="p-[1.2rem] sm:py-[.6rem] bg-[#8FD5CC] rounded-[1rem] text-black">
               Message Routing
             </span>{" "}
             and <span className="font-[400]">Exchange </span>Mechanisms
@@ -74,8 +74,8 @@ const Index = () => {
 
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[2.2rem] leading-[5rem] sm:leading-[6rem] sm:text-left  w-[28rem] sm:w-[100%]  sm:text-[3.1rem] font-[700] text-center">
-            <span className="p-[1.2rem] bg-[#FF6600]  rounded-[1rem]">
+          <h3 className="text-[2.2rem] leading-[5rem] sm:leading-[6rem] sm:text-left  w-[28rem] sm:w-[48rem] sm:text-[3.1rem] font-[700] text-center">
+            <span className="p-[1.2rem] bg-[#FF6600] text-black rounded-[.7rem]">
               Enterprise
             </span>
             <span className="font-[400]"> Upgrades </span>with Zero Downtime and
@@ -89,7 +89,7 @@ const Index = () => {
           "We help you design custom exchange types and establish routing rules to ensure messages reach the right destinations with minimal overhead."
         }
         orangeTick={true}
-        image={"/rabbit_dashboard.png"}
+        image={"/rabbit_dashboard.webp"}
         inverse={true}
         imageWidth={"w-[50rem]  mt-[2rem]"}
         borderColor={"border-[#FF6600]"}
@@ -98,9 +98,9 @@ const Index = () => {
       <PlaceTextBesideImage
         header={
           <h3 className="text-[2.2rem] leading-[5rem] sm:leading-[6rem] sm:text-left  w-[28rem] sm:w-[40rem]  sm:text-[3.1rem] font-[700] text-center">
-            <span className="p-[1.2rem] bg-[#FF6600]  rounded-[1rem]">
+            <span className="p-[1.2rem] text-[black] bg-[#FF6600]  rounded-[.7rem]">
               Performance
-            </span>{" "}
+            </span>
             and Reliability <span className="font-[400]">Tuning</span>
           </h3>
         }
@@ -120,7 +120,7 @@ const Index = () => {
         inverse={true}
         header={
           <h3 className="text-[2.2rem] sm:text-left leading-[5rem] sm:leading-[6rem] w-[28rem] sm:w-[40rem]  sm:text-[3.1rem] font-[700] text-center">
-            <span className="p-[1.2rem] bg-[#8FD5CC]  rounded-[1rem]">
+            <span className="p-[1.2rem] bg-[#8FD5CC] text-black rounded-[.7rem]">
               Telemetry
             </span>{" "}
             -Driven Bottleneck Identification
@@ -149,11 +149,11 @@ export default Index;
 const Patterns = () => {
   return (
     <div className="sm:flex sm:flex-col sm:items-center sm:mb-[12rem] mb-[8rem]">
-      <h4 className="text-[2.2rem] sm:text-[3rem] sm:w-[50rem] font-[700] text-center">
+      <h4 className="text-[2.2rem] sm:text-[4rem] sm:w-[55rem] font-[700] text-center">
         Advanced <span className="font-[400]">Messaging</span>{" "}
         <span className="text-[#8FD5CC]">Patterns</span> and Optimization
       </h4>
-      <p className="text-center my-[1.4rem] max-w-[90rem]">
+      <p className="text-center my-[1.4rem] max-w-[70rem]">
         Unlock the full potential of RabbitMQ with our advanced messaging
         patterns and optimization techniques. We go beyond basic messaging
         functionality to help you build robust and scalable messaging
@@ -161,7 +161,7 @@ const Patterns = () => {
       </p>
       <Image
         src="/advanced.png"
-        className="w-[40rem] mt-[2rem]"
+        className="w-[60rem] mt-[2rem]"
         width={376}
         height={296}
         alt="patterns image"
@@ -172,24 +172,26 @@ const Patterns = () => {
 
 const LoadBalancing = () => {
   return (
-    <div className="sm:mt-[9rem] mb-[5rem] flex flex-col items-center">
-      <h3 className="text-center text-[2.7rem] sm:text-[3.5rem] w-[23rem] sm:w-[55rem] mb-[1.8rem] font-[400]">
-        <span className="text-[#FF6600] font-[700]">Message Queue</span>{" "}
-        Management <span className="font-[700]">and Load Balancing</span>
-      </h3>
-      <div className="hidden sm:flex">
-        <Image
-          src="/rabbitMQContent.png"
-          className="w-[60rem]"
-          alt="content"
-          width={766}
-          height={232}
-        />
-        <img
-          src="/rabbitMQ.svg"
-          alt="rabbitMQ logo"
-          className="w-[10rem] ml-[12rem]"
-        />
+    <div className="sm:mt-[9rem] mb-[5rem] flex flex-col sm:ml-[12rem] items-center">
+      <div className="">
+        <h3 className="text-center text-[2.7rem] sm:text-[4rem] w-[23rem] sm:w-[60rem] mb-[1.8rem] font-[400]">
+          <span className="text-[#FF6600] font-[700]">Message Queue</span>{" "}
+          Management <span className="font-[700]">and Load Balancing</span>
+        </h3>
+        <div className="hidden sm:flex">
+          <Image
+            src="/rabbitMQContent.png"
+            className="w-[60rem]"
+            alt="content"
+            width={766}
+            height={232}
+          />
+          <img
+            src="/rabbitMQ.svg"
+            alt="rabbitMQ logo"
+            className="w-[10rem] sm:w-[15rem] ml-[6rem]"
+          />
+        </div>
       </div>
       <Image
         src="/queue_mobile.png"
@@ -214,17 +216,15 @@ const PlaceTextBesideImage = ({
 }) => {
   return (
     <div
-      className={`sm:flex sm:justify-between ${
-        inverse ? "sm:flex-row-reverse" : "flex-row"
-      }  sm:mt-[3rem] sm:mb-[5rem] mb-[7rem] sm:w-[100%] sm:items-center`}
+      className={`sm:flex sm:justify-between ${inverse ? "sm:flex-row-reverse" : "flex-row"
+        }  sm:mt-[3rem] sm:mb-[5rem] mb-[7rem] sm:w-[100%] sm:items-center`}
     >
       <div className="sm:w-[50%] overflow-hidden flex flex-col items- sm:items-start">
         {header}
         <div className="mt-[2rem]">
           <div
-            className={`flex border mb-[2rem] ${
-              borderColor ? borderColor : "border-[#8FD5CC]"
-            }  gap-[1rem] p-[.5rem] rounded-[1rem]`}
+            className={`flex border mb-[2rem] ${borderColor ? borderColor : "border-[#8FD5CC]"
+              }  gap-[1rem] p-[.5rem] rounded-[1rem]`}
           >
             <img
               src={orangeTick ? "/orange_tick.svg" : "/tick.svg"}
@@ -256,12 +256,12 @@ const PlaceTextBesideImage = ({
 
 const Banner = () => {
   return (
-    <div className="sm:mt-[4rem] border border-[#FF6600] rounded-[2rem] py-[2rem] px-[.5rem] sm:flex flex-col items-center">
-      <h3 className="font-[700] mb-[1rem] text-center text-[3rem] sm:text-[3.5rem] sm:w-[70rem]">
+    <div className="sm:mt-[4rem] border sm:w-full border-[#FF6600] rounded-[2rem] py-[2rem] sm:py-[4rem] px-[.5rem] sm:flex flex-col items-center">
+      <h3 className="font-[700] mb-[1rem] text-center text-[3rem] sm:text-[5.7rem] sm:w-[80rem]">
         24/7 <span className="text-[#FF6600]">Worldwide</span> SLA-Based{" "}
         <span className="font-[400]">Enterprise</span> Support
       </h3>
-      <p className="text-center">
+      <p className="text-center sm:w-[75%]">
         AceMQ delivers 24/7 SLA-based support for Enterprises, ensuring
         uninterrupted operations. Dedicated experts promptly address critical
         incidents, optimize performance, and handle inquiries. In addition,
@@ -321,7 +321,7 @@ const Supports = () => {
 
   return (
     <div className="flex flex-col items-center mt-[4rem] sm:mt-[6rem] mb-[5rem] sm:w-[100%]">
-      <h2 className="font-[700] text-[3rem] sm:text-[3.5rem] text-center w-[20rem] sm:w-[100%] mb-[2rem] sm:mb-[4rem]">
+      <h2 className="font-[700] text-[3rem] sm:text-[5.7rem] text-center w-[20rem] sm:w-[100%] mb-[2rem] sm:mb-[4rem]">
         Key <span className="font-[400]">Support</span>{" "}
         <span className="text-[#8FD5CC]">Features:</span>
       </h2>
@@ -329,7 +329,7 @@ const Supports = () => {
         {features.map((featureGroup, groupIndex) => (
           <div
             key={groupIndex}
-            className="flex justify-between w-[32rem] sm:w-[100%]"
+            className="flex justify-between sm:mb-[3.5rem] w-[32rem] sm:w-[100%]"
           >
             {featureGroup.map((item, itemIndex) => {
               const featureNumber =
@@ -339,12 +339,12 @@ const Supports = () => {
                   key={itemIndex}
                   className="flex items-start sm:items-center gap-[1rem] sm:gap-[2rem] py-[1rem]"
                 >
-                  <h1 className="text-[#8FD5CC] font-[700] text-[3.5rem] sm:text-[5rem] opacity-[.3]">
+                  <h1 className="text-[#8FD5CC] font-[700] text-[3.5rem] sm:text-[9rem] opacity-[.3]">
                     {featureNumber}
                   </h1>
                   <div className="w-[12rem] sm:w-[50rem]">
                     {item.header}
-                    <p className="mt-[1rem] hidden sm:block">
+                    <p className="mt-[2rem] hidden sm:block">
                       {item.paragraph}
                     </p>
                   </div>
