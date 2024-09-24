@@ -1,6 +1,15 @@
+'use client';
+import { useState } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import PlaceTextBesideImage from "../../common/placeTextBesideImage";
+import Link from "next/link";
+import { fadeIn, slideIn } from "@/app/Animations/common";
 const Index = () => {
+  useEffect(() => {
+    fadeIn()
+    slideIn()
+  }, [])
   return (
     <section className="px-[3rem] sm:px-[10rem]">
       <Info />
@@ -97,7 +106,7 @@ const Index = () => {
         orangeTick={true}
         borderColor={"border-[#FF6600]"}
         imageWidth={"w-[55rem]"}
-        image={"/service_analytics.png"}
+        image={"/root_cause.png"}
       />
 
       <Features />
@@ -109,8 +118,8 @@ export default Index;
 
 const Info = () => {
   return (
-    <div className="py-[4rem] sm:pt-[10rem] flex flex-col">
-      <p className="text-center sm:text-start mb-[2rem] sm:w-[70rem]">
+    <div className="py-[4rem] sm:pt-[10rem] flex flex-col" data-animation-id='slideIn'>
+      <p className="text-center sm:text-[2.5rem] sm:leading-[4rem] sm:text-start mb-[2rem] sm:w-[90%] sm:mb-[2rem]">
         At{" "}
         <span className="bg-[#FF6600] px-[1rem] py-[.5rem] rounded-[1.5rem] text-[#0D1117] font-[700]">
           AceMQ
@@ -130,7 +139,7 @@ const Info = () => {
       <Image
         src="/dashboard_service.png"
         width={1552}
-        className="sm:block hidden w-[110rem]"
+        className="sm:block hidden w-[96%]"
         height={700}
         alt="encription"
       />
@@ -140,14 +149,14 @@ const Info = () => {
 
 const Banner1 = () => {
   return (
-    <div className="border border-[#8FD5CC] rounded-[2rem] py-[2rem] sm:py-[3rem] sm:mt-[8rem] px-[1rem] sm:pl-[4rem] sm:flex relative">
+    <div data-animation-id='slideIn' className="border border-[#8FD5CC] rounded-[2rem] py-[2rem] sm:py-[3rem] sm:mt-[15rem] px-[1rem] sm:pl-[4rem] sm:flex relative">
       <div className="">
-        <h2 className="sub-header text-center sm:text-left mb-[1rem]">
+        <h2 className="sub-header sm:w-[60rem] text-center sm:text-left mb-[1rem]">
           Millions <span className="font-[400]">Saved in Downtime</span> for{" "}
           <span className="text-[#8FD5CC]">Global</span>{" "}
           <span className="text-[#8FD5CC]">Retail</span> Giant
         </h2>
-        <p className="text-center sm:text-left">
+        <p className="text-center sm:w-[95%] sm:text-left">
           In the relentless world of international retail, downtime can have
           substantial costs. AceMQ’s Support mitigated several incidents for a
           major player, saving millions on downtime. With seamless communication
@@ -158,14 +167,16 @@ const Banner1 = () => {
           support becomes a strategic asset for global retailers navigating the
           competitive landscape.
         </p>
-        <button className="sm:block hidden border-[#8FD5CC] text-[1.4rem] bg-[#232323] mt-[3rem]">
-          Learn More
-        </button>
+        <Link href='#contact'>
+          <button className="sm:block hidden border-[#8FD5CC] text-[1.4rem] bg-[#232323] mt-[3rem]">
+            Learn More
+          </button>
+        </Link>
       </div>
 
       <Image
         alt="An image of a store"
-        className="hidden sm:block w-[50rem]"
+        className="hidden sm:block sm:mt-[-7rem] w-[50rem]"
         width={608}
         height={496}
         src="/store.webp"
@@ -176,8 +187,8 @@ const Banner1 = () => {
 
 const Performance = () => {
   return (
-    <div className="text-center flex flex-col items-center mt-[8rem] mb-[2rem]">
-      <h3 className="sub-header sm:w-[45rem] leading-[3.5rem] mb-[2rem]">
+    <div className="text-center flex flex-col items-center mt-[8rem] sm:mb-[6rem] mb-[2rem]" data-animation-id='slideIn'>
+      <h3 className="sm:text-[5.3rem] sm:w-[70rem] leading-[6.3rem] font-[700] mb-[2rem]">
         Maximizing <span className="text-[#8FD5CC]">RabbitMQ</span>{" "}
         <span className="text-[#8FD5CC]">Enterprise</span>{" "}
         <span className="font-[400]">Performance and</span> Reliability
@@ -198,68 +209,95 @@ const Technologies = () => {
     {
       src: "/tech_1.svg",
       align: "self-center",
+      text: 'AWS SQS'
     },
     {
       src: "/tech_2.svg",
       align: "self-end",
+      text: 'Google PubSub'
+    },
+    {
+      src: "/redis.png",
+      align: "self-center",
+      text: 'Redis',
     },
     {
       src: "/tech_3.svg",
       align: "self-start",
+      text: 'Apache Pulsar'
     },
     {
       src: "/tech_4.svg",
       align: "self-center",
+      text: 'Kafka'
     },
     {
       src: "/tech_5.svg",
       align: "self-start",
+      text: 'IBM ActiveMQ'
     },
     {
       src: "/tech_6.svg",
       align: "self-end",
+      text: 'AWS SQS'
     },
     {
       src: "/tech_7.svg",
       align: "self-center",
+      text: 'Others'
     },
   ];
   return (
-    <div className="flex flex-col items-center mb-[8rem]">
-      <h2 className="sub-header text-center mb-[2rem] sm:w-[40rem]">
+    <div className="flex flex-col sm:mt-[5rem] items-center mb-[8rem]" data-animation-id='slideIn'>
+      <h2 className="sm:text-[5.3rem]  font-[700] text-center mb-[2rem]">
         Other <span className="font-[500]">Supported</span>{" "}
         <span className="text-[#FF6600]">Technologies</span>
       </h2>
       <Image
         src="/service_technologies.png"
         width={300}
+        
         className="sm:hidden"
         height={216}
         alt="technologies"
       />
 
       <div className="hidden  sm:flex w-[100%] justify-between mt-[4rem] h-[25rem]">
-        {technologies.map((icon, index) => (
-          <img
-            src={icon.src}
-            key={index}
-            className={`${icon.align}`}
-            alt="technology_icon"
-          />
-        ))}
+        {technologies.map((icon, index) => (<Technology key={index} tech={icon} />))}
       </div>
     </div>
   );
 };
 
 const Features = () => {
-    return (
-        <div className="mb-[4rem] flex flex-col">
-            <h3 className="sub-header text-center sm:mb-[6rem] mb-[3rem]"><span className="text-[#8FD5CC]">Features</span> and Benefits</h3>
-            <img src="/service_features.webp" className="hidden sm:block" alt="features" />
-            <img src="/service_features_sm.svg" className="sm:hidden" alt="features" />
+  return (
+    <div className="mb-[4rem] flex flex-col" data-animation-id='slideIn'>
+      <h3 className="text-center sm:text-[5.3rem] font-[700] sm:mb-[6rem] mb-[3rem]"><span className="text-[#8FD5CC]">Features</span> and Benefits</h3>
+      <img src="/service_features.webp" className="hidden sm:block" alt="features" />
+      <img src="/service_features_sm.svg" className="sm:hidden" alt="features" />
 
-            <p className="text-center mt-[1rem] w-[65%] hidden sm:block self-center">At AceMQ we pledge that our Enterprise support not only provides insurance against costly downtime but also proves to be a more cost-effective solution compared to the expenses associated with hiring expert talent</p>
-        </div>
-    )
+      <h3 className="sm:text-[8rem] text-center font-[700] sm:mt-[7rem]"><span className="text-[#8FD5CC]">The</span> AceMQ <span className="font-[400]">Assurance</span></h3>
+      <p className="text-center font-[500] mt-[1rem] sm:text-[2.2rem] w-[75%] sm:leading-[3.5rem] hidden sm:block self-center">At <span className="px-[1rem]
+            bg-[#FF6600] rounded-[2rem] text-black font-[700] py-[.5rem]">AceMQ</span> we pledge that our <span className="text-[#FF6600]"> Enterprise support</span> not only provides <span className="text-[#FF6600]"> insurance</span> against <span className="text-[#FF6600]"> costly downtime </span>but also proves to be a more <span className="text-[#FF6600]"> cost-effective solution</span> compared to the expenses associated with <span className="text-[#FF6600]"> hiring expert talent</span></p>
+    </div>
+  )
+}
+
+
+const Technology = ({ tech }) => {
+  const [isHovered, setIshovered] = useState(false)
+  return (
+      <div className={`${tech.align} `}>
+          <img
+              src={tech.src}
+              width={150}
+              onMouseEnter={() => setIshovered(true)}
+              onMouseLeave={() => setIshovered(false)}
+              height={150}
+              className={`cursor-pointer w-[10rem] h-[10rem] service_card_shadow rounded-[2rem] hover:translate-y-[10px] transition-all duration-700`}
+              alt="tech icon"
+          />
+          <p className={`text-center mt-[2rem] max-w-[8rem] mx-auto font-[700] transition-all duration-500 ${isHovered ? 'opacity-1' : 'opacity-0'}`}>{tech.text}</p>
+      </div>
+  )
 }

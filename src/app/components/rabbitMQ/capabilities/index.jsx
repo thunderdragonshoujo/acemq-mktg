@@ -148,7 +148,7 @@ export default Index;
 
 const Patterns = () => {
   return (
-    <div className="sm:flex sm:flex-col sm:items-center sm:mb-[12rem] mb-[8rem]">
+    <div className="sm:flex sm:flex-col sm:items-center sm:mb-[12rem] mb-[8rem]" data-animation-id ='slideIn'>
       <h4 className="text-[2.2rem] sm:text-[4rem] sm:w-[55rem] font-[700] text-center">
         Advanced <span className="font-[400]">Messaging</span>{" "}
         <span className="text-[#8FD5CC]">Patterns</span> and Optimization
@@ -172,7 +172,7 @@ const Patterns = () => {
 
 const LoadBalancing = () => {
   return (
-    <div className="sm:mt-[9rem] mb-[5rem] flex flex-col sm:ml-[12rem] items-center">
+    <div className="sm:mt-[9rem] mb-[5rem] flex flex-col sm:ml-[12rem] items-center" data-animation-id ='slideIn'>
       <div className="">
         <h3 className="text-center text-[2.7rem] sm:text-[4rem] w-[23rem] sm:w-[60rem] mb-[1.8rem] font-[400]">
           <span className="text-[#FF6600] font-[700]">Message Queue</span>{" "}
@@ -216,6 +216,7 @@ const PlaceTextBesideImage = ({
 }) => {
   return (
     <div
+      data-animation-id ='slideIn'
       className={`sm:flex sm:justify-between ${inverse ? "sm:flex-row-reverse" : "flex-row"
         }  sm:mt-[3rem] sm:mb-[5rem] mb-[7rem] sm:w-[100%] sm:items-center`}
     >
@@ -320,7 +321,7 @@ const Supports = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center mt-[4rem] sm:mt-[6rem] mb-[5rem] sm:w-[100%]">
+    <div className="flex flex-col items-center mt-[4rem] sm:mt-[6rem] mb-[5rem] sm:w-[100%]" data-animation-id='slideIn'>
       <h2 className="font-[700] text-[3rem] sm:text-[5.7rem] text-center w-[20rem] sm:w-[100%] mb-[2rem] sm:mb-[4rem]">
         Key <span className="font-[400]">Support</span>{" "}
         <span className="text-[#8FD5CC]">Features:</span>
@@ -365,31 +366,42 @@ const Supports = () => {
 
 const Banner2 = () => {
   return (
-    <div className="flex flex-col items-center p-[3rem] sm:pt-[6rem] sm:mt-[6rem] bg-black w-[100%] rounded-[2rem] relative">
-      <img
-        src="/acemq.png"
-        alt="logo"
-        className="absolute top-[-2rem] w-[13rem]"
+    <div className="blue_border sm:mt-[6rem] relative">
+      <Image
+        src={'/blue_border.png'}
+        width={1300}
+        height={572}
+        alt="border"
+        className="absolute w-[100%] inset-0"
       />
-      <h3 className="sm:text-[3.5rem] sm:w-[50%] text-[2.7rem] text-center font-[700]">
-        <span className="font-[400]">Unlock</span> the{" "}
-        <span className="text-[#FF6600]">True Potential</span> of{" "}
-        <span className="text-[#FF6600]">RabbitMQ</span> in Your{" "}
-        <span className="font-[400]">Enterprise.</span>
-      </h3>
-      <p className="sm:w-[90rem] text-center mt-[2rem]">
-        Unlock the full power of RabbitMQ with AceMQ's expert services.
-        Seamlessly integrate RabbitMQ into your environment for optimized
-        performance. Our team ensures high availability and fault tolerance,
-        sets up advanced messaging patterns, and fine-tunes configurations for
-        optimal resource utilization. Experience risk-free upgrades, performance
-        tuning, and world class support. Elevate your messaging architecture
-        with AceMQ.
-      </p>
+      <div className="flex sm:mt-[1rem] sm:ml-[1.2rem] flex-col border border-[#929292] items-center p-[3rem] sm:pt-[6rem] bg-black w-[100%] rounded-[2rem] relative">
+        <img
+          src="/acemq.png"
+          alt="logo"
+          className="absolute top-[-3rem] w-[13rem] sm:w-[18rem]"
+        />
+        <h3 className="sm:text-[5rem] sm:w-[70%] text-[2.7rem] text-center font-[700]">
+          <span className="font-[400]">Unlock</span> the{" "}
+          <span className="text-[#FF6600]">True Potential</span> of{" "}
+          <span className="text-[#FF6600]">RabbitMQ</span> in Your{" "}
+          <span className="font-[400]">Enterprise.</span>
+        </h3>
+        <p className="sm:w-[85rem] text-center mt-[2rem]">
+          Unlock the full power of RabbitMQ with AceMQ's expert services.
+          Seamlessly integrate RabbitMQ into your environment for optimized
+          performance. Our team ensures high availability and fault tolerance,
+          sets up advanced messaging patterns, and fine-tunes configurations for
+          optimal resource utilization. Experience risk-free upgrades, performance
+          tuning, and world class support. Elevate your messaging architecture
+          with AceMQ.
+        </p>
 
-      <button className="text-[1.2rem] border mt-[5rem]">
-        Schedule a Free Consultation
-      </button>
+        <Link href={'/contact-us'} className="mt-[5rem]">
+          <button className="text-[1.2rem] border">
+            Schedule a Free Consultation
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };

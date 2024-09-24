@@ -94,7 +94,7 @@ const Form = () => {
     <div className="text-black sm:w-[55rem] pt-[8rem] flex flex-col">
       <ToastContainer />
       <h2 className="sub-header w-[20rem] self-center text-center sm:w-auto">
-        <span className="text-[#9B86FE]">Tell Us</span> About Yourself
+        <span className="text-[#8FD5CC]">Tell Us</span> About Yourself
       </h2>
       <form action="" className="sm:mt-[7rem] mt-[3rem]">
         <div className="sm:flex justify-between gap-[2rem]">

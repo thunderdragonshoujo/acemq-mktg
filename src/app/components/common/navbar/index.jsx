@@ -49,6 +49,10 @@ const Index = () => {
       path: "/mq-services/",
     },
     {
+      name: "Blog",
+      path: "/blogs/",
+    },
+    {
       name: "Customer Stories",
       path: "/stories/",
     },

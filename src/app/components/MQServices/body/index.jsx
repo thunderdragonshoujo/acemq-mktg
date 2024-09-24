@@ -1,7 +1,13 @@
+'use client'
 import Image from "next/image";
 import PlaceTextBesideImage from '../../common/placeTextBesideImage'
-
+import { useEffect } from "react";
+import { slideIn, fadeIn } from "@/app/Animations/common";
 const Index = () => {
+    useEffect(() => {
+        slideIn()
+        fadeIn()
+    }, [])
     return (
         <section className="px-[3rem] sm:px-[10rem]">
             <Info />
@@ -18,7 +24,7 @@ export default Index;
 
 const Info = () => {
     return (
-        <div className="py-[4rem] sm:pt-[10rem] sm:flex sm:flex-col sm:items-center" data-animation-id='slideIn'>
+        <div data-animation-id='slideIn' className="py-[4rem] border sm:pt-[10rem] sm:flex sm:flex-col sm:items-center">
             <p className="text-center mb-[2rem] sm:w-[100rem]">At <span className="bg-[#8FD5CC] px-[1rem] py-[.5rem] rounded-[1.5rem] text-[#0D1117] font-[700]">AceMQ</span> we have developed a comprehensive practice around message brokers. Our engineers possess extensive experience working closely with message broker products, including RabbitMQ. Their in-depth knowledge and architectural understanding of Message Brokers allow us to seamlessly integrate it into your unique technology stack. As an internationally accredited partner of many of the top Message Brokers, we are the go-to choice for all your message broker service needs.</p>
             <Image src='/MQservice_codesnippet.png'  height={480} className="hidden w-[100rem] sm:block" width={1552} alt="code" />
         </div>

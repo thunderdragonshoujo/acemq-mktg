@@ -109,7 +109,7 @@ const Technology = ({ tech }) => {
                 className={`cursor-pointer w-[10rem] h-[10rem] service_card_shadow rounded-[2rem] hover:translate-y-[10px] transition-all duration-700`}
                 alt="tech icon"
             />
-            <p className={`text-center mt-[2rem] max-w-[7.5rem] mx-auto border font-[700] transition-all duration-500 ${isHovered ? 'opacity-1' : 'opacity-0'}`}>{tech.text}</p>
+            <p className={`text-center mt-[2rem] max-w-[7.5rem] mx-auto font-[700] transition-all duration-500 ${isHovered ? 'opacity-1' : 'opacity-0'}`}>{tech.text}</p>
         </div>
     )
 }

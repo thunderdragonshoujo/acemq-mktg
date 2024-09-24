@@ -19,7 +19,7 @@ const Index = () => {
       <div className="flex flex-col items-center relative">
         <h1 className="header">
           <span className="font-[400]">Get</span> in{" "}
-          <span className="text-[#9B86FE]">Touch</span>
+          <span className="text-[#8FD5CC]">Touch</span>
         </h1>
         <p className="sm:w-[60rem] text-center">
           Let us know how we can add value to your organization and we'll
