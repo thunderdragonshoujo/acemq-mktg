@@ -51,8 +51,8 @@ const Index = () => {
     ]
     return (
         <section className="px-[3rem] relative sm:px-[10rem] sm:mt-[8rem]">
-            <div className="hidden h-[0] overflow-hidden absolute sm:block mt-[15rem]" data-animation-id='milestone'>
-                <img src="/mille_2.svg" className="w-[4rem]" alt="arrow" />
+            <div className="hidden h-[0] overflow-hidden absolute sm:block mt-[14.5rem]" data-animation-id='milestone'>
+                <img src="/mille_2.svg" className="w-[4.4rem]" alt="arrow" />
             </div>
             <div className="sm:flex">
                 <div className="sm:flex sm:ml-[7rem] sm:mt-[6rem] sm:justify-between sm:w-[100%]">

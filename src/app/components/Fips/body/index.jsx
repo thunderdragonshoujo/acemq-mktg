@@ -1,6 +1,11 @@
 'use client'
 import Image from "next/image";
+import { useEffect } from "react";
+import { slideIn } from "@/app/Animations/common";
 const Index = () => {
+  useEffect(() => {
+    slideIn()
+  }, [])
   return (
     <section className="px-[3rem] sm:px-[10rem]">
       <Info />
@@ -33,7 +38,7 @@ export default Index;
 const Info = () => {
   return (
     <div className="py-[4rem] sm:pt-[10rem] sm:flex sm:flex-col sm:items-center" data-animation-id='slideIn'>
-      <p className="text-center mb-[2rem] sm:w-[70rem]">At<span className="bg-[#8FD5CC] px-[1rem] py-[.5rem] rounded-[1.5rem] text-[#0D1117] font-[700]"> AceMQ</span>, we specialize in providing comprehensive support services for FIPS, the leading FIPS- compliant message broker. Our team of experts is well-versed in leveraging our FIPSMQ solution, to enable secure and scalable messaging solutions for businesses that require compliance with FIPS (Federal Information Processing Standards) guidelines..
+      <p className="text-center mb-[2rem] sm:w-[85rem] sm:text-[1.5rem]">At <span className="bg-[#8FD5CC] px-[.5rem] py-[.5rem] rounded-[1.5rem] text-[#0D1117] font-[700]"> AceMQ,</span> we specialize in providing comprehensive support services for FIPS, the leading FIPS- compliant message broker. Our team of experts is well-versed in leveraging our FIPSMQ solution, to enable secure and scalable messaging solutions for businesses that require compliance with FIPS (Federal Information Processing Standards) guidelines..
       </p>
       <Image
         src="/encriptiion.webp"
@@ -57,8 +62,16 @@ const Compliance = () => {
   return (
     <div className="sm:flex sm:gap-[7rem] mt-[3rem] sm:mb-[10rem] mb-[4rem]" data-animation-id='slideIn'>
       <div className="flex-1">
-        <div className="bg-[#10151D] p-[1rem] sm:w-fit sm:p-[1.5rem] rounded-[2rem] sm:mt-[10rem]">
-          <h1 className="sub-header py-[.7rem] rounded-[3rem] mb-[.5rem] px-[2.5rem] border w-fit">
+
+        <div className="p-[1rem] sm:w-fit relative sm:p-[1.5rem] rounded-[2rem] sm:mt-[10rem]">
+          <Image 
+              src={'/lock.png'}
+            width={77}
+            height={93}
+            alt="pad-lock"
+            className="w-[6rem] absolute right-0"
+          />
+          <h1 className="sub-header py-[.7rem] sm:py-[.3rem] rounded-[3rem] mb-[.5rem] px-[2.5rem] sm:px-[3rem] sm:rounded-[3.5rem] border-[1.5px] w-fit">
             FIPS
           </h1>
           <h1 className="sub-header sm:w-[40rem]">
@@ -66,6 +79,7 @@ const Compliance = () => {
             <span className="text-[#8FD5CC] mb-[2rem]">Security</span> Assurance
           </h1>
         </div>
+
         <div className="w-[100%]">
           <div className="mt-[2rem]">
             <div className="flex border mb-[2rem] border-[#8FD5CC] bg-[#232323] gap-[1rem] p-[.5rem] rounded-[1rem]">

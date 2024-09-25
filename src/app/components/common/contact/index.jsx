@@ -56,13 +56,6 @@ const Index = () => {
     return (
         <section className="sm:px-[10rem] relative sm:mt-[20rem] pb-[5rem] scroll-mt-[5rem]" id="contact">
             <ToastContainer />
-            {
-                pathName === '/' && <img
-                    src='/last_mile.png'
-                    className="h-[20rem] top-[-24rem] hidden sm:block left-[11.5rem] z-[-1] absolute"
-                    alt="arrow"
-                />
-            }
             <div className="pt-[2rem] sm:pl-[7rem] px-[3rem] pb-[1rem] sm:pb-[5rem] mt-[5rem] sm:mt-[12rem] bg-black sm:flex sm:justify-between rounded-[3rem]">
 
                 <div className="sm:flex-1 sm:relative sm:pt-[7rem]">

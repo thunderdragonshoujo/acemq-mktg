@@ -103,7 +103,7 @@ const Card = ({ id, card }) => {
             <img src={card.image} className="absolute top-[-3rem] sm:top-[-7rem] sm:w-[15rem] sm:h-[15rem] w-[6rem] h-[6rem]" alt="troubleshoot icon" />
             <div className="mt-[6rem] w-[15rem] sm:mt-[12.3rem] text-center sm:w-[25rem] overflow-hidden">
                 <h4 className="font-[700] mb-[1rem] text-[1.5rem] sm:text-[3rem] sm:mb-[3rem]">{cardCollapse.header}</h4>
-                <p className="text-[1.3rem] hidden sm:block">{card.paragraph}</p>
+                <p className=" hidden sm:block">{card.paragraph}</p>
                 <p className="text-[1.2rem] sm:hidden">{card.mobileText}</p>
                 <div className={`sm:flex flex-col sm:gap-[2rem] transition-max-height duration-500 ease-in-out ${!cardCollapse.collapse ? 'max-h-[65rem]' : 'max-h-0'}`}>
                     {

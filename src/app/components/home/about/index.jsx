@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Index = () => {
     return (
-        <section className="px-[3rem] sm:px-[10rem]">
+        <section className="px-[3rem] sm:mt-[2rem] sm:px-[10rem]">
             <div className="bg-black p-[1.2rem] rounded-[3rem] justify-between sm:p-[8rem] sm:relative sm:flex sm:flex-row-reverse">
                 <div className="sm:w-[52rem] ">
                     <h3 className="text-[3rem] sm:text-[3.6rem] mb-[1rem] sm:text-left font-[400] text-center">Who<span className="font-[700]"> We</span><span className="font-[700] text-[#FF6600]"> Are</span></h3>

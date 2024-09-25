@@ -119,28 +119,31 @@ export default Index;
 const Info = () => {
   return (
     <div className="py-[4rem] sm:pt-[10rem] flex flex-col" data-animation-id='slideIn'>
-      <p className="text-center sm:text-[2.5rem] sm:leading-[4rem] sm:text-start mb-[2rem] sm:w-[90%] sm:mb-[2rem]">
-        At{" "}
-        <span className="bg-[#FF6600] px-[1rem] py-[.5rem] rounded-[1.5rem] text-[#0D1117] font-[700]">
-          AceMQ
-        </span>
-        we are proud to offer 24/7 world-wide comprehensive SLA-based support
-        for RabbitMQ Enterprise customers. Our dedicated team of experts is
-        committed to ensuring uninterrupted operations and providing timely
-        assistance for any RabbitMQ-related issues that may arise.
-      </p>
+
+      <div className="">
+        <p className="text-center sm:text-start mb-[2rem] sm:w-[95rem] text-[1.8rem] sm:leading-[3rem] sm:mb-[2rem]">
+          At{" "}
+          <span className="bg-[#FF6600] px-[1rem] py-[.5rem] rounded-[1.5rem] text-[#0D1117] font-[700]">
+            AceMQ
+          </span>
+          we are proud to offer 24/7 world-wide comprehensive SLA-based support
+          for RabbitMQ Enterprise customers. Our dedicated team of experts is
+          committed to ensuring uninterrupted operations and providing timely
+          assistance for any RabbitMQ-related issues that may arise.
+        </p>
+        <Image
+          src="/dashboard_service.png"
+          width={1552}
+          className="sm:block hidden w-[115rem]"
+          height={700}
+          alt="encription"
+        />
+      </div>
       <Image
         src="/dashboard_service.png"
         width={300}
         className="sm:hidden self-center"
         height={216}
-        alt="encription"
-      />
-      <Image
-        src="/dashboard_service.png"
-        width={1552}
-        className="sm:block hidden w-[96%]"
-        height={700}
         alt="encription"
       />
     </div>
@@ -256,7 +259,7 @@ const Technologies = () => {
       <Image
         src="/service_technologies.png"
         width={300}
-        
+
         className="sm:hidden"
         height={216}
         alt="technologies"
@@ -287,17 +290,17 @@ const Features = () => {
 const Technology = ({ tech }) => {
   const [isHovered, setIshovered] = useState(false)
   return (
-      <div className={`${tech.align} `}>
-          <img
-              src={tech.src}
-              width={150}
-              onMouseEnter={() => setIshovered(true)}
-              onMouseLeave={() => setIshovered(false)}
-              height={150}
-              className={`cursor-pointer w-[10rem] h-[10rem] service_card_shadow rounded-[2rem] hover:translate-y-[10px] transition-all duration-700`}
-              alt="tech icon"
-          />
-          <p className={`text-center mt-[2rem] max-w-[8rem] mx-auto font-[700] transition-all duration-500 ${isHovered ? 'opacity-1' : 'opacity-0'}`}>{tech.text}</p>
-      </div>
+    <div className={`${tech.align} `}>
+      <img
+        src={tech.src}
+        width={150}
+        onMouseEnter={() => setIshovered(true)}
+        onMouseLeave={() => setIshovered(false)}
+        height={150}
+        className={`cursor-pointer w-[10rem] h-[10rem] service_card_shadow rounded-[2rem] hover:translate-y-[10px] transition-all duration-700`}
+        alt="tech icon"
+      />
+      <p className={`text-center mt-[2rem] max-w-[8rem] mx-auto font-[700] transition-all duration-500 ${isHovered ? 'opacity-1' : 'opacity-0'}`}>{tech.text}</p>
+    </div>
   )
 }

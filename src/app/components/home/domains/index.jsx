@@ -108,10 +108,10 @@ const DomiansMobile = ({ domains }) => (
 );
 
 const DomainsDesktop = ({ domains }) => (
-    <section className="hidden sm:flex relative px-[3rem] sm:px-[10rem] gap-x-[4rem]">
+    <section className="hidden sm:flex relative px-[3rem] sm:mt-[5.2rem] sm:px-[10rem] gap-x-[4rem]">
         <div className="">
             <div className="absolute hidden sm:block overflow-hidden" data-animation-id='milestone'>
-                <img src="/mille_3.svg" alt="arrow" className="mt-[2rem] sm:w-[4rem]" />
+                <img src="/mille_3.svg" alt="arrow" className="mt-[4.7rem] sm:w-[4rem]" />
             </div>
             <div className="">
                 <div className="flex flex-col sm:ml-[7rem]" >

@@ -41,7 +41,7 @@ const Index = () => {
         />
         <img
           src="/shield.svg"
-          className="absolute left-[0] sm:left-[11rem] top-[9rem] sm:top-[8rem] w-[3.5rem] sm:w-[10rem]"
+          className="absolute left-[0] sm:left-[11rem] top-[9rem] sm:top-[10rem] w-[3.5rem] sm:w-[10rem]"
           alt="arrow"
           data-animation-id="fadeIn"
         />
@@ -53,13 +53,13 @@ const Index = () => {
         />
         <img
           src="/arrow_2_sm.svg"
-          className="absolute sm:block hidden h-[8rem] left-[1rem] sm:left-[10rem] top-[13rem] sm:top-[18rem]"
+          className="absolute sm:block hidden h-[8rem] left-[1rem] sm:left-[10rem] top-[13rem] sm:top-[21rem]"
           alt="arrow"
           data-animation-id="fadeIn"
         />
         <img
           src="/notification.svg"
-          className="absolute left-[0] sm:left-[5rem] bottom-[0] sm:w-[10rem] w-[3.5rem]"
+          className="absolute left-[0] sm:left-[5rem] bottom-[0] sm:bottom-[-4rem] sm:w-[10rem] w-[3.5rem]"
           alt="arrow"
           data-animation-id="fadeIn"
         />

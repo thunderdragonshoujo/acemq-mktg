@@ -37,16 +37,16 @@ const Index = () => {
       path: "/rabbitmq/",
     },
     {
-      name: "FIPS",
-      path: "/fipsmq/",
-    },
-    {
       name: "Support Services",
       path: "/support/",
     },
     {
       name: "MQ Services",
       path: "/mq-services/",
+    },
+    {
+      name: "FIPS",
+      path: "/fipsmq/",
     },
     {
       name: "Blog",

@@ -63,10 +63,10 @@ const Index = () => {
     ]
 
     return (
-        <section className="mt-[3rem] sm:flex sm:px-[10rem] px-[3rem] relative">
+        <section className="mt-[3rem] sm:flex sm:px-[10rem]  sm:mt-[1rem] px-[3rem]">
             <MaxContainer>
                 <div className="absolute hidden sm:block mt-[3rem] overflow-hidden" data-animation-id='milestone'>
-                    <img src="/mille_4.webp" className="w-[4rem]" alt="line" />
+                    <img src="/mile_4.png" className="w-[3.9rem] sm:mt-[3rem]" alt="line" />
                 </div>
                 <div className="relative" data-animation-id='slideIn'>
                     {/* <img src="/faceL.png" className="filter absolute opacity-[.5]  blend top-[0rem] hidden sm:block z-[-1] right-0 w-[20rem]" alt="" />

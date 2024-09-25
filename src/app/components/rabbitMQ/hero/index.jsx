@@ -2,7 +2,6 @@
 import { useEffect } from "react";
 import { fadeIn, slideIn } from "@/app/Animations/common";
 import Image from "next/image";
-import MaxContainer from '../../common/maxContainer'
 const Index = () => {
     useEffect(() => {
         slideIn()
@@ -11,7 +10,7 @@ const Index = () => {
 
 
     return (
-        <section className="flex flex-col px-[3rem] sm:px-[10rem] pt-[7rem] sm:pt-[13rem] relative pb-[6rem] sm:pb-[15rem] overflow-hidden">
+        <section className="flex z-[10] flex-col px-[3rem] sm:px-[10rem] pt-[7rem] sm:pt-[13rem] relative pb-[6rem] sm:pb-[15rem] overflow-hidden">
             <div className="">
                 <img src="/rabbitMq_hero_bg.png" className="absolute w-[100vw] sm:hidden h-[42rem] top-[-6rem] inset-0 z-[-1]" alt="background" />
                 <img src="/hero_rabbit_bg.png" className="absolute w-[100vw] hidden sm:block inset-0 z-[-2] " alt="background" />
