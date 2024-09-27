@@ -8,7 +8,7 @@ const Index = () => {
     fadeIn()
   }, [])
   return (
-    <section className="py-[5.5rem] sm:pt-[17rem] sm:pb-[12rem] px-[1.5rem] sm:px-[10rem] relative">
+    <section className="py-[5.5rem] sm:pt-[23rem] pt-[10rem] sm:pb-[12rem] px-[1.5rem] sm:px-[10rem] relative">
       <Image
         src="/wheel_mobile.webp"
         className="absolute inset-0 sm:hidden top-0 w-[100%] h-[100%] multiply"

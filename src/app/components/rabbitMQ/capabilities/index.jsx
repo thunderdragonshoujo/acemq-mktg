@@ -1,6 +1,34 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 const Index = () => {
+  const icons = [
+    {
+      image: '/person.png',
+      hoveredImage: '/person_hov.png',
+      text: 'Change Management',
+      containerStyle: 'top-0 hidden sm:block',
+    },
+    {
+      image: '/QA.png',
+      hoveredImage: '/QA_hov.png',
+      text: 'QA',
+      containerStyle: 'bottom-0  hidden sm:block',
+    },
+    {
+      image: '/disserter.png',
+      hoveredImage: '/disaster.png',
+      text: 'Disaster Recovery',
+      containerStyle: 'left-[53rem]  hidden sm:block bottom-[9rem]',
+    },
+    {
+      image: '/deployment_unhov.png',
+      hoveredImage: '/deployment.png',
+      text: 'Deployment',
+      containerStyle: 'right-0  hidden sm:block',
+    },
+  ]
   return (
     <section className="px-[3rem] mt-[3rem] flex flex-col items-center sm:px-[10rem]">
       <h5 className="text-[2.5rem] sm:text-[3.5rem] mb-[3rem] w-[25rem] sm:w-[100%] text-center font-[700]">
@@ -9,7 +37,7 @@ const Index = () => {
       </h5>
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[2.2rem] sm:text-[2.8rem] sm:w-[28rem] font-[700]">
+          <h3 className="text-[3rem] sm:text-[2.8rem] sm:w-[28rem] font-[700]">
             <span className="font-[400]">Seamless</span>{" "}
             <span className="text-[#8FD5CC]">Integration</span> and
             Configuration
@@ -25,35 +53,36 @@ const Index = () => {
         imageWidth={"sm:w-[50rem] hidden sm:block"}
       />
 
-      <PlaceTextBesideImage
-        header={
-          <h3 className="text-[2.2rem] sm:text-[3.1rem] sm:w-[30rem] font-[400]">
-            High <span className="font-[700]">Availability</span> and{" "}
-            <span className="font-[700]">Fault</span>{" "}
-            <span
-              className="text-[#8FD5CC]
-                    font-[700]"
-            >
-              Tolerance
-            </span>
-          </h3>
-        }
-        firstParagraph={
-          "We ensure seamless integration of RabbitMQ into your existing infrastructure, whether it's on-premises or in the cloud."
-        }
-        secondParagraph={
-          "Our experts handle the configuration process to optimize RabbitMQ for your specific use case, ensuring maximum performance and efficiency."
-        }
-        image={"/code_snippet2.webp"}
-        imageWidth={"sm:w-[40rem] hidden sm:block"}
-        inverse={true}
-      />
+      <div className="flex  w-[100%] sm:pt-[8rem] relative mb-[8rem] justify-between">
+        <Image  
+          src={'/code_snippet2.webp'}
+          width={500}
+          height={500}
+          className="w-[35rem] hidden sm:block ml-[15rem] mb-[3rem]"
+          alt="code snippet"
+        />
+          <Image  
+          src={'/high_availability.png'}
+          width={600}
+          className="sm:w-[55rem] hidden sm:block mt-[8rem]"
+          height={600}
+          alt="code snippet"
+        />
+          <Image  
+          src={'/high_availability_sm.png'}
+          width={600}
+          className="sm:hidden block"
+          height={600}
+          alt="code snippet"
+        />
+        { icons.map((icon, index) => <Icon icon={icon} key={index} /> ) }
+      </div>
 
       <Patterns />
 
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[2.2rem] leading-[5rem] sm:leading-[4.5rem] w-[30rem] sm:w-[35rem] sm:text-[3.1rem] font-[700]">
+          <h3 className="text-[3rem] leading-[5rem] sm:leading-[4.5rem] w-[30rem] sm:w-[35rem] sm:text-[3.1rem] font-[700]">
             <span className="p-[1.2rem] sm:py-[.6rem] bg-[#8FD5CC] rounded-[1rem] text-black">
               Message Routing
             </span>{" "}
@@ -74,8 +103,8 @@ const Index = () => {
 
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[2.2rem] leading-[5rem] sm:leading-[6rem] sm:text-left  w-[28rem] sm:w-[48rem] sm:text-[3.1rem] font-[700] text-center">
-            <span className="p-[1.2rem] bg-[#FF6600] text-black rounded-[.7rem]">
+          <h3 className="text-[3rem] leading-[5rem] sm:leading-[6rem] sm:text-left  sm:w-[43rem] sm:text-[3.1rem] font-[700]">
+            <span className="sm:p-[1.2rem] p-[.8rem] bg-[#FF6600] text-black rounded-[.7rem]">
               Enterprise
             </span>
             <span className="font-[400]"> Upgrades </span>with Zero Downtime and
@@ -97,7 +126,7 @@ const Index = () => {
 
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[2.2rem] leading-[5rem] sm:leading-[6rem] sm:text-left  w-[28rem] sm:w-[40rem]  sm:text-[3.1rem] font-[700] text-center">
+          <h3 className="text-[3rem] leading-[5rem] sm:leading-[6rem] sm:text-left  w-[28rem] sm:w-[40rem]  sm:text-[3.1rem] font-[700] text-center">
             <span className="p-[1.2rem] text-[black] bg-[#FF6600]  rounded-[.7rem]">
               Performance
             </span>
@@ -119,7 +148,7 @@ const Index = () => {
       <PlaceTextBesideImage
         inverse={true}
         header={
-          <h3 className="text-[2.2rem] sm:text-left leading-[5rem] sm:leading-[6rem] w-[28rem] sm:w-[40rem]  sm:text-[3.1rem] font-[700] text-center">
+          <h3 className="text-[3rem] sm:text-left leading-[5rem] sm:leading-[6rem] w-[28rem] sm:w-[40rem]  sm:text-[3.1rem] font-[700] text-center">
             <span className="p-[1.2rem] bg-[#8FD5CC] text-black rounded-[.7rem]">
               Telemetry
             </span>{" "}
@@ -147,32 +176,100 @@ const Index = () => {
 export default Index;
 
 const Patterns = () => {
+  const icons = [
+    {
+      image: '/engine.png',
+      hoveredImage: '/transformation.png',
+      text: 'Transformation',
+      containerStyle: 'top-0 self-center',
+    },
+    {
+      image: '/robot.png',
+      hoveredImage: '/channels.png',
+      text: 'Channels',
+      containerStyle: 'bottom-0 right-0',
+    },
+    {
+      image: '/monitor.png',
+      hoveredImage: '/monitoring.webp',
+      text: 'Monitoring',
+      containerStyle: 'top-[6rem] right-[3rem]',
+    },
+    {
+      image: '/sync.png',
+      hoveredImage: '/routing.png',
+      text: 'Routing',
+      containerStyle: 'left-[0] bottom-[0]',
+    },
+    {
+      image: '/rain_drop.png',
+      hoveredImage: '/construction.png',
+      text: 'Construction',
+      containerStyle: 'left-[3rem] top-[6rem]',
+    },
+  ]
   return (
-    <div className="sm:flex sm:flex-col sm:items-center sm:mb-[12rem] mb-[8rem]" data-animation-id ='slideIn'>
-      <h4 className="text-[2.2rem] sm:text-[4rem] sm:w-[55rem] font-[700] text-center">
+    <div className="sm:flex sm:flex-col sm:items-center sm:mb-[8rem] mb-[8rem]" data-animation-id='slideIn'>
+      <h4 className="text-[3.2rem]  sm:text-[4rem] sm:w-[55rem] font-[700] text-center">
         Advanced <span className="font-[400]">Messaging</span>{" "}
         <span className="text-[#8FD5CC]">Patterns</span> and Optimization
       </h4>
-      <p className="text-center my-[1.4rem] max-w-[70rem]">
+      <p className="text-center my-[1.4rem] sm:max-w-[70rem] ">
         Unlock the full potential of RabbitMQ with our advanced messaging
         patterns and optimization techniques. We go beyond basic messaging
         functionality to help you build robust and scalable messaging
         architectures.
       </p>
-      <Image
+      {/* <Image
         src="/advanced.png"
         className="w-[60rem] mt-[2rem]"
         width={376}
         height={296}
         alt="patterns image"
-      />
+      /> */}
+
+      <div className="sm:w-[50rem] sm:h-[40rem] h-[23rem] mt-[6rem] justify-center flex relative">
+        <Image
+          src={'/message_patterns.png'}
+          width={220}
+          height={300}
+          className="self-end w-[13rem] sm:w-auto"
+          alt="Advance messaging patterns"
+        />
+        { icons.map((icon, index) => <Icon key={index} icon={icon} />) }
+      </div>
     </div>
   );
 };
 
+const Icon = ({ icon }) => {
+  const [hovered, setIshovered] = useState(false)
+  return (
+    <div className={`${icon.containerStyle} absolute flex flex-col items-center`}>
+      <div className="relative" onMouseEnter={() => setIshovered(true)} onMouseLeave={() => setIshovered(false)}>
+        <Image
+          src={icon.image}
+          width={100}
+          height={100}
+          className={`rounded-full absolute cursor-pointer sm:w-[8rem]  w-[5rem] ${hovered ? 'opacity-0' : 'opacity-1'} transition-all aspect-square`}
+          alt="icon"
+        />
+         <Image
+          src={icon.hoveredImage}
+          width={100}
+          height={100}
+          className={`rounded-full mx-auto ${hovered ? 'opacity-1' : 'opacity-0'} inset-0 cursor-pointer sm:w-[8rem] w-[5rem]  transition-all duration-75 aspect-square`}
+          alt="icon"
+        />
+      </div>
+      <p className={`font-[700] mx-auto rounded-full ${hovered ? 'opacity-[1]' : 'opacity-0'} max-w-[10rem] text-center transition-all duration-700 mt-[.5rem]`}>{icon.text}</p>
+    </div>
+  )
+}
+
 const LoadBalancing = () => {
   return (
-    <div className="sm:mt-[9rem] mb-[5rem] flex flex-col sm:ml-[12rem] items-center" data-animation-id ='slideIn'>
+    <div className="sm:mt-[9rem] mb-[5rem] flex flex-col sm:ml-[12rem] items-center" data-animation-id='slideIn'>
       <div className="">
         <h3 className="text-center text-[2.7rem] sm:text-[4rem] w-[23rem] sm:w-[60rem] mb-[1.8rem] font-[400]">
           <span className="text-[#FF6600] font-[700]">Message Queue</span>{" "}
@@ -216,7 +313,7 @@ const PlaceTextBesideImage = ({
 }) => {
   return (
     <div
-      data-animation-id ='slideIn'
+      data-animation-id='slideIn'
       className={`sm:flex sm:justify-between ${inverse ? "sm:flex-row-reverse" : "flex-row"
         }  sm:mt-[3rem] sm:mb-[5rem] mb-[7rem] sm:w-[100%] sm:items-center`}
     >

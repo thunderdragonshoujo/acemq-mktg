@@ -2,7 +2,7 @@ import Image from "next/image";
 import storiesBG from "@/images/stories_bg.webp";
 const Index = () => {
   return (
-    <section className="sm:py-[5.5rem] py-[8rem] sm:pt-[17rem] sm:pb-[18rem] px-[1.5rem] sm:px-[10rem] relative">
+    <section className="sm:py-[5.5rem] py-[8rem] sm:pt-[25rem] pt-[10rem] sm:pb-[18rem] px-[1.5rem] sm:px-[10rem] relative">
       <Image
         src="/MQservice_hero_bg_sm.webp"
         className="absolute inset-0 sm:hidden top-0 w-[100%] h-[100%] multiply"

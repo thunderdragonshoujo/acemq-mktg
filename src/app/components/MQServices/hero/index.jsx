@@ -7,7 +7,7 @@ const Index = () => {
     slideIn()
   }, [])
   return (
-    <section className="py-[5.5rem] sm:pt-[12rem] sm:pb-[12rem] px-[1.5rem] sm:px-[10rem] relative">
+    <section className="py-[5.5rem] sm:pt-[20rem] pt-[12rem] sm:pb-[12rem] px-[1.5rem] sm:px-[10rem] relative">
       <Image
         src="/MQservice_hero_bg_sm.webp"
         className="absolute inset-0 sm:hidden top-0 w-[100%] h-[100%] multiply"

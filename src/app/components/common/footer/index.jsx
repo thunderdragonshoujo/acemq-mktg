@@ -118,7 +118,7 @@ const FooterMobile = () => {
 
 const FooterDesktop = () => {
   return (
-    <footer className="bg-[#0D111C] sm:flex hidden">
+    <footer className="bg-[#0D111C] sm:block hidden">
       <MaxContainer>
         <div className="relative">
           <div className="flex px-[10rem] w-[100%] justify-between py-[10rem]">
@@ -137,13 +137,13 @@ const FooterDesktop = () => {
                     src="/footer_telephone..svg"
                     alt="call us at"
                   />
-                  <p className="text-[1.5rem]">305-981-6475</p>
+                  <p className="text-[1.5rem]">305-204-2607</p>
                 </li>
 
                 <li className="flex gap-[1rem] items-center">
                   <img
                     className="w-[3rem]"
-                    src="/location_footer.svg"
+                    src="/loc.png"
                     alt="address"
                   />
                   <p className="w-[30rem] text-[1.5rem]">
@@ -152,7 +152,7 @@ const FooterDesktop = () => {
                 </li>
 
                 <li className="flex gap-[1rem] items-center">
-                  <div className="w-[2.5rem] aspect-square bg-[#8FD5CC] grid place-content-center rounded-full">
+                  <div className="w-[3rem] aspect-square bg-[#8FD5CC] grid place-content-center rounded-full">
                     <img
                       className="w-[1.7rem] aspect-square"
                       src="/mail.png"
@@ -222,13 +222,14 @@ const FooterDesktop = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 right-0 bottom-0 bg-black">
+        </div>
+         
+      </MaxContainer>
+      <div className="bg-black">
             <p className="text-center text-[1.5rem] py-[2rem]">
               © Copyright AceMQ {new Date().getFullYear()}
             </p>
           </div>
-        </div>
-      </MaxContainer>
     </footer>
   );
 };

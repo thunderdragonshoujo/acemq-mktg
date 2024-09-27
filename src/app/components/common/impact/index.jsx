@@ -32,10 +32,10 @@ const Index = () => {
     <section className="px-[3rem] sm:px-[10rem] sm:mb-[0] mt-[6.5rem]">
       <MaxContainer>
         <div className="" data-animation-id="slideIn">
-          <h3 className="text-center text-[2.7rem] sm:text-[4.5rem] font-[700]">
+          <h3 className="text-center text-[2.7rem] sm:text-[6rem] font-[700]">
             <span className="text-[#FF6600]">Among</span> The Best
           </h3>
-          <p className="text-center mb-[3rem] sm:mb-[4rem]">
+          <p className="text-center  mb-[3rem] sm:mb-[4rem]">
             AceMQ has helped the World's premiere companies reach exceptional
             outcomes
           </p>

@@ -11,7 +11,7 @@ const Index = () => {
   })
 
   return (
-    <div className="py-[5.5rem] sm:pt-[17rem] sm:pb-[12rem] px-[1.5rem] sm:px-[10rem] relative">
+    <div className="py-[5.5rem] sm:pt-[20rem] pt-[10rem] sm:pb-[12rem] px-[1.5rem] sm:px-[10rem] relative">
       <Image
         src="/wheel_mobile.webp"
         className="absolute inset-0 sm:hidden top-0 w-[100%] h-[100%] multiply"
@@ -89,7 +89,7 @@ const Index = () => {
             FIPS-<span className="font-[400]">Compliant</span>{" "}
             <span className="sm:text-[#8FD5CC]">Message Broker</span>
           </h1>
-          <div className="border w-[25rem] sm:w-[48rem] rounded-[.7rem] border-[#3FA4FF] p-[1rem] mt-[.5rem]">
+          <div className="border w-[25rem] sm:w-[48rem] rounded-[.7rem] drop_shadow border-[#3FA4FF] p-[1rem] mt-[.5rem]">
             <p className="text-center">
               Empowering Secure and Scalable Messaging with FIPSMQ
             </p>

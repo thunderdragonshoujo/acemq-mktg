@@ -279,7 +279,7 @@ const Features = () => {
       <img src="/service_features.webp" className="hidden sm:block" alt="features" />
       <img src="/service_features_sm.svg" className="sm:hidden" alt="features" />
 
-      <h3 className="sm:text-[8rem] text-center font-[700] sm:mt-[7rem]"><span className="text-[#8FD5CC]">The</span> AceMQ <span className="font-[400]">Assurance</span></h3>
+      <h3 className="sm:text-[8rem] text-center font-[700] sm:mt-[7rem]"><span className="text-[#FF6600]">The</span> AceMQ <span className="font-[400]">Assurance</span></h3>
       <p className="text-center font-[500] mt-[1rem] sm:text-[2.2rem] w-[75%] sm:leading-[3.5rem] hidden sm:block self-center">At <span className="px-[1rem]
             bg-[#FF6600] rounded-[2rem] text-black font-[700] py-[.5rem]">AceMQ</span> we pledge that our <span className="text-[#FF6600]"> Enterprise support</span> not only provides <span className="text-[#FF6600]"> insurance</span> against <span className="text-[#FF6600]"> costly downtime </span>but also proves to be a more <span className="text-[#FF6600]"> cost-effective solution</span> compared to the expenses associated with <span className="text-[#FF6600]"> hiring expert talent</span></p>
     </div>

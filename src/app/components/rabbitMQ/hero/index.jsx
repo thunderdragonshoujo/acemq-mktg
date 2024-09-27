@@ -10,13 +10,13 @@ const Index = () => {
 
 
     return (
-        <section className="flex z-[10] flex-col px-[3rem] sm:px-[10rem] pt-[7rem] sm:pt-[13rem] relative pb-[6rem] sm:pb-[15rem] overflow-hidden">
+        <section className="flex z-[10] flex-col px-[3rem] sm:px-[10rem] pt-[7rem] sm:pt-[23rem] relative pb-[6rem] sm:pb-[15rem] overflow-hidden">
             <div className="">
                 <img src="/rabbitMq_hero_bg.png" className="absolute w-[100vw] sm:hidden h-[42rem] top-[-6rem] inset-0 z-[-1]" alt="background" />
                 <img src="/hero_rabbit_bg.png" className="absolute w-[100vw] hidden sm:block inset-0 z-[-2] " alt="background" />
                 <img src="/hero_rabbit_lg.png" className="absolute  w-[100vw] hidden sm:block inset-0 z-[-1] blend2 " alt="background" />
                 <Image className="absolute right-[.6rem] top-[6.5rem] w-[7rem] h-[13rem] rotate-[-5deg] sm:hidden" width={71} height={139} src='/rabbitMQ_hero-R.png' alt="icon" />
-                <Image data-animation-id='fadeIn' className="absolute sm:block hidden right-[10rem] top-[6.5rem] w-[20rem] h-[45rem] rotate-[-5deg]" width={260} height={576} src='/hero_icon_bg_2.png' alt="icon" />
+                <Image data-animation-id='fadeIn' className="absolute sm:block  hidden right-[10rem] top-[15rem] w-[20rem] h-[45rem] rotate-[-5deg]" width={260} height={576} src='/hero_icon_bg_2.png' alt="icon" />
                 <Image className="absolute right-[3rem] bottom-[8rem] w-[7rem] h-[8rem] rotate-[-5deg] sm:hidden" width={71} height={139} src='/hero_icon.svg' alt="icon" />
                 <Image data-animation-id='fadeIn' className="absolute hidden sm:block bottom-[25rem] left-[22rem] h-[10rem]" width={155} height={122} src='/convex.svg' alt="icon" />
                 <Image className="absolute left-[3rem] bottom-[16rem] w-[7rem] h-[8rem] rotate-[-5deg] sm:hidden" width={71} height={139} src='/hero_icon_sm_2.svg' alt="icon" />

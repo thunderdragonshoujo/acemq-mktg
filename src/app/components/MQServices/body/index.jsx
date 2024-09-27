@@ -24,7 +24,7 @@ export default Index;
 
 const Info = () => {
     return (
-        <div data-animation-id='slideIn' className="py-[4rem] border sm:pt-[10rem] sm:flex sm:flex-col sm:items-center">
+        <div data-animation-id='slideIn' className="py-[4rem] sm:pt-[10rem] sm:flex sm:flex-col sm:items-center">
             <p className="text-center mb-[2rem] sm:w-[100rem]">At <span className="bg-[#8FD5CC] px-[1rem] py-[.5rem] rounded-[1.5rem] text-[#0D1117] font-[700]">AceMQ</span> we have developed a comprehensive practice around message brokers. Our engineers possess extensive experience working closely with message broker products, including RabbitMQ. Their in-depth knowledge and architectural understanding of Message Brokers allow us to seamlessly integrate it into your unique technology stack. As an internationally accredited partner of many of the top Message Brokers, we are the go-to choice for all your message broker service needs.</p>
             <Image src='/MQservice_codesnippet.png'  height={480} className="hidden w-[100rem] sm:block" width={1552} alt="code" />
         </div>
@@ -36,7 +36,7 @@ const Services = () => {
         <div className="sm:flex sm:flex-row-reverse sm:justify-between sm:mb-[10rem] mb-[5rem]" data-animation-id='slideIn'>
             <div className="sm:w-[48rem] sm:mt-[4rem]">
                 <h2 className="sub-header text-center sm:text-left"><span className="font-[400] px-[2rem] py-[1rem] bg-[#8FD5CC] text-[#232323] rounded-[1.2rem]">Our</span><br></br>Services</h2>
-                <p className="hidden sm:block text-[1.3rem] mt-[1rem]">Our consultants have encountered and successfully resolved a wide range of challenges related to message brokers. With years of experience in supporting message broker products and environments, our engineers are well-prepared to tackle any issue you may face.</p>
+                <p className="hidden sm:block sm:w-[43rem] mt-[1rem]">Our consultants have encountered and successfully resolved a wide range of challenges related to message brokers. With years of experience in supporting message broker products and environments, our engineers are well-prepared to tackle any issue you may face.</p>
             </div>
 
             <Image src='/flow.webp' className="mt-[2rem] sm:w-[70rem] self-start" width={700} height={400} alt="flow chat" />
