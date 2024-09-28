@@ -90,7 +90,7 @@ const DomiansMobile = ({ domains }) => (
                 <h3 className="text-[3rem] font-[700] mb-[1.7rem]">Capabilities</h3>
                 <p className="">
                     AceMQ is a subsidiary of a larger, highly specialized full-stack
-                    services company, Ace8, therefore we understand how your Message
+                    services company, <span className="p-[.4rem] rounded-[.3rem] border-[#FF6600] border">Ace8,</span> therefore we understand how your Message
                     Queing tool fits into your environment as a whole.
                 </p>
             </div>

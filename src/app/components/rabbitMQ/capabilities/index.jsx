@@ -30,14 +30,14 @@ const Index = () => {
     },
   ]
   return (
-    <section className="px-[3rem] mt-[3rem] flex flex-col items-center sm:px-[10rem]">
-      <h5 className="text-[2.5rem] sm:text-[3.5rem] mb-[3rem] w-[25rem] sm:w-[100%] text-center font-[700]">
+    <section className="px-[3rem] mt-[5rem] flex flex-col items-center sm:px-[10rem]">
+      <h5 className="text-[3.5rem] sm:text-[3.5rem] mb-[3rem] w-[25rem] sm:w-[100%] text-center font-[700]">
         Our <span className="font-[400]">Consulting</span>{" "}
         <span className="text-[#8FD5CC]">Capabilities</span>
       </h5>
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[3rem] sm:text-[2.8rem] sm:w-[28rem] font-[700]">
+          <h3 className="text-[3rem] w-[25rem] sm:text-[2.8rem] sm:w-[28rem] font-[700]">
             <span className="font-[400]">Seamless</span>{" "}
             <span className="text-[#8FD5CC]">Integration</span> and
             Configuration
@@ -54,28 +54,28 @@ const Index = () => {
       />
 
       <div className="flex  w-[100%] sm:pt-[8rem] relative mb-[8rem] justify-between">
-        <Image  
+        <Image
           src={'/code_snippet2.webp'}
           width={500}
           height={500}
           className="w-[35rem] hidden sm:block ml-[15rem] mb-[3rem]"
           alt="code snippet"
         />
-          <Image  
+        <Image
           src={'/high_availability.png'}
           width={600}
           className="sm:w-[55rem] hidden sm:block mt-[8rem]"
           height={600}
           alt="code snippet"
         />
-          <Image  
+        <Image
           src={'/high_availability_sm.png'}
           width={600}
           className="sm:hidden block"
           height={600}
           alt="code snippet"
         />
-        { icons.map((icon, index) => <Icon icon={icon} key={index} /> ) }
+        {icons.map((icon, index) => <Icon icon={icon} key={index} />)}
       </div>
 
       <Patterns />
@@ -103,7 +103,7 @@ const Index = () => {
 
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[3rem] leading-[5rem] sm:leading-[6rem] sm:text-left  sm:w-[43rem] sm:text-[3.1rem] font-[700]">
+          <h3 className="text-[3rem] text-center leading-[4rem] sm:leading-[6rem] sm:text-left  sm:w-[43rem] sm:text-[3.1rem] font-[700]">
             <span className="sm:p-[1.2rem] p-[.8rem] bg-[#FF6600] text-black rounded-[.7rem]">
               Enterprise
             </span>
@@ -120,16 +120,16 @@ const Index = () => {
         orangeTick={true}
         image={"/rabbit_dashboard.webp"}
         inverse={true}
-        imageWidth={"w-[50rem]  mt-[2rem]"}
+        imageWidth={"w-[50rem] mt-[3rem]"}
         borderColor={"border-[#FF6600]"}
       />
 
       <PlaceTextBesideImage
         header={
           <h3 className="text-[3rem] leading-[5rem] sm:leading-[6rem] sm:text-left  w-[28rem] sm:w-[40rem]  sm:text-[3.1rem] font-[700] text-center">
-            <span className="p-[1.2rem] text-[black] bg-[#FF6600]  rounded-[.7rem]">
+            <span className="sm:p-[1.2rem] p-[.8rem] text-[black] bg-[#FF6600]  rounded-[.7rem]">
               Performance
-            </span>
+            </span>{' '}
             and Reliability <span className="font-[400]">Tuning</span>
           </h3>
         }
@@ -148,11 +148,11 @@ const Index = () => {
       <PlaceTextBesideImage
         inverse={true}
         header={
-          <h3 className="text-[3rem] sm:text-left leading-[5rem] sm:leading-[6rem] w-[28rem] sm:w-[40rem]  sm:text-[3.1rem] font-[700] text-center">
-            <span className="p-[1.2rem] bg-[#8FD5CC] text-black rounded-[.7rem]">
+          <h3 className="text-[3rem] sm:text-left leading-[4rem] sm:leading-[6rem] w-[28rem] sm:w-[40rem]  sm:text-[3.1rem] font-[700]">
+            <span className="sm:p-[1.2rem] p-[.8rem] bg-[#8FD5CC] text-black mr-[.3rem] rounded-[.7rem]">
               Telemetry
-            </span>{" "}
-            -Driven Bottleneck Identification
+            </span>
+            - Driven Bottleneck Identification
           </h3>
         }
         firstParagraph={
@@ -236,7 +236,7 @@ const Patterns = () => {
           className="self-end w-[13rem] sm:w-auto"
           alt="Advance messaging patterns"
         />
-        { icons.map((icon, index) => <Icon key={index} icon={icon} />) }
+        {icons.map((icon, index) => <Icon key={index} icon={icon} />)}
       </div>
     </div>
   );
@@ -254,7 +254,7 @@ const Icon = ({ icon }) => {
           className={`rounded-full absolute cursor-pointer sm:w-[8rem]  w-[5rem] ${hovered ? 'opacity-0' : 'opacity-1'} transition-all aspect-square`}
           alt="icon"
         />
-         <Image
+        <Image
           src={icon.hoveredImage}
           width={100}
           height={100}
@@ -271,9 +271,9 @@ const LoadBalancing = () => {
   return (
     <div className="sm:mt-[9rem] mb-[5rem] flex flex-col sm:ml-[12rem] items-center" data-animation-id='slideIn'>
       <div className="">
-        <h3 className="text-center text-[2.7rem] sm:text-[4rem] w-[23rem] sm:w-[60rem] mb-[1.8rem] font-[400]">
+        <h3 className="text-center text-[3rem] sm:text-[4rem] w-[30rem] sm:w-[60rem] mb-[1.8rem] font-[400]">
           <span className="text-[#FF6600] font-[700]">Message Queue</span>{" "}
-          Management <span className="font-[700]">and Load Balancing</span>
+          Management <span className="font-[700]"> <br></br> and Load Balancing</span>
         </h3>
         <div className="hidden sm:flex">
           <Image
@@ -375,7 +375,7 @@ const Supports = () => {
     [
       {
         header: (
-          <p className="font-[700] sm:text-[2.8rem]">
+          <p className="font-[700] text-[1.1rem] sm:text-[2.8rem]">
             Round-the-Clock <span className="text-[#8FD5CC]">Assistance</span>
           </p>
         ),
@@ -384,7 +384,7 @@ const Supports = () => {
       },
       {
         header: (
-          <p className="font-[700] sm:text-[2.8rem]">
+          <p className="font-[700] text-[1.1rem] sm:text-[2.8rem]">
             Service Level <span className="font-[400]">Agreements</span>{" "}
             <span className="text-[#8FD5CC]">(SLAs)</span>
           </p>
@@ -396,7 +396,7 @@ const Supports = () => {
     [
       {
         header: (
-          <p className="font-[700] sm:text-[2.8rem]">
+          <p className="font-[700] text-[1.1rem] sm:text-[2.8rem]">
             Performance <span className="font-[400]">Optimization</span> and{" "}
             <span className="text-[#8FD5CC]">Proactive</span> Monitoring
           </p>
@@ -406,9 +406,9 @@ const Supports = () => {
       },
       {
         header: (
-          <p className="font-[700] sm:text-[2.8rem]">
+          <p className="font-[700] text-[1.1rem] sm:text-[2.8rem]">
             <span className="text-[#8FD5CC]">Troubleshooting</span> and Root
-            Cause <span className="">Analysis</span>
+            Cause <span className="font-[400]">Analysis</span>
           </p>
         ),
         paragraph:
@@ -463,27 +463,34 @@ const Supports = () => {
 
 const Banner2 = () => {
   return (
-    <div className="blue_border sm:mt-[6rem] relative">
+    <div className="blue_border sm:mt-[6rem] mt-[4rem] relative">
       <Image
         src={'/blue_border.png'}
         width={1300}
         height={572}
         alt="border"
-        className="absolute w-[100%] inset-0"
+        className="absolute w-[100%] hidden sm:block h-[100%] inset-0"
       />
-      <div className="flex sm:mt-[1rem] sm:ml-[1.2rem] flex-col border border-[#929292] items-center p-[3rem] sm:pt-[6rem] bg-black w-[100%] rounded-[2rem] relative">
+        <Image
+        src={'/border_sm.png'}
+        width={375}
+        height={580}
+        alt="border"
+        className="absolute w-[100%] sm:hidden h-[100%] inset-0"
+      />
+      <div className="flex mt-[1rem] sm:ml-[1.2rem] ml-[.5rem] flex-col border-[#929292] items-center p-[3rem] sm:pt-[6rem] bg-black w-[100%] rounded-[2rem] relative">
         <img
           src="/acemq.png"
           alt="logo"
           className="absolute top-[-3rem] w-[13rem] sm:w-[18rem]"
         />
-        <h3 className="sm:text-[5rem] sm:w-[70%] text-[2.7rem] text-center font-[700]">
+        <h3 className="sm:text-[5rem] sm:w-[70%] text-[3rem] w-[22rem] text-center font-[700]">
           <span className="font-[400]">Unlock</span> the{" "}
           <span className="text-[#FF6600]">True Potential</span> of{" "}
           <span className="text-[#FF6600]">RabbitMQ</span> in Your{" "}
           <span className="font-[400]">Enterprise.</span>
         </h3>
-        <p className="sm:w-[85rem] text-center mt-[2rem]">
+        <p className="sm:w-[85rem] hidden sm:block text-center mt-[2rem]">
           Unlock the full power of RabbitMQ with AceMQ's expert services.
           Seamlessly integrate RabbitMQ into your environment for optimized
           performance. Our team ensures high availability and fault tolerance,
@@ -491,6 +498,10 @@ const Banner2 = () => {
           optimal resource utilization. Experience risk-free upgrades, performance
           tuning, and world class support. Elevate your messaging architecture
           with AceMQ.
+        </p>
+
+        <p className="sm:hidden sm:w-[85rem] text-center mt-[2rem]">
+          Unlock the full power of RabbitMQ with AceMQ's expert services. Seamlessly integrate RabbitMQ into your environment for optimized performance. Our team ensures high availability and fault tolerance, sets up advanced messaging patterns, and fine-tunes configurations for optimal resource utilization. Experience risk-free upgrades, performance tuning, and world class support.
         </p>
 
         <Link href={'/contact-us'} className="mt-[5rem]">

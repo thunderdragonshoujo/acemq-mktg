@@ -29,11 +29,11 @@ const Index = () => {
     },
   ];
   return (
-    <section className="px-[3rem] sm:px-[10rem] sm:mb-[0] mt-[6.5rem]">
+    <section className="px-[3rem] sm:px-[10rem] sm:mb-[0] sm:mt-[6.5rem]">
       <MaxContainer>
         <div className="" data-animation-id="slideIn">
-          <h3 className="text-center text-[2.7rem] sm:text-[6rem] font-[700]">
-            <span className="text-[#FF6600]">Among</span> The Best
+          <h3 className="text-center text-[3.7rem] sm:text-[6rem] font-[700]">
+            <span className="text-[#FF6600]">Among</span> <span className="font-[400]">The</span> Best
           </h3>
           <p className="text-center  mb-[3rem] sm:mb-[4rem]">
             AceMQ has helped the World's premiere companies reach exceptional
@@ -73,7 +73,7 @@ const Card = ({ card }) => (
     />
 
     <div className="absolute z-[3] bottom-[.7rem] sm:bottom-[2.5rem] w-[20rem] sm:w-[35rem] flex flex-col items-center mx-[17%] sm:self-center">
-      <h3 className="font-[700] sm:text-[1.5rem] sm:w-[22rem] sm:mb-[1rem] text-center">
+      <h3 className="font-[700] w-[25rem]  sm:text-[1.5rem] sm:w-[22rem] sm:mb-[1rem] text-center">
         {card.header}
       </h3>
       <p className="text-center text-[1rem] sm:text-[1.3rem] sm:leading-[2rem]">

@@ -57,7 +57,7 @@ const Index = () => {
             <div className="sm:flex">
                 <div className="sm:flex sm:ml-[7rem] sm:mt-[6rem] sm:justify-between sm:w-[100%]">
                     <div className="" data-animation-id='slideIn'>
-                        <h2 className="text-center text-[2.5rem] sm:text-[7.3rem] mt-[5rem] mb-[1rem] sm:text-left font-[700]"><span className="text-[#8FD5CC] font-[400]">MQ</span> Services</h2>
+                        <h2 className="text-center text-[3.2rem] sm:text-[7.3rem] mt-[5rem] mb-[1rem] sm:text-left font-[700]"><span className="text-[#8FD5CC] font-[400]">MQ</span> Services</h2>
                         <p className="hidden sm:block w-[40rem]">We offer a range of services to address all your messaging and queuing requirements.Our team of seasoned professionals excels in delivering top-notch solutions to enhance the reliability, scalability, and performance of your MQ systems” </p>
                     </div>
                     <div className="sm:block hidden">
@@ -81,8 +81,8 @@ export default Index;
 
 
 const Cards = ({ card, width, containerStyle }) => (
-    <div className={`flex ${containerStyle} sm:flex-col items-start border sm:py-[3rem] sm:px-[3rem] gap-x-[1.2rem] px-[.8rem] rounded-[1.5rem] border-[#444444] bg-[#11151A] py-[1.3rem]`}>
-        <img src={card.image} className="sm:w-[8rem] mb-[1.5rem]" alt="card icon" />
+    <div className={`flex ${containerStyle} sm:flex-col items-start border sm:py-[3rem] sm:px-[3rem] gap-x-[1.2rem] px-[1.2rem] rounded-[1.5rem] border-[#444444] bg-[#11151A] py-[1.5rem]`}>
+        <img src={card.image} className="sm:w-[8rem] hidden sm:block mb-[1.5rem]" alt="card icon" />
         <div className="">
             {card.name}
             <p className={`${width} text-[1.4rem]`}>{card.text}</p>

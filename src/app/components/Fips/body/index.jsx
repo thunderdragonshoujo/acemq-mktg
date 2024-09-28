@@ -68,18 +68,26 @@ const Index = () => {
     <section className="px-[3rem] sm:px-[10rem]">
       <Info />
       <Compliance />
-      <div className="sm:mb-[7rem] sm:flex justify-between items-center">
+      <div className="sm:mb-[7rem]  mb-[5rem] mt-[5rem] sm:mt-[0]  sm:flex justify-between items-center" data-animation-id='slideIn'>
         <div className="relative hidden sm:block  sm:w-[55rem] sm:h-[55rem]">
-          { icons.map(icon => <Icon key={icon.text} icon={icon} />) }
+          {icons.map(icon => <Icon key={icon.text} icon={icon} />)}
           <p className="absolute top-[18rem] font-[700] right-[12rem]">High Availability</p>
         </div>
 
-        <Image 
+        <Image
           width={700}
           height={414}
-          className="w-[60rem] hidden sm:block"
+          className="w-[60rem]  hidden sm:block"
           alt="high availability"
           src={'/high_availability.png'}
+        />
+
+        <Image
+          width={700}
+          height={414}
+          className="w-[40rem] sm:hidden block"
+          alt="high availability"
+          src={'/_high_availability_sm.png'}
         />
       </div>
       <Patterns />
@@ -126,7 +134,7 @@ const Compliance = () => {
             width={77}
             height={93}
             alt="pad-lock"
-            className="w-[6rem] absolute hidden sm:block right-[8rem] sm:w-[5rem]"
+            className="w-[4.3rem] absolute opacity-[.4] sm:opacity-[1] sm:block right-[1rem] sm:right-[8rem] sm:w-[5rem]"
           />
           <h1 className="sub-header py-[.7rem] sm:py-[.3rem] rounded-[3rem] mb-[.5rem] px-[2.5rem] sm:px-[3rem] sm:rounded-[3.5rem] border-[1.5px] w-fit">
             FIPS
@@ -290,7 +298,7 @@ const Icon = ({ icon }) => {
           className={`rounded-full absolute cursor-pointer sm:w-[8rem]  w-[5rem] ${hovered ? 'opacity-0' : 'opacity-1'} transition-all aspect-square`}
           alt="icon"
         />
-         <Image
+        <Image
           src={icon.hoveredImage}
           width={100}
           height={100}

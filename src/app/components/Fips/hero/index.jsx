@@ -89,7 +89,7 @@ const Index = () => {
             FIPS-<span className="font-[400]">Compliant</span>{" "}
             <span className="sm:text-[#8FD5CC]">Message Broker</span>
           </h1>
-          <div className="border w-[25rem] sm:w-[48rem] rounded-[.7rem] drop_shadow border-[#3FA4FF] p-[1rem] mt-[.5rem]">
+          <div className="border w-[25rem] sm:w-[48rem] rounded-[1.5rem] drop_shadow border-[#3FA4FF] p-[1rem] mt-[.5rem]">
             <p className="text-center">
               Empowering Secure and Scalable Messaging with FIPSMQ
             </p>

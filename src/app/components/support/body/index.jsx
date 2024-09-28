@@ -17,7 +17,7 @@ const Index = () => {
 
       <PlaceTextBesideImage
         header={
-          <h1 className="sub-header sm:w-[40rem] leading-[6rem]">
+          <h1 className="text-[3rem] leading-[4rem] pt-[.7rem] font-[700] sm:text-[4.5rem] sm:w-[40rem] sm:leading-[6rem]">
             <span className="border px-[2rem] py-[1rem] rounded-[3rem]">
               RTCS
             </span>
@@ -41,8 +41,8 @@ const Index = () => {
       <div className="mt-[7rem]">
         <PlaceTextBesideImage
           header={
-            <h1 className="sub-header sm:w-[40rem] leading-[6rem]">
-              <span className="border border-[#8FD5CC] text-[#8FD5CC] px-[2rem] py-[1rem] rounded-[3rem]">
+            <h1 className="text-[3rem] leading-[4rem] font-[700] pt-[.5rem] sm:w-[40rem] sm:leading-[6rem]">
+              <span className="border  text-[#8FD5CC] px-[2rem] py-[1rem] rounded-[3rem]">
                 SLAs
               </span>
               <br></br>
@@ -104,7 +104,7 @@ const Index = () => {
           "We guarantee rapid response times, resolution targets, and ongoing communication to keep you informed throughout the support process."
         }
         orangeTick={true}
-        borderColor={"border-[#FF6600]"}
+        borderColor={"border-[#8FD5CC]"}
         imageWidth={"w-[55rem]"}
         image={"/root_cause.png"}
       />
@@ -123,9 +123,9 @@ const Info = () => {
       <div className="">
         <p className="text-center sm:text-start mb-[2rem] sm:w-[95rem] text-[1.8rem] sm:leading-[3rem] sm:mb-[2rem]">
           At{" "}
-          <span className="bg-[#FF6600] px-[1rem] py-[.5rem] rounded-[1.5rem] text-[#0D1117] font-[700]">
+          <span className="bg-[#FF6600] sm:px-[1rem] px-[.5rem] py-[.3rem] sm:py-[.5rem] rounded-[1.5rem] text-[#0D1117] font-[700]">
             AceMQ
-          </span>
+          </span>{' '}
           we are proud to offer 24/7 world-wide comprehensive SLA-based support
           for RabbitMQ Enterprise customers. Our dedicated team of experts is
           committed to ensuring uninterrupted operations and providing timely
@@ -142,7 +142,7 @@ const Info = () => {
       <Image
         src="/dashboard_service.png"
         width={300}
-        className="sm:hidden self-center"
+        className="sm:hidden w-[100%] self-center"
         height={216}
         alt="encription"
       />
@@ -190,8 +190,8 @@ const Banner1 = () => {
 
 const Performance = () => {
   return (
-    <div className="text-center flex flex-col items-center mt-[8rem] sm:mb-[6rem] mb-[2rem]" data-animation-id='slideIn'>
-      <h3 className="sm:text-[5.3rem] sm:w-[70rem] leading-[6.3rem] font-[700] mb-[2rem]">
+    <div className="text-center flex flex-col items-center mt-[5rem] sm:mb-[6rem] mb-[5rem]" data-animation-id='slideIn'>
+      <h3 className="sm:text-[5.3rem] text-[2.5rem] sm:w-[70rem] sm:leading-[6.3rem] font-[700] mb-[2rem]">
         Maximizing <span className="text-[#8FD5CC]">RabbitMQ</span>{" "}
         <span className="text-[#8FD5CC]">Enterprise</span>{" "}
         <span className="font-[400]">Performance and</span> Reliability
@@ -251,8 +251,8 @@ const Technologies = () => {
     },
   ];
   return (
-    <div className="flex flex-col sm:mt-[5rem] items-center mb-[8rem]" data-animation-id='slideIn'>
-      <h2 className="sm:text-[5.3rem]  font-[700] text-center mb-[2rem]">
+    <div className="flex flex-col sm:mt-[5rem] my-[3rem] items-center sm:mb-[8rem]" data-animation-id='slideIn'>
+      <h2 className="sm:text-[5.3rem] text-[3rem] font-[700] text-center mb-[2rem]">
         Other <span className="font-[500]">Supported</span>{" "}
         <span className="text-[#FF6600]">Technologies</span>
       </h2>
@@ -275,11 +275,11 @@ const Technologies = () => {
 const Features = () => {
   return (
     <div className="mb-[4rem] flex flex-col" data-animation-id='slideIn'>
-      <h3 className="text-center sm:text-[5.3rem] font-[700] sm:mb-[6rem] mb-[3rem]"><span className="text-[#8FD5CC]">Features</span> and Benefits</h3>
+      <h3 className="text-center sm:text-[5.3rem] font-[700] text-[2.5rem] sm:mb-[6rem] mb-[3rem]"><span className="text-[#8FD5CC]">Features</span> and Benefits</h3>
       <img src="/service_features.webp" className="hidden sm:block" alt="features" />
       <img src="/service_features_sm.svg" className="sm:hidden" alt="features" />
 
-      <h3 className="sm:text-[8rem] text-center font-[700] sm:mt-[7rem]"><span className="text-[#FF6600]">The</span> AceMQ <span className="font-[400]">Assurance</span></h3>
+      <h3 className="sm:text-[8rem] hidden sm:block text-center font-[700] sm:mt-[7rem]"><span className="text-[#FF6600]">The</span> AceMQ <span className="font-[400]">Assurance</span></h3>
       <p className="text-center font-[500] mt-[1rem] sm:text-[2.2rem] w-[75%] sm:leading-[3.5rem] hidden sm:block self-center">At <span className="px-[1rem]
             bg-[#FF6600] rounded-[2rem] text-black font-[700] py-[.5rem]">AceMQ</span> we pledge that our <span className="text-[#FF6600]"> Enterprise support</span> not only provides <span className="text-[#FF6600]"> insurance</span> against <span className="text-[#FF6600]"> costly downtime </span>but also proves to be a more <span className="text-[#FF6600]"> cost-effective solution</span> compared to the expenses associated with <span className="text-[#FF6600]"> hiring expert talent</span></p>
     </div>
