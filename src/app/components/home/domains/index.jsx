@@ -195,8 +195,8 @@ const DomainDesktop = ({ domain, id }) => {
 };
 
 const Banner = () => (
-    <div className="">
-        <div className="border border-[#FF6600] p-[1rem] sm:p-[3rem] rounded-[.8rem] mt-[3rem] sm:flex sm:justify-between sm:mt-[9rem]" data-animation-id='slideIn'>
+    <div className="mt-[5rem]">
+        <div className="border border-[#FF6600] p-[1rem] sm:p-[3rem] rounded-[.8rem]  sm:flex sm:justify-between sm:mt-[9rem]" data-animation-id='slideIn'>
             <div className="flex flex-col sm:w-[58rem]">
                 <h3 className="font-[400] capitalize text-[1.4rem] text-center sm:text-left mb-[1.3rem]"><span className="font-[700] text-[#FF6600]">RabbitMQ</span> Enterprise <span className="font-[700]">support</span></h3>
                 <h3 className="text-center text-[2.7rem] sm:text-[3.5rem]  font-[700] sm:text-left">How we <span className="font-[400]">Saved Millions</span> in <span className="text-[#FF6600]">Downtime</span> for a <span className="text-[#FF6600]">Global</span> <span className="font-[400]">Retail Giant</span></h3>

@@ -259,7 +259,6 @@ const Technologies = () => {
       <Image
         src="/service_technologies.png"
         width={300}
-
         className="sm:hidden"
         height={216}
         alt="technologies"

@@ -15,7 +15,7 @@ const Index = () => {
       />
       <img
         src="/ace_logo_white.svg"
-        className="w-[12rem] sm:w-[17rem] absolute top-[-2rem] sm:left-[15rem]"
+        className="w-[15rem] sm:w-[22rem] absolute top-[-2rem] sm:top-[-3rem] sm:left-[15rem]"
         alt="Acemq Logo"
       />
       <div className="sm:pl-[5rem] sm:py-[3rem] relative">
@@ -24,12 +24,12 @@ const Index = () => {
           className="w-[100%] h-[100%] absolute inset-0 z-[-1]  sm:block hidden"
           alt="background"
         />
-        <div className="sm:w-[65rem] sm:mt-[3rem]">
-          <h2 className="sub-header sm:w-[55rem]">
+        <div className="sm:w-[65rem] mt-[3rem]">
+          <h2 className="text-[3rem] leading-[4rem] sm:text-[5rem] sm:leading-[6rem] font-[700] sm:w-[55rem]">
             <span className="font-[400]">Experience</span> Unparalleled Support
             with AceMQ
           </h2>
-          <p className="mt-[2rem] text-[2rem]">
+          <p className="mt-[2rem] sm:text-[2rem]">
             Ready to experience unparalleled support for your RabbitMQ
             Enterprise deployment? Trust AceMQ's 24/7 comprehensive SLA-based
             support to ensure uninterrupted operations and maximize the

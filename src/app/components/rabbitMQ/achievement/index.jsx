@@ -16,6 +16,7 @@ const Index = () => {
                     width={350}
                     height={350}
                     alt="glob"
+                    className="w-[30rem] rounded-full border"
                 />
                 <p className="w-[52rem] leading-[3rem]">
                     RabbitMQ Premier Global Services Partner. Recognized by RabbitMQ as a Go-To services partner, AceMQ maintains a global footprint, but with our headquarters in North America, we are widely recognized as the <Link href='https://www.rabbitmq.com/commercial-offerings' className="px-[.5rem] py-[.8rem] bg-[#FF6600] rounded-[.3rem]">Premier North American RabbitMQ Partner.</Link>

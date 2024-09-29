@@ -228,7 +228,7 @@ const Patterns = () => {
         alt="patterns image"
       /> */}
 
-      <div className="sm:w-[50rem] sm:h-[40rem] h-[23rem] mt-[6rem] justify-center flex relative">
+      <div className="sm:w-[50rem] sm:h-[40rem] h-[23rem] sm:mt-[6rem] mt-[3rem] justify-center flex relative">
         <Image
           src={'/message_patterns.png'}
           width={220}
@@ -478,13 +478,13 @@ const Banner2 = () => {
         alt="border"
         className="absolute w-[100%] sm:hidden h-[100%] inset-0"
       />
-      <div className="flex mt-[1rem] sm:ml-[1.2rem] ml-[.5rem] flex-col border-[#929292] items-center p-[3rem] sm:pt-[6rem] bg-black w-[100%] rounded-[2rem] relative">
+      <div className="flex mt-[1rem] sm:ml-[1.2rem] ml-[.5rem] flex-col border-[#929292] items-center p-[1.5rem] sm:p-[3rem] sm:pt-[6rem] bg-black w-[100%] rounded-[2rem] relative">
         <img
           src="/acemq.png"
           alt="logo"
           className="absolute top-[-3rem] w-[13rem] sm:w-[18rem]"
         />
-        <h3 className="sm:text-[5rem] sm:w-[70%] text-[3rem] w-[22rem] text-center font-[700]">
+        <h3 className="sm:text-[5rem] sm:w-[70%] text-[3rem] w-[27rem] text-center font-[700]">
           <span className="font-[400]">Unlock</span> the{" "}
           <span className="text-[#FF6600]">True Potential</span> of{" "}
           <span className="text-[#FF6600]">RabbitMQ</span> in Your{" "}

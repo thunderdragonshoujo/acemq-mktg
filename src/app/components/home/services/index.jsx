@@ -50,14 +50,14 @@ const Index = () => {
         },
     ]
     return (
-        <section className="px-[3rem] relative sm:px-[10rem] sm:mt-[8rem]">
+        <section className="px-[3rem] relative mb-[3rem] sm:px-[10rem] sm:mt-[8rem]">
             <div className="hidden h-[0] overflow-hidden absolute sm:block mt-[14.5rem]" data-animation-id='milestone'>
                 <img src="/mille_2.svg" className="w-[4.4rem]" alt="arrow" />
             </div>
             <div className="sm:flex">
                 <div className="sm:flex sm:ml-[7rem] sm:mt-[6rem] sm:justify-between sm:w-[100%]">
                     <div className="" data-animation-id='slideIn'>
-                        <h2 className="text-center text-[3.2rem] sm:text-[7.3rem] mt-[5rem] mb-[1rem] sm:text-left font-[700]"><span className="text-[#8FD5CC] font-[400]">MQ</span> Services</h2>
+                        <h2 className="text-center text-[3.2rem] sm:text-[7.3rem] sm:mt-[5rem] mb-[1rem] sm:text-left font-[700]"><span className="text-[#8FD5CC] font-[400]">MQ</span> Services</h2>
                         <p className="hidden sm:block w-[40rem]">We offer a range of services to address all your messaging and queuing requirements.Our team of seasoned professionals excels in delivering top-notch solutions to enhance the reliability, scalability, and performance of your MQ systems” </p>
                     </div>
                     <div className="sm:block hidden">
@@ -70,7 +70,7 @@ const Index = () => {
                 {cardsLG.map((card, index) => <Cards card={card} key={index} containerStyle={'sm:w-[32%]'} width={'sm:w-[95%]'} />)}
             </div>
 
-            <div className="flex flex-col gap-y-[1.2rem] sm:hidden">
+            <div className="flex flex-col mb-[2.5rem] gap-y-[1.2rem] sm:hidden">
                 {cards.map((card, index) => (<Cards card={card} key={index} />))}
             </div>
         </section>
