@@ -5,8 +5,7 @@ import { usePathname } from "next/navigation";
 
 const Index = () => {
   const [open, setOpen] = useState(false);
-  const [showNav, setShowNav] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [scrollY, setScrollY] = useState(0); // Track scroll position
   const pathName = usePathname();
 
   const toggleNav = () => {
@@ -30,18 +29,16 @@ const Index = () => {
     };
   }, [open]);
 
-  // Scroll listener to hide nav on scroll down and show on scroll up
+  // Scroll listener to change background color of the nav
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setShowNav(false); // Hide nav when scrolling down
+      if (currentScrollY > 100) {
+        setScrollY(currentScrollY); // Trigger background change on scroll past 100px
       } else {
-        setShowNav(true); // Show nav when scrolling up
+        setScrollY(0); // Reset background to transparent when near top
       }
-
-      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -49,7 +46,7 @@ const Index = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, []);
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -63,13 +60,13 @@ const Index = () => {
 
   return (
     <nav
-      className={`bg-black sm:px-[10rem] px-[3rem] transition-transform duration-500 ease-in-out ${
-        showNav ? "translate-y-0" : "-translate-y-full"
-      } fixed w-full z-50`}
+      className={`fixed w-full z-50 transition-all duration-500 ease-in-out ${
+        scrollY > 100 ? "bg-black" : "bg-transparent"
+      } sm:px-[10rem] px-[3rem]`}
     >
       <div className="flex items-center py-[1.5rem] lg:py-[2.5rem] justify-between">
         <div className="lg:flex lg:items-center">
-          <Link href="/"  className="z-[100] relative">
+          <Link href="/" className="z-[100] relative">
             <img
               src="/ace_logo.png"
               className="w-[7.6rem] sm:w-[14rem] sm:mr-[1rem]"
@@ -81,7 +78,7 @@ const Index = () => {
               open ? "translate-x-0" : "translate-x-[100%] lg:translate-x-0"
             }`}
           >
-            <ul className="mt-[10rem] sm:mt-0  sm:flex">
+            <ul className="mt-[10rem] sm:mt-0 sm:flex">
               {navItems.map((item, i) => (
                 <Link
                   key={i}
@@ -91,7 +88,7 @@ const Index = () => {
                   <li
                     className={`text-[1.5rem] lg:text-[1.3] w-fit ${
                       pathName === item.path
-                        ? " border-b-[2px] border-accent-100"
+                        ? "border-b-[2px] border-accent-100"
                         : ""
                     } lg:font-normal font-medium`}
                   >
