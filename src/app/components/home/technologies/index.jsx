@@ -15,7 +15,7 @@ const Index = () => {
     const technologies = [
         {
             icon: '/tech_0.png',
-            text: 'Rabbit MQ',
+            text: 'RabbitMQ',
             style: 'h-fit',
         },
         {

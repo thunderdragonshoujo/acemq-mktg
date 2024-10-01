@@ -19,11 +19,11 @@ const Index = () => {
           alt="background"
         />
         <div className="sm:w-[65rem] mt-[2.3rem] sm:mt-[6rem]">
-          <h2 className="text-[3rem] leading-[3.5rem] sm:text-[4rem]  font-[700]">
+          <h2 className="text-[3rem] leading-[5rem] sm:text-[4rem] sm:w-[58rem] font-[700]">
             Empower your messaging with{" "}
             <span className="text-[#8FD5CC]">FIPSMQ</span>
           </h2>
-          <p className="mt-[2rem]">
+          <p className="mt-[2rem] sm:mt-[.8rem]">
             the leading FIPS-compliant message broker, supported comprehensively
             by AceMQ. Ensure secure and scalable solutions adhering to FIPS
             140-2 standards with our expert guidance. Achieve high availability
@@ -34,7 +34,7 @@ const Index = () => {
             FIPS-compliant excellence.
           </p>
 
-          <Link href="#contact" className="border px-[1rem] py-[.5rem] text-[1.2rem] font-[700] mt-[5rem] w-[10rem] text-center block">
+          <Link href="#contact" className="border rounded-[.5rem] px-[1rem] py-[.5rem] text-[1.2rem] font-[700] mt-[5rem] w-[10rem] text-center block">
             Learn more
           </Link>
         </div>

@@ -19,7 +19,7 @@ const Index = () => {
             <Image src='/hero_bg_lg.png' width={1920} className="absolute hero_main_mask_image w-[100vw] h-[100%] hidden  sm:block z-[-1] inset-0 " height={1000} alt="background image" />
             <div className="relative flex gap-[4rem] pt-[6.3rem] sm:pb-[8rem] pb-[2rem]">
                 <div className="h-[0] overflow-hidden absolute hidden sm:block" data-animation-id='milestone'>
-                    <img src="/mille_1.png" className="mt-[2rem] w-[4.15rem]" alt="mile stone" />
+                    <img src="/mille_1.png" className="mt-[2rem] w-[4.27rem]" alt="mile stone" />
                 </div>
 
                 <div className="relative  sm:w-fit sm:ml-[7rem]" data-animation-id='slideIn'>

@@ -41,7 +41,7 @@ const Index = () => {
         {
             image: '/support.svg',
             name: <h3 className="text-[1.8rem] sm:w-[32rem]  sm:text-[3.5rem] mb-[1rem] font-[700] text-[#8FD5CC]">Support</h3>,
-            text: 'Customized Operation and Support Models including Service Level Agreements (SLAs), and dedicated Support Specialists.',
+            text: 'Personal Protective Equipment (PPE): Includes helmets, gloves, boots, safety goggles, and high-visibility vests for workers.Scaffolding and Guardrails: For worker safety during construction at height Dust Control Systems: Water sprayers or dust extractors to manage dust created during excavation or concrete cutting.',
         },
         {
             image: '/training.svg',
@@ -52,7 +52,7 @@ const Index = () => {
     return (
         <section className="px-[3rem] relative mb-[3rem] sm:px-[10rem] sm:mt-[8rem]">
             <div className="hidden h-[0] overflow-hidden absolute sm:block mt-[14.5rem]" data-animation-id='milestone'>
-                <img src="/mille_2.svg" className="w-[4.4rem]" alt="arrow" />
+                <img src="/mille_2.svg" className="w-[4.65rem]" alt="arrow" />
             </div>
             <div className="sm:flex">
                 <div className="sm:flex sm:ml-[7rem] sm:mt-[6rem] sm:justify-between sm:w-[100%]">

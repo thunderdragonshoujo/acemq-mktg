@@ -76,7 +76,7 @@ const Index = () => {
           data-animation-id="fadeIn"
         />
         <img
-          src="/ace.svg"
+          src="/ace.png"
           className="absolute right-[0] top-[8rem] w-[3.5rem] sm:w-[10rem]"
           alt="arrow"
           data-animation-id="fadeIn"

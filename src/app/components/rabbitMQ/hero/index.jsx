@@ -26,7 +26,7 @@ const Index = () => {
                     <h1 className="text-center self-center sm:text-[7.5rem] sm:leading-[8rem] sm:w-[80rem] font-[700] text-[3rem] w-[26rem] leading-[4rem]"><span className="text-accent-100">Elevate</span> Your <span className="font-[400]">RabbitMQ Experience</span>  with  <span className="text-[#0D1117] inline-block sm:py-[.5rem] px-[2rem] bg-accent-100 rounded-[3rem]">AceMQ</span></h1>
 
                     <Image className="self-center mt-[1.6rem] sm:hidden" width={212} height={53} src='/border4k.png' alt="border" />
-                    <Image className="self-center sm:block hidden w-[60rem] mt-[3rem]" width={212} height={53} src='/dashed-text.png' alt="border" />
+                    <Image className="self-center sm:block hidden w-[60rem] mt-[3rem]" width={800} height={53} src='/_unlock.png' alt="border" />
                 </div>
             </div>
         </section>

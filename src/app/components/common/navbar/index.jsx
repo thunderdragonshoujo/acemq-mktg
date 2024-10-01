@@ -69,12 +69,12 @@ const Index = () => {
           <Link href="/" className="z-[100] relative">
             <img
               src="/ace_logo.png"
-              className="w-[7.6rem] sm:w-[14rem] sm:mr-[1rem]"
+              className="w-[8.4rem] sm:w-[14rem] sm:mr-[1rem]"
               alt="logo"
             />
           </Link>
           <div
-            className={`fixed sm:static z-20 w-[100vw] sm:w-auto h-[100vh] sm:h-auto bg-black inset-0 sm:inset-auto px-[2rem] sm:px-0 transition-all duration-500 ease-[cubic-bezier(0.65, 0, 0.35, 1)] ${
+            className={`fixed sm:static z-20 w-[100vw] sm:w-auto h-[100vh] sm:h-auto bg-black sm:bg-transparent inset-0 sm:inset-auto px-[2rem] sm:px-0 transition-all duration-500 ease-[cubic-bezier(0.65, 0, 0.35, 1)] ${
               open ? "translate-x-0" : "translate-x-[100%] lg:translate-x-0"
             }`}
           >
@@ -102,7 +102,7 @@ const Index = () => {
 
         <div className="flex items-center gap-x-[3rem]">
           <Link href="/contact-us/">
-            <button className="font-bold rounded-[.5rem] text-[1rem] lg:text-[1.3rem] lg:border text-text-100 lg:text-white bg-white lg:bg-transparent px-[1.2rem] lg:px-[2.3rem] py-[.7rem]">
+            <button className="font-bold rounded-[.5rem] text-[1rem] lg:text-[1.3rem] lg:border text-text-100 lg:text-white bg-white lg:bg-transparent px-[1.2rem] lg:px-[2.3rem] border-[#8FD5CC] py-[.7rem]">
               Contact us
             </button>
           </Link>

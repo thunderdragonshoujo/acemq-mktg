@@ -37,7 +37,7 @@ const Index = () => {
       </h5>
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[3rem] w-[25rem] sm:text-[2.8rem] sm:w-[28rem] font-[700]">
+          <h3 className="text-[3rem] w-[25rem] sm:text-[4.5rem] sm:w-[45rem] sm:leading-[5.5rem] font-[700]">
             <span className="font-[400]">Seamless</span>{" "}
             <span className="text-[#8FD5CC]">Integration</span> and
             Configuration
@@ -61,20 +61,35 @@ const Index = () => {
           className="w-[35rem] hidden sm:block ml-[15rem] mb-[3rem]"
           alt="code snippet"
         />
-        <Image
-          src={'/high_availability.png'}
-          width={600}
-          className="sm:w-[55rem] hidden sm:block mt-[8rem]"
-          height={600}
-          alt="code snippet"
-        />
-        <Image
+        <div className="sm:w-[54rem]">
+          <div className="p-[1rem] sm:w-[48rem] relative sm:p-[1.5rem] rounded-[2rem]">
+            <h1 className="sm:text-[4.5rem] sm:leading-[5.5rem] leading-[4rem] text-[3rem] font-[700] w-fit"><span className="font-[300]">High Availability</span><br></br> and <span className="text-[#8FD5CC]">Fault Tolerance</span></h1>
+          </div>
+
+          <div className="w-[100%]">
+            <div className="mt-[2rem] sm:mt-[0]">
+              <div className="flex border border-[#8FD5CC]  p-[.5rem] rounded-[1rem]  mb-[2rem]  gap-[1rem]">
+                <img src="/tick.svg" className="w-[2rem]" alt="mark icon" />
+                <p className="">
+                  We ensure seamless integration of RabbitMQ into your existing infrastructure, whether it's on-premises or in the cloud.
+                </p>
+              </div>
+              <div className="flex gap-[1rem]  ml-[4rem]  max-w-[50rem]">
+                <img src="/tick.svg" className="w-[2rem]" alt="mark icon" />
+                <p className="w-[100%]">
+                  Our experts handle the configuration process to optimize RabbitMQ for your specific use case, ensuring maximum performance and efficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <Image
           src={'/high_availability_sm.png'}
           width={600}
           className="sm:hidden block"
           height={600}
           alt="code snippet"
-        />
+        /> */}
         {icons.map((icon, index) => <Icon icon={icon} key={index} />)}
       </div>
 
@@ -471,7 +486,7 @@ const Banner2 = () => {
         alt="border"
         className="absolute w-[100%] hidden sm:block h-[100%] inset-0"
       />
-        <Image
+      <Image
         src={'/border_sm.png'}
         width={375}
         height={580}

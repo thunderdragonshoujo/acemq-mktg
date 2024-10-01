@@ -93,8 +93,8 @@ const Form = () => {
   return (
     <div className="text-black sm:w-[55rem] pt-[8rem] flex flex-col">
       <ToastContainer />
-      <h2 className="sub-header w-[20rem] self-center text-center sm:w-auto">
-        <span className="text-[#8FD5CC]">Tell Us</span> About Yourself
+      <h2 className="sub-header w-[20rem] self-center capitalize text-center sm:w-auto">
+        <span className="text-[#8FD5CC]">Tell Us</span> How We Can help
       </h2>
       <form action="" className="sm:mt-[7rem] mt-[3rem]">
         <div className="sm:flex justify-between gap-[2rem]">
@@ -184,7 +184,7 @@ const Form = () => {
 
         <button
           onClick={handleSubmit}
-          className="mt-[3rem] self-center sm:self-start px-[3rem] py-[1rem] text-white bg-conner-gradient rounded-[1rem]"
+          className="mt-[3rem] self-center sm:self-start px-[3rem] py-[1rem] text-white bg-[#8FD5CC] rounded-[1rem]"
         >
           {loading ? "loading.." : "Submit"}
         </button>

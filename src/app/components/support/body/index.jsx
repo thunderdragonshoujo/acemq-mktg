@@ -17,14 +17,15 @@ const Index = () => {
 
       <PlaceTextBesideImage
         header={
-          <h1 className="text-[3rem] leading-[4rem] pt-[.7rem] font-[700] sm:text-[4.5rem] sm:w-[40rem] sm:leading-[6rem]">
-            <span className="border px-[2rem] py-[1rem] rounded-[3rem]">
+          <>
+            <h1 className="text-[3rem] border sm:mb-[1rem] pt-[.5rem] sm:py-[1rem] px-[2rem] py-[1rem] rounded-[3rem] leading-[4rem] font-[700] sm:text-[4.5rem]">
               RTCS
-            </span>
-            <br></br>
-            <span className="font-[400]">Round-the-Clock</span>{" "}
-            <span className="text-[#FF6600]">Support Worldwide</span>
-          </h1>
+            </h1>
+            <h1 className="text-[3rem] leading-[4rem] pt-[.7rem] font-[700] sm:text-[4.5rem] sm:w-[50rem] sm:leading-[5.5rem]">
+              <span className="font-[400]">Round-the-Clock</span>{" "}
+              <span className="text-[#FF6600]">Support Worldwide</span>
+            </h1>
+          </>
         }
         firstParagraph={
           "Our support services are available 24 hours a day, 7 days a week, ensuring that you have access to assistance whenever you need it."
@@ -32,7 +33,7 @@ const Index = () => {
         secondParagraph={
           "Whether it's a critical incident, performance optimization, or general inquiries, our experts are ready to address your concerns promptly."
         }
-        imageWidth={"w-[55rem]"}
+        imageWidth={"w-[65rem]"}
         orangeTick={true}
         borderColor={"border-[#FF6600]"}
         image={"/service_mq.png"}
@@ -41,14 +42,15 @@ const Index = () => {
       <div className="mt-[7rem]">
         <PlaceTextBesideImage
           header={
-            <h1 className="text-[3rem] leading-[4rem] font-[700] pt-[.5rem] sm:w-[40rem] sm:leading-[6rem]">
-              <span className="border  text-[#8FD5CC] px-[2rem] py-[1rem] rounded-[3rem]">
+            <>
+              <h1 className="text-[3rem] border sm:mb-[1rem] pt-[.5rem] border-[#8FD5CC]  text-[#8FD5CC] px-[2rem] py-[1rem] rounded-[3rem] leading-[4rem] font-[700] sm:text-[4.5rem]">
                 SLAs
-              </span>
-              <br></br>
-              <span className="font-[400]">Tailored Service Level</span>{" "}
-              <span className="text-[#8FD5CC]">Agreements</span>
-            </h1>
+              </h1>
+              <h1 className="text-[3rem] leading-[4rem] font-[700] sm:text-[4.5rem] sm:w-[40rem] sm:leading-[6rem]">
+                <span className="font-[400]">Tailored Service Level</span>{" "}
+                <span className="text-[#8FD5CC]">Agreements</span>
+              </h1>
+            </>
           }
           inverse={true}
           firstParagraph={
@@ -60,7 +62,7 @@ const Index = () => {
           orangeTick={false}
           borderColor={"border-[#8FD5CC]"}
           image={"/service_timer.webp"}
-          imageWidth={"w-[55rem]"}
+          imageWidth={"w-[62rem]"}
         />
       </div>
 

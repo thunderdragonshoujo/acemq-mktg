@@ -4,7 +4,7 @@
 
 
 html {
-  font-size: 0.6944444444vw;
+  font-size: min(0.6944444444vw, 12px);
   height: 100%;
   scroll-behavior: smooth;
 }
@@ -16,11 +16,11 @@ html {
 }
 
 
-@media screen and (min-width: 2000px) {
+/* @media screen and (min-width: 2000px) {
   html {
     font-size: 12px;
   }
-}
+} */
 
 body {
   margin: 0;

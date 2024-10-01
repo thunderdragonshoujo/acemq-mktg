@@ -55,7 +55,7 @@ export default Index;
 const Card = ({ card }) => (
   <div className="relative sm:ml-[7rem] sm:w-[45%] sm:flex sm:flex-col h-[24rem] sm:h-[40rem]">
     <p className="text-center relative font-[700] text-[1.7rem] sm:text-[1.9rem] top-[1.5rem] z-[3]">
-      Customer story
+      Customer Story
     </p>
     <Image
       className="absolute inset-0 top-0 w-[100%] h-[24rem] sm:h-[100%] bottom-0 z-[0]`"
@@ -76,7 +76,7 @@ const Card = ({ card }) => (
       <h3 className="font-[700] w-[25rem]  sm:text-[1.5rem] sm:w-[22rem] sm:mb-[1rem] text-center">
         {card.header}
       </h3>
-      <p className="text-center text-[1rem] sm:text-[1.3rem] sm:leading-[2rem]">
+      <p className="text-center sm:leading-[2rem]">
         {card.role}
       </p>
       <Link
