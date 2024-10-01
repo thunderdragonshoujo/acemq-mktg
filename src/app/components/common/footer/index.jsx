@@ -82,7 +82,7 @@ const FooterMobile = () => {
             </div>
           </div>
 
-          <div className="h-fit">
+          <div className="h-fit translate-y-[-2rem]">
             <h3 className="text-[1.4rem] font-[700] mb-[1.2rem]">Navigate</h3>
             <ul className="">
               <Link href="/" className="">

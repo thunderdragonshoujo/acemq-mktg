@@ -13,12 +13,12 @@ const Index = () => {
   return (
     <section className="px-[3rem] sm:px-[10rem]">
       <Info />
-      <Technologies />
+      <Technologies style={'hidden sm:flex'} />
 
       <PlaceTextBesideImage
         header={
           <>
-            <h1 className="text-[3rem] border sm:mb-[1rem] pt-[.5rem] sm:py-[1rem] px-[2rem] py-[1rem] rounded-[3rem] leading-[4rem] font-[700] sm:text-[4.5rem]">
+            <h1 className="text-[3rem] w-fit border sm:mb-[1rem] pt-[.5rem] sm:py-[1rem] px-[2rem] py-[1rem] rounded-[3rem] leading-[4rem] font-[700] sm:text-[4.5rem]">
               RTCS
             </h1>
             <h1 className="text-[3rem] leading-[4rem] pt-[.7rem] font-[700] sm:text-[4.5rem] sm:w-[50rem] sm:leading-[5.5rem]">
@@ -43,7 +43,7 @@ const Index = () => {
         <PlaceTextBesideImage
           header={
             <>
-              <h1 className="text-[3rem] border sm:mb-[1rem] pt-[.5rem] border-[#8FD5CC]  text-[#8FD5CC] px-[2rem] py-[1rem] rounded-[3rem] leading-[4rem] font-[700] sm:text-[4.5rem]">
+              <h1 className="text-[3rem] border sm:mb-[1rem] w-fit pt-[.5rem] border-[#8FD5CC]  text-[#8FD5CC] px-[2rem] py-[1rem] rounded-[3rem] leading-[4rem] font-[700] sm:text-[4.5rem]">
                 SLAs
               </h1>
               <h1 className="text-[3rem] leading-[4rem] font-[700] sm:text-[4.5rem] sm:w-[40rem] sm:leading-[6rem]">
@@ -65,7 +65,7 @@ const Index = () => {
           imageWidth={"w-[62rem]"}
         />
       </div>
-
+      <Technologies style={'sm:hidden mb-[5rem]'} />
       <Banner1 />
       <Performance />
       <PlaceTextBesideImage
@@ -154,7 +154,7 @@ const Info = () => {
 
 const Banner1 = () => {
   return (
-    <div data-animation-id='slideIn' className="border border-[#8FD5CC] rounded-[2rem] py-[2rem] sm:py-[3rem] sm:mt-[15rem] px-[1rem] sm:pl-[4rem] sm:flex relative">
+    <div data-animation-id='slideIn' className="border border-[#8FD5CC] rounded-[2rem] py-[2rem] sm:py-[3rem] sm:mt-[15rem] px-[1rem] sm:pl-[4rem]  relative">
       <div className="">
         <h2 className="sub-header sm:w-[60rem] text-center sm:text-left mb-[1rem]">
           Millions <span className="font-[400]">Saved in Downtime</span> for{" "}
@@ -209,7 +209,7 @@ const Performance = () => {
   );
 };
 
-const Technologies = () => {
+const Technologies = ({ style }) => {
   const technologies = [
     {
       src: "/tech_1.svg",
@@ -253,7 +253,7 @@ const Technologies = () => {
     },
   ];
   return (
-    <div className="flex flex-col sm:mt-[5rem] my-[3rem] items-center sm:mb-[8rem]" data-animation-id='slideIn'>
+    <div className={`flex flex-col sm:mt-[5rem] my-[3rem] ${style} items-center sm:mb-[8rem]`} data-animation-id='slideIn'>
       <h2 className="sm:text-[5.3rem] text-[3rem] font-[700] text-center mb-[2rem]">
         Other <span className="font-[500]">Supported</span>{" "}
         <span className="text-[#FF6600]">Technologies</span>

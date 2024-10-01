@@ -118,7 +118,7 @@ const Index = () => {
 
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[3rem] text-center leading-[4rem] sm:leading-[6rem] sm:text-left  sm:w-[43rem] sm:text-[3.1rem] font-[700]">
+          <h3 className="text-[3rem] text-center leading-[5rem] sm:leading-[6rem] sm:text-left  sm:w-[43rem] sm:text-[3.1rem] font-[700]">
             <span className="sm:p-[1.2rem] p-[.8rem] bg-[#FF6600] text-black rounded-[.7rem]">
               Enterprise
             </span>
