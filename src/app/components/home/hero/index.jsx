@@ -28,7 +28,7 @@ const Index = () => {
                     <p className="mb-[2rem] sm:hidden sm:mb-0">AceMQ is a firm built on delivering excellence on all Messaging Queuing Solutions. We have expertise in Message Queuing Tools, Streaming, Architecture, and integration in various environments. Let us assist you with your Message brokers deployment or assess your current environment.</p>
                     <p className="sm:hidden">Let us assist you with your planned deployment or assess your current environment.</p>
 
-                    <p className="sm:block hidden  sm:w-[37rem]">AceMQ is a firm built on delivering excellence on all Messaging Queuing Solutions. We have exclude tools and streaming Tools, in Streaming, Architecture, and how they integrate in various environments. Let us assist you with your Message brokers deployment or assess your current environment.</p>
+                    <p className="sm:block hidden  sm:w-[37rem]">AceMQ is a firm built on delivering excellence on all Messaging Queuing Solutions. We have expertise in Message Queuing Tools, Streaming, Architecture, and integration in various environments. Let us assist you with your Message brokers deployment or assess your current environment.</p>
 
                     <Link href='/#contact'>
                         <button className="border border-accent-100 mt-[2.8rem] relative">Contact Us</button>
