@@ -154,7 +154,7 @@ const Info = () => {
 
 const Banner1 = () => {
   return (
-    <div data-animation-id='slideIn' className="border border-[#8FD5CC] rounded-[2rem] py-[2rem] sm:py-[3rem] sm:mt-[15rem] px-[1rem] sm:pl-[4rem]  relative">
+    <div data-animation-id='slideIn' className="border border-[#8FD5CC] sm:flex rounded-[2rem] py-[2rem] sm:py-[3rem] sm:mt-[15rem] px-[1rem] sm:pl-[4rem]  relative">
       <div className="">
         <h2 className="sub-header sm:w-[60rem] text-center sm:text-left mb-[1rem]">
           Millions <span className="font-[400]">Saved in Downtime</span> for{" "}
