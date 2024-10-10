@@ -25,10 +25,10 @@ const Index = () => {
                 <div className="relative  sm:w-fit sm:ml-[7rem]" data-animation-id='slideIn'>
                     <h1 className="font-[300] text-[5.3rem] sm:text-[9rem] sm:w-[58rem] leading-[5.5rem] sm:leading-[9rem]">Message <span className="font-[700] text-accent-100">Queuing</span></h1>
                     <h2 className="text-[2.5rem] sm:text-[4rem] sm:leading-[9rem] leading-[6.2rem] font-[700]">Technology <span className="font-[400]">Experts</span></h2>
-                    <p className="mb-[2rem] sm:hidden sm:mb-0">AceMQ is a firm built on delivering excellence on all Message Queuing and Streaming Solutions. We have expertise in Queueing tools and Streaming tools, their Architecture, and how they integrate in various environments.</p>
+                    <p className="mb-[2rem] sm:hidden sm:mb-0">AceMQ is a firm built on delivering excellence on all Messaging Queuing Solutions. We have expertise in Message Queuing Tools, Streaming, Architecture, and integration in various environments. Let us assist you with your Message brokers deployment or assess your current environment.</p>
                     <p className="sm:hidden">Let us assist you with your planned deployment or assess your current environment.</p>
 
-                    <p className="sm:block hidden  sm:w-[37rem]">AceMQ is a firm built on delivering excellence on all Messaging Queuing Solutions. We have exclude tools and streaming Tools, in Streaming, Architecture, and how they integrate in various environments. Let us assist you with your Message brokers deployment or assess your current environment.</p>
+                    <p className="sm:block hidden  sm:w-[37rem]">AceMQ is a firm built on delivering excellence on all Messaging Queuing Solutions. We have expertise in Message Queuing Tools, Streaming, Architecture, and integration in various environments. Let us assist you with your Message brokers deployment or assess your current environment.</p>
 
                     <Link href='/#contact'>
                         <button className="border border-accent-100 mt-[2.8rem] relative">Contact Us</button>
