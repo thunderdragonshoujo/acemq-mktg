@@ -161,7 +161,7 @@ const Compliance = () => {
           </h1>
           <h1 className="sub-header sm:w-[40rem]">
             Compliance and
-            <span className="text-[#8FD5CC] mb-[2rem]"> Security</span> Assurance
+            <span className="text-[#8FD5CC] mb-[2rem]"> Security</span> <span className="font-[400]">Assurance</span>
           </h1>
         </div>
 

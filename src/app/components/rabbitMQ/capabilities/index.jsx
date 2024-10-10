@@ -97,12 +97,12 @@ const Index = () => {
 
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[3rem] leading-[5rem] sm:leading-[4.5rem] w-[30rem] sm:w-[35rem] sm:text-[3.1rem] font-[700]">
-            <span className="p-[1.2rem] sm:py-[.6rem] bg-[#8FD5CC] rounded-[1rem] text-black">
-              Message Routing
-            </span>{" "}
-            and <span className="font-[400]">Exchange </span>Mechanisms
-          </h3>
+          <>
+            <h3 className="py-[.3rem] px-[1.3rem] w-fit text-[3rem] font-[700] sm:text-[4.5rem] bg-[#8FD5CC] rounded-[1rem] text-black">Message Routing</h3>
+            <h3 className="text-[3rem] ml-[.8rem] sm:ml-[0] leading-[3.7rem] sm:leading-[5.5rem] w-[30rem] sm:w-[35rem] sm:text-[4.5rem] font-[700]">
+              and <span className="font-[400]">Exchange </span>Mechanisms
+            </h3>
+          </>
         }
         firstParagraph={
           "Our experts guide you in implementing efficient message routing mechanisms, leveraging RabbitMQ's exchange and binding features"
@@ -286,7 +286,7 @@ const LoadBalancing = () => {
   return (
     <div className="sm:mt-[9rem] mb-[5rem] flex flex-col sm:ml-[12rem] items-center" data-animation-id='slideIn'>
       <div className="">
-        <h3 className="text-center text-[3rem] sm:text-[4rem] w-[30rem] sm:w-[60rem] mb-[1.8rem] font-[400]">
+        <h3 className="text-center text-[3rem] leading-[3.6rem] sm:leading-[5rem] sm:text-[4rem] w-[30rem] sm:w-[60rem] mb-[1.8rem] font-[400]">
           <span className="text-[#FF6600] font-[700]">Message Queue</span>{" "}
           Management <span className="font-[700]"> <br></br> and Load Balancing</span>
         </h3>

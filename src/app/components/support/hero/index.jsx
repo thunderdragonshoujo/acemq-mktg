@@ -26,13 +26,13 @@ const Index = () => {
       <div className="flex flex-col items-center relative">
         <img
           src="/new_logo.jpg"
-          className="absolute rounded-[100%] w-[4rem]  sm:w-[12rem] sm:right-[-6rem] sm:top-[10rem] top-[3rem] right-0"
+          className="absolute rounded-[100%] w-[3.2rem]   sm:w-[12rem] sm:right-[-6rem] sm:top-[10rem] top-[3rem] right-0"
           alt="Rabbitmq services"
           data-animation-id='fadeIn'
         />
         <img
           src="/new_logo.jpg"
-          className="absolute w-[4rem] rounded-[100%] sm:w-[12rem] sm:left-[0] left-[-1rem] sm:top-[18rem] top-[10rem]"
+          className="absolute w-[3.2rem] rounded-[100%] sm:w-[12rem] sm:left-[0] left-[-1rem] sm:top-[18rem] top-[10rem]"
           alt="Rabbitmq services"
           data-animation-id='fadeIn'
         />

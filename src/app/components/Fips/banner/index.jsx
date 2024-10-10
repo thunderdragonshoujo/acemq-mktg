@@ -19,12 +19,12 @@ const Index = () => {
           alt="background"
         />
         <div className="sm:w-[65rem] mt-[2.3rem] sm:mt-[6rem]">
-          <h2 className="text-[3rem] leading-[5rem] sm:text-[4rem] sm:w-[58rem] font-[700]">
+          <h2 className="text-[3rem] leading-[3.2rem] sm:leading-[5rem] sm:text-[4rem] sm:w-[58rem] font-[700]">
             Empower your messaging with{" "}
             <span className="text-[#8FD5CC]">FIPSMQ</span>
           </h2>
           <p className="mt-[2rem] sm:mt-[.8rem]">
-            the leading FIPS-compliant message broker, supported comprehensively
+            The leading FIPS-compliant message broker, supported comprehensively
             by AceMQ. Ensure secure and scalable solutions adhering to FIPS
             140-2 standards with our expert guidance. Achieve high availability
             and fault tolerance, critical for mission-critical systems, all

@@ -69,7 +69,7 @@ const Index = () => {
           <Link href="/" className="z-[100] relative">
             <img
               src="/ace_logo.png"
-              className="w-[8.4rem] sm:w-[14rem] sm:mr-[1rem]"
+              className="w-[10rem] sm:w-[16rem] sm:mr-[1rem]"
               alt="logo"
             />
           </Link>

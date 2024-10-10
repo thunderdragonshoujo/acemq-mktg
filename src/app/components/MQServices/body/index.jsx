@@ -35,9 +35,13 @@ const Services = () => {
     return (
         <div className="sm:flex sm:flex-row-reverse sm:gap-[10rem] sm:justify-between sm:mb-[10rem] mb-[5rem]" data-animation-id='slideIn'>
             <div className="sm:w-[48rem] sm:mt-[4rem]">
-                <h2 className="sub-header text-center sm:text-left"><span className="font-[400] sm:px-[2rem] px-[2rem]
+                <h2 className="sub-header hidden sm:block text-center sm:text-left"><span className="font-[400] sm:px-[2rem] px-[2rem]
                 py-[1rem] sm:py-[1rem] bg-[#8FD5CC] text-[#232323] sm:rounded-[1.2rem] rounded-[1.9rem]">Our</span><br></br>Services</h2>
                 <p className="hidden sm:block sm:w-[43rem] mt-[1rem]">Our consultants have encountered and successfully resolved a wide range of challenges related to message brokers. With years of experience in supporting message broker products and environments, our engineers are well-prepared to tackle any issue you may face.</p>
+            </div>
+            <div className="sm:hidden mx-auto w-fit">
+                <h2 className="bg-[#8FD5CC] text-[#232323] mx-auto rounded-[2rem] text-[4rem] w-fit px-[2rem] py-[.3rem]">Our</h2>
+                <h2 className="text-[4.5rem] font-[700]">Services</h2>
             </div>
 
             <Image src='/flow.webp' className="mt-[2rem] hidden sm:block sm:w-[70rem] self-start" width={700} height={400} alt="flow chat" />
