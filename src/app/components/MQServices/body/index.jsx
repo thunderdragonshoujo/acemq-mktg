@@ -40,7 +40,7 @@ const Services = () => {
                 <p className="hidden sm:block sm:w-[43rem] mt-[1rem]">Our consultants have encountered and successfully resolved a wide range of challenges related to message brokers. With years of experience in supporting message broker products and environments, our engineers are well-prepared to tackle any issue you may face.</p>
             </div>
 
-            <Image src='/flow.webp' className="mt-[2rem]  hidden sm:block sm:w-[70rem] self-start" width={700} height={400} alt="flow chat" />
+            <Image src='/flow.webp' className="mt-[2rem] hidden sm:block sm:w-[70rem] self-start" width={700} height={400} alt="flow chat" />
             <Image src='/messaging_products.png' className="mt-[2rem] sm:hidden sm:w-[70rem] self-start" width={700} height={400} alt="flow chat" />
         </div>
     )
@@ -69,7 +69,7 @@ const SevicesItems = () => {
 const Values = () => {
     return (
         <div className="sm:mt-[10rem] mt-[5rem] flex flex-col items-center" data-animation-id='slideIn'>
-            <h1 className="sub-header text-center sm:mb-[4rem] mb-[2rem] sm:w-[32rem] sm:self-center">Our <span className="text-[#8FD5CC]">Differentiator</span> & <span className="">Value</span></h1>
+            <h1 className="sm:text-[6rem] text-[3rem] text-center sm:mb-[4rem] mb-[2rem] sm:w-[55rem] font-[700] sm:self-center">Our <span className="text-[#8FD5CC]">Differentiator</span> & <span className="font-[400]">Value</span></h1>
             <Image width={1150} height={700} src='/values.svg' className="w-[100rem] hidden sm:block" alt="values" />
             <Image width={371} height={203} src='/troubleshooting_sm.png' className="sm:hidden" alt="values" />
         </div>
@@ -91,7 +91,7 @@ const Assesment = () => {
 const Support = () => {
     return (
         <div className="mt-[5rem]" data-animation-id='slideIn'>
-            <PlaceTextBesideImage header={<h4 className="sub-header text-center"><span className="text-[#8FD5CC]">Support</span> & Services</h4>} firstParagraph={'Managed Service:  Fully managed message broker environment and services, providing peace of mind and freeing up your team\'s resources.'} secondParagraph={'Comprehensive Support:  This includes to operations and oversight including dedicated resources and service level agreements (SLAs)'} imageWidth={'hidden sm:block w-[55rem]'} thirdParagraph={'Comprehensive support:  Tailored solutions addressing your environment and business demands, covering troubleshooting, deployments, operations, and sustainment. This includes dedicated resources and service level agreements (SLAs).'} image={'/MQ_service_board.png'} subHeader={' Our support offerings include:'} />
+            <PlaceTextBesideImage header={<h4 className="sm:text-[5.5rem] text-[3rem] font-[700] text-center"><span className="text-[#8FD5CC]">Support</span> & Services</h4>} firstParagraph={'Managed Service:  Fully managed message broker environment and services, providing peace of mind and freeing up your team\'s resources.'} secondParagraph={'Comprehensive Support:  This includes to operations and oversight including dedicated resources and service level agreements (SLAs)'} imageWidth={'hidden sm:block w-[55rem]'} thirdParagraph={'Comprehensive support:  Tailored solutions addressing your environment and business demands, covering troubleshooting, deployments, operations, and sustainment. This includes dedicated resources and service level agreements (SLAs).'} image={'/MQ_service_board.png'} subHeader={' Our support offerings include:'} />
         </div>
     )
 }

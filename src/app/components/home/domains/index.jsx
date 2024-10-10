@@ -128,8 +128,8 @@ const DomainsDesktop = ({ domains }) => (
                         <Image src='/center_logo.png' className="w-[45rem]" width={550} alt="logo" height={178} />
                         {domains.map((domain, index) => <DomainDesktop domain={domain} key={index} id={index} />)}
                     </div>
-                    <Link href={'https://www.ace8.io/'} className="mx-auto hover:scale-[.9] transition-all duration-500">
-                        <button data-animation-id='slideIn' className="px-[2.5rem] hover:scale-[1.1] transition-all duration-500 border border-[#FF6600] self-center mt-[4rem]">Ace8’s Services</button>
+                    <Link href={'https://www.ace8.io/'}  className="block mt-[4rem] self-center w-fit hover:scale-[.9] transition-all duration-500">
+                        <button  className="px-[2.5rem] transition-all duration-500 border border-[#FF6600] ">Ace8’s Services</button>
                     </Link>
                     <Banner />
                 </div>

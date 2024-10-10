@@ -281,9 +281,9 @@ const Patterns = () => {
   ]
   return (
     <div className="sm:flex sm:flex-col sm:items-center sm:mb-[12rem] mb-[4rem]" data-animation-id='slideIn'>
-      <h4 className="sm:text-[4rem] text-[2.2rem] sm:w-[55rem] font-[700] text-center">
+      <h4 className="sm:text-[5rem] text-[2.2rem] sm:w-[70rem] font-[700] text-center">
         Advanced <span className="text-[#8FD5CC]">Messaging</span>
-        <span className="text-[#8FD5CC]"> Patterns</span> <span className="sm:block hidden">and</span><span className="sm:hidden">&</span> <span className="font-[400] sm:font-[700]">Optimization</span>
+        <span className="text-[#8FD5CC]"> Patterns</span> <span className="sm:inline-block hidden">and</span><span className="sm:hidden">&</span> <span className="font-[400] sm:font-[700]">Optimization</span>
       </h4>
       <p className="text-center my-[1.4rem] max-w-[60rem]">
         Unlock the full potential of RabbitMQ with our advanced messaging
