@@ -1,6 +1,7 @@
 import MaxContainer from "../components/common/maxContainer";
 import Hero from "../components/contact/hero";
 import Body from "../components/contact/body";
+import Brand from '../components/common/brand'
 
 export const metadata = {
   title: "Contact AceMQ | Expert RabbitMQ Support & Consulting",

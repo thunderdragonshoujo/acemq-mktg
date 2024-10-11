@@ -9,7 +9,7 @@ const Index = () => {
       />
       <img
         src="/ace_logo_white.svg"
-        className="w-[12rem] sm:w-[19rem] absolute top-[-2rem] sm:left-[15rem]"
+        className="w-[14rem] sm:w-[19rem] absolute top-[-2rem] sm:left-[15rem]"
         alt="Acemq Logo"
       />
       <div className="sm:pl-[5rem] sm:py-[3rem] sm:pb-[5rem] relative">
@@ -23,12 +23,12 @@ const Index = () => {
           className="w-[100%] difference h-[100%] absolute inset-0 z-[-1]  sm:block hidden"
           alt="background"
         />
-        <div className=" sm:mt-[3rem]">
-          <h2 className="sub-header sm:w-[50rem] mt-[1rem] sm:mt-[5rem]">
+        <div className="mt-[2rem] sm:mt-[3rem]">
+          <h2 className="text-[3rem] leading-[3.5rem] sm:leading-[5rem] sm:text-[4rem] font-[700] sm:w-[50rem] mt-[1rem] sm:mt-[5rem]">
             Elevate Your <span className="font-[400]">messaging queuing</span>{" "}
             with AceMQ
           </h2>
-          <p className="mt-[2rem] sm:w-[65rem]">
+          <p className="sm:mt-[2rem] mt-[1rem] sm:w-[65rem]">
             your trusted partner for seamless integration and unparalleled
             support. As an accredited RabbitMQ partner, we bring expertise to
             troubleshoot challenges, assess your environment, and offer flexible

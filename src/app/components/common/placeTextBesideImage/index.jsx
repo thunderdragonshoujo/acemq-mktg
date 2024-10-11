@@ -1,8 +1,8 @@
 import Image from "next/image"
 const Index = ({ header, firstParagraph, secondParagraph, image, imageWidth, subHeader, inverse, borderColor, thirdParagraph, orangeTick }) => {
     return (
-        <div className={`sm:flex sm:justify-between ${inverse ? 'sm:flex-row-reverse' : 'flex-row'}  sm:mt-[3rem] sm:mb-[5rem] mb-[7rem] sm:w-[100%] sm:items-center`}>
-            <div className="sm:w-[50%] overflow-hidden flex flex-col items- sm:items-start">
+        <div data-animation-id='slideIn' className={`sm:flex sm:justify-between ${inverse ? 'sm:flex-row-reverse' : 'flex-row'}  sm:mt-[3rem] sm:mb-[5rem] mb-[7rem] sm:w-[100%] sm:items-center`}>
+            <div className="sm:w-[45%] overflow-hidden flex flex-col items- sm:items-start">
                 {header}
                 <p className="sm:text-left text-center">{subHeader}</p>
                 <div className="mt-[2rem]">

@@ -90,7 +90,7 @@ const DomiansMobile = ({ domains }) => (
                 <h3 className="text-[3rem] font-[700] mb-[1.7rem]">Capabilities</h3>
                 <p className="">
                     AceMQ is a subsidiary of a larger, highly specialized full-stack
-                    services company, Ace8, therefore we understand how your Message
+                    services company, <span className="p-[.4rem] rounded-[.3rem] border-[#FF6600] border">Ace8,</span> therefore we understand how your Message
                     Queing tool fits into your environment as a whole.
                 </p>
             </div>
@@ -108,10 +108,10 @@ const DomiansMobile = ({ domains }) => (
 );
 
 const DomainsDesktop = ({ domains }) => (
-    <section className="hidden sm:flex relative px-[3rem] sm:px-[10rem] gap-x-[4rem]">
+    <section className="hidden sm:flex relative px-[3rem] sm:mt-[5.2rem] sm:px-[10rem] gap-x-[4rem]">
         <div className="">
             <div className="absolute hidden sm:block overflow-hidden" data-animation-id='milestone'>
-                <img src="/mille_3.svg" alt="arrow" className="mt-[2rem] sm:w-[4rem]" />
+                <img src="/mille_3.svg" alt="arrow" className="mt-[4.7rem] sm:w-[4.12rem]" />
             </div>
             <div className="">
                 <div className="flex flex-col sm:ml-[7rem]" >
@@ -140,7 +140,17 @@ const DomainsDesktop = ({ domains }) => (
 
 const DomainMobile = ({ domain, id }) => (
     <div className={`w-[230px] flex flex-col ${id % 2 ? 'self-end' : 'self-start'}`} data-animation-id='slideIn'>
-        <Image src={domain.image} width={115} height={90} className={`${id % 2 ? 'self-end' : 'self-start'} w-[5rem] mb-[.5rem]`} alt="icon" />
+        <div className={`flex items-end gap-[1.5rem] ${id % 2 ? 'self-end' : 'self-start'} w-fit`}>
+            <Image 
+                src={domain.image} 
+                width={115} 
+                height={90} 
+                className={`${id % 2 ? 'self-end' : 'self-start'} w-[5rem] mb-[.5rem]`} 
+                alt="icon" />
+                <h3 className="text-[4rem] font-[700] text-[#FF6600] opacity-[.3]">
+                    {domain.number}
+                </h3>
+        </div>
         <p className={`text-[1.4rem] font-[700] ${id % 2 ? 'text-right' : 'text-left'}`}>{domain.name}</p>
         <p className={`text-[1.6rem] font-[700] text-[#FF6600] ${id % 2 ? 'text-right' : 'text-left'}`}>{domain.title}</p>
     </div>
@@ -195,11 +205,11 @@ const DomainDesktop = ({ domain, id }) => {
 };
 
 const Banner = () => (
-    <div className="">
-        <div className="border border-[#FF6600] p-[1rem] sm:p-[3rem] rounded-[.8rem] mt-[3rem] sm:flex sm:justify-between sm:mt-[9rem]" data-animation-id='slideIn'>
+    <div className="mt-[5rem]">
+        <div className="border border-[#FF6600] p-[1rem] sm:p-[3rem] rounded-[.8rem]  sm:flex sm:justify-between sm:mt-[9rem]" data-animation-id='slideIn'>
             <div className="flex flex-col sm:w-[58rem]">
-                <h3 className="font-[400] capitalize text-[1.4rem] text-center sm:text-left mb-[1.3rem]"><span className="font-[700] text-[#FF6600]">RabbitMQ</span> Enterprise <span className="font-[700]">support</span></h3>
-                <h3 className="text-center text-[2.7rem] sm:text-[3.5rem]  font-[700] sm:text-left">How we <span className="font-[400]">Saved Millions</span> in <span className="text-[#FF6600]">Downtime</span> for a <span className="text-[#FF6600]">Global</span> <span className="font-[400]">Retail Giant</span></h3>
+                <h3 className="font-[400] capitalize text-[1.4rem] sm:text-[2.2rem] text-center sm:mb-[.5rem] sm:text-left mb-[1.3rem]"><span className="font-[700] text-[#FF6600]">RabbitMQ</span> Enterprise <span className="font-[700]">support</span></h3>
+                <h3 className="text-center text-[2.7rem] sm:text-[3.5rem] sm:leading-[4rem]  font-[700] sm:text-left">How we <span className="font-[400]">Saved Millions</span> in <span className="text-[#FF6600]">Downtime</span> for a <span className="text-[#FF6600]">Global</span> <span className="font-[400]">Retail Giant</span></h3>
                 <p className="hidden sm:block">Learn how AceMQ’s RabbitMQ Enterprise support saved a global Retail Giant millions of dollars in downtime, while saving them thousands in hiring costs.</p>
 
                 <Link href='/support' className="mx-auto sm:mx-0">

@@ -83,6 +83,7 @@ const Index = () => {
     return (
         <section className="px-[3rem] sm:px-[10rem] mt-[8rem] relative">
             <div className="flex flex-col gap-y-[2rem] sm:justify-between sm:flex-row w-[100%]">
+                <h3 className="text-center mb-[3rem] text-[3rem] font-[700] sm:hidden"><span className="text-[#FB8817]">Our</span> Services</h3>
                 {cards.map((card, i) => <Card id={i} card={card} key={i} />)}
             </div>
         </section>
@@ -99,11 +100,11 @@ const Card = ({ id, card }) => {
     }
 
     return (
-        <div className={`px-[1.5rem] rounded-[2rem] sm:px-[1rem] h-fit ${id % 2 ? 'self-end sm:self-auto' : 'self-start sm:self-auto'} w-fit rounded-[2rem] bg-[#0D1117] service_card_shadow flex flex-col items-center pb-[1.8rem] relative`}>
+        <div className={`px-[1.5rem] rounded-[2rem] sm:px-[1rem] h-fit  w-fit mb-[3rem] sm:mb-0 self-center bg-[#0D1117] service_card_shadow flex flex-col items-center pb-[.4rem] sm:pb-[2rem] relative`}>
             <img src={card.image} className="absolute top-[-3rem] sm:top-[-7rem] sm:w-[15rem] sm:h-[15rem] w-[6rem] h-[6rem]" alt="troubleshoot icon" />
-            <div className="mt-[6rem] w-[15rem] sm:mt-[12.3rem] text-center sm:w-[25rem] overflow-hidden">
-                <h4 className="font-[700] mb-[1rem] text-[1.5rem] sm:text-[3rem] sm:mb-[3rem]">{cardCollapse.header}</h4>
-                <p className="text-[1.3rem] hidden sm:block">{card.paragraph}</p>
+            <div className="mt-[4rem] w-[15rem] sm:mt-[10rem] text-center sm:w-[25rem] overflow-hidden">
+                <h4 className="font-[700] mb-[.5rem] text-[1.5rem] sm:text-[3rem] sm:mb-[1rem]">{cardCollapse.header}</h4>
+                <p className=" hidden sm:block">{card.paragraph}</p>
                 <p className="text-[1.2rem] sm:hidden">{card.mobileText}</p>
                 <div className={`sm:flex flex-col sm:gap-[2rem] transition-max-height duration-500 ease-in-out ${!cardCollapse.collapse ? 'max-h-[65rem]' : 'max-h-0'}`}>
                     {

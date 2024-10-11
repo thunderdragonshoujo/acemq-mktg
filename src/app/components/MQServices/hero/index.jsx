@@ -7,7 +7,7 @@ const Index = () => {
     slideIn()
   }, [])
   return (
-    <section className="py-[5.5rem] sm:pt-[12rem] sm:pb-[12rem] px-[1.5rem] sm:px-[10rem] relative">
+    <section className="py-[5.5rem] sm:pt-[20rem] pt-[12rem] sm:pb-[12rem] px-[1.5rem] sm:px-[10rem] relative">
       <Image
         src="/MQservice_hero_bg_sm.webp"
         className="absolute inset-0 sm:hidden top-0 w-[100%] h-[100%] multiply"
@@ -23,11 +23,11 @@ const Index = () => {
         alt="wheel"
       />
       <div className="items-center relative" data-animation-id='slideIn'>
-        <h1 className="header mx-auto sm:w-[60rem]  text-center">
+        <h1 className="header mx-auto sm:w-[60rem] w-[30rem] text-center">
           Your Trusted <span className="font-[400]">Message</span>{" "}
           <span className="text-[#8FD5CC]">Queuing Services</span> Partner
         </h1>
-        <p className="text-center mt-[.5rem] w-[32rem] sm:w-full">
+        <p className="text-center mt-[.7rem] w-[25rem] mx-auto sm:w-full">
           Expertise, Support, and Value for Your Messaging & Queuing
           Implementation
         </p>

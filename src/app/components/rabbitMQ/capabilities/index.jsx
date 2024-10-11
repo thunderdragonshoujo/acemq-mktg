@@ -1,15 +1,43 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 const Index = () => {
+  const icons = [
+    {
+      image: '/person.png',
+      hoveredImage: '/person_hov.png',
+      text: 'Change Management',
+      containerStyle: 'top-0 hidden sm:block',
+    },
+    {
+      image: '/QA.png',
+      hoveredImage: '/QA_hov.png',
+      text: 'QA',
+      containerStyle: 'bottom-0  hidden sm:block',
+    },
+    {
+      image: '/disserter.png',
+      hoveredImage: '/disaster.png',
+      text: 'Disaster Recovery',
+      containerStyle: 'left-[53rem]  hidden sm:block bottom-[9rem]',
+    },
+    {
+      image: '/deployment_unhov.png',
+      hoveredImage: '/deployment.png',
+      text: 'Deployment',
+      containerStyle: 'right-0  hidden sm:block',
+    },
+  ]
   return (
-    <section className="px-[3rem] mt-[3rem] flex flex-col items-center sm:px-[10rem]">
-      <h5 className="text-[2.5rem] sm:text-[3.5rem] mb-[3rem] w-[25rem] sm:w-[100%] text-center font-[700]">
+    <section className="px-[3rem] mt-[5rem] flex flex-col items-center sm:px-[10rem]">
+      <h5 className="text-[3.5rem] sm:text-[3.5rem] mb-[3rem] w-[25rem] sm:w-[100%] text-center font-[700]">
         Our <span className="font-[400]">Consulting</span>{" "}
         <span className="text-[#8FD5CC]">Capabilities</span>
       </h5>
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[2.2rem] sm:text-[2.8rem] sm:w-[28rem] font-[700]">
+          <h3 className="text-[3rem] w-[25rem] sm:text-[4.5rem] sm:w-[45rem] sm:leading-[5.5rem] font-[700]">
             <span className="font-[400]">Seamless</span>{" "}
             <span className="text-[#8FD5CC]">Integration</span> and
             Configuration
@@ -25,35 +53,51 @@ const Index = () => {
         imageWidth={"sm:w-[50rem] hidden sm:block"}
       />
 
-      <PlaceTextBesideImage
-        header={
-          <h3 className="text-[2.2rem] sm:text-[3.1rem] sm:w-[30rem] font-[400]">
-            High <span className="font-[700]">Availability</span> and{" "}
-            <span className="font-[700]">Fault</span>{" "}
-            <span
-              className="text-[#8FD5CC]
-                    font-[700]"
-            >
-              Tolerance
-            </span>
-          </h3>
-        }
-        firstParagraph={
-          "We ensure seamless integration of RabbitMQ into your existing infrastructure, whether it's on-premises or in the cloud."
-        }
-        secondParagraph={
-          "Our experts handle the configuration process to optimize RabbitMQ for your specific use case, ensuring maximum performance and efficiency."
-        }
-        image={"/code_snippet2.webp"}
-        imageWidth={"sm:w-[40rem] hidden sm:block"}
-        inverse={true}
-      />
+      <div className="flex  w-[100%] sm:pt-[8rem] relative mb-[8rem] justify-between">
+        <Image
+          src={'/code_snippet2.webp'}
+          width={500}
+          height={500}
+          className="w-[35rem] hidden sm:block ml-[15rem] mb-[3rem]"
+          alt="code snippet"
+        />
+        <div className="sm:w-[54rem]">
+          <div className="p-[1rem] sm:w-[48rem] relative sm:p-[1.5rem] rounded-[2rem]">
+            <h1 className="sm:text-[4.5rem] sm:leading-[5.5rem] leading-[4rem] text-[3rem] font-[700] w-fit"><span className="font-[300]">High Availability</span><br></br> and <span className="text-[#8FD5CC]">Fault Tolerance</span></h1>
+          </div>
+
+          <div className="w-[100%]">
+            <div className="mt-[2rem] sm:mt-[0]">
+              <div className="flex border border-[#8FD5CC]  p-[.5rem] rounded-[1rem]  mb-[2rem]  gap-[1rem]">
+                <img src="/tick.svg" className="w-[2rem]" alt="mark icon" />
+                <p className="">
+                  We ensure seamless integration of RabbitMQ into your existing infrastructure, whether it's on-premises or in the cloud.
+                </p>
+              </div>
+              <div className="flex gap-[1rem]  ml-[4rem]  max-w-[50rem]">
+                <img src="/tick.svg" className="w-[2rem]" alt="mark icon" />
+                <p className="w-[100%]">
+                  Our experts handle the configuration process to optimize RabbitMQ for your specific use case, ensuring maximum performance and efficiency.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <Image
+          src={'/high_availability_sm.png'}
+          width={600}
+          className="sm:hidden block"
+          height={600}
+          alt="code snippet"
+        /> */}
+        {icons.map((icon, index) => <Icon icon={icon} key={index} />)}
+      </div>
 
       <Patterns />
 
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[2.2rem] leading-[5rem] sm:leading-[4.5rem] w-[30rem] sm:w-[35rem] sm:text-[3.1rem] font-[700]">
+          <h3 className="text-[3rem] leading-[5rem] sm:leading-[4.5rem] w-[30rem] sm:w-[35rem] sm:text-[3.1rem] font-[700]">
             <span className="p-[1.2rem] sm:py-[.6rem] bg-[#8FD5CC] rounded-[1rem] text-black">
               Message Routing
             </span>{" "}
@@ -74,8 +118,8 @@ const Index = () => {
 
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[2.2rem] leading-[5rem] sm:leading-[6rem] sm:text-left  w-[28rem] sm:w-[48rem] sm:text-[3.1rem] font-[700] text-center">
-            <span className="p-[1.2rem] bg-[#FF6600] text-black rounded-[.7rem]">
+          <h3 className="text-[3rem] text-center leading-[5rem] sm:leading-[6rem] sm:text-left  sm:w-[43rem] sm:text-[3.1rem] font-[700]">
+            <span className="sm:p-[1.2rem] p-[.8rem] bg-[#FF6600] text-black rounded-[.7rem]">
               Enterprise
             </span>
             <span className="font-[400]"> Upgrades </span>with Zero Downtime and
@@ -91,16 +135,16 @@ const Index = () => {
         orangeTick={true}
         image={"/rabbit_dashboard.webp"}
         inverse={true}
-        imageWidth={"w-[50rem]  mt-[2rem]"}
+        imageWidth={"w-[50rem] mt-[3rem]"}
         borderColor={"border-[#FF6600]"}
       />
 
       <PlaceTextBesideImage
         header={
-          <h3 className="text-[2.2rem] leading-[5rem] sm:leading-[6rem] sm:text-left  w-[28rem] sm:w-[40rem]  sm:text-[3.1rem] font-[700] text-center">
-            <span className="p-[1.2rem] text-[black] bg-[#FF6600]  rounded-[.7rem]">
+          <h3 className="text-[3rem] leading-[5rem] sm:leading-[6rem] sm:text-left  w-[28rem] sm:w-[40rem]  sm:text-[3.1rem] font-[700] text-center">
+            <span className="sm:p-[1.2rem] p-[.8rem] text-[black] bg-[#FF6600]  rounded-[.7rem]">
               Performance
-            </span>
+            </span>{' '}
             and Reliability <span className="font-[400]">Tuning</span>
           </h3>
         }
@@ -119,11 +163,11 @@ const Index = () => {
       <PlaceTextBesideImage
         inverse={true}
         header={
-          <h3 className="text-[2.2rem] sm:text-left leading-[5rem] sm:leading-[6rem] w-[28rem] sm:w-[40rem]  sm:text-[3.1rem] font-[700] text-center">
-            <span className="p-[1.2rem] bg-[#8FD5CC] text-black rounded-[.7rem]">
+          <h3 className="text-[3rem] sm:text-left leading-[4rem] sm:leading-[6rem] w-[28rem] sm:w-[40rem]  sm:text-[3.1rem] font-[700]">
+            <span className="sm:p-[1.2rem] p-[.8rem] bg-[#8FD5CC] text-black mr-[.3rem] rounded-[.7rem]">
               Telemetry
-            </span>{" "}
-            -Driven Bottleneck Identification
+            </span>
+            - Driven Bottleneck Identification
           </h3>
         }
         firstParagraph={
@@ -147,36 +191,104 @@ const Index = () => {
 export default Index;
 
 const Patterns = () => {
+  const icons = [
+    {
+      image: '/engine.png',
+      hoveredImage: '/transformation.png',
+      text: 'Transformation',
+      containerStyle: 'top-0 self-center',
+    },
+    {
+      image: '/robot.png',
+      hoveredImage: '/channels.png',
+      text: 'Channels',
+      containerStyle: 'bottom-0 right-0',
+    },
+    {
+      image: '/monitor.png',
+      hoveredImage: '/monitoring.webp',
+      text: 'Monitoring',
+      containerStyle: 'top-[6rem] right-[3rem]',
+    },
+    {
+      image: '/sync.png',
+      hoveredImage: '/routing.png',
+      text: 'Routing',
+      containerStyle: 'left-[0] bottom-[0]',
+    },
+    {
+      image: '/rain_drop.png',
+      hoveredImage: '/construction.png',
+      text: 'Construction',
+      containerStyle: 'left-[3rem] top-[6rem]',
+    },
+  ]
   return (
-    <div className="sm:flex sm:flex-col sm:items-center sm:mb-[12rem] mb-[8rem]">
-      <h4 className="text-[2.2rem] sm:text-[4rem] sm:w-[55rem] font-[700] text-center">
+    <div className="sm:flex sm:flex-col sm:items-center sm:mb-[8rem] mb-[8rem]" data-animation-id='slideIn'>
+      <h4 className="text-[3.2rem]  sm:text-[4rem] sm:w-[55rem] font-[700] text-center">
         Advanced <span className="font-[400]">Messaging</span>{" "}
         <span className="text-[#8FD5CC]">Patterns</span> and Optimization
       </h4>
-      <p className="text-center my-[1.4rem] max-w-[70rem]">
+      <p className="text-center my-[1.4rem] sm:max-w-[70rem] ">
         Unlock the full potential of RabbitMQ with our advanced messaging
         patterns and optimization techniques. We go beyond basic messaging
         functionality to help you build robust and scalable messaging
         architectures.
       </p>
-      <Image
+      {/* <Image
         src="/advanced.png"
         className="w-[60rem] mt-[2rem]"
         width={376}
         height={296}
         alt="patterns image"
-      />
+      /> */}
+
+      <div className="sm:w-[50rem] sm:h-[40rem] h-[23rem] sm:mt-[6rem] mt-[3rem] justify-center flex relative">
+        <Image
+          src={'/message_patterns.png'}
+          width={220}
+          height={300}
+          className="self-end w-[13rem] sm:w-auto"
+          alt="Advance messaging patterns"
+        />
+        {icons.map((icon, index) => <Icon key={index} icon={icon} />)}
+      </div>
     </div>
   );
 };
 
+const Icon = ({ icon }) => {
+  const [hovered, setIshovered] = useState(false)
+  return (
+    <div className={`${icon.containerStyle} absolute flex flex-col items-center`}>
+      <div className="relative" onMouseEnter={() => setIshovered(true)} onMouseLeave={() => setIshovered(false)}>
+        <Image
+          src={icon.image}
+          width={100}
+          height={100}
+          className={`rounded-full absolute cursor-pointer sm:w-[8rem]  w-[5rem] ${hovered ? 'opacity-0' : 'opacity-1'} transition-all aspect-square`}
+          alt="icon"
+        />
+        <Image
+          src={icon.hoveredImage}
+          width={100}
+          height={100}
+          className={`rounded-full mx-auto ${hovered ? 'opacity-1' : 'opacity-0'} inset-0 cursor-pointer sm:w-[8rem] w-[5rem]  transition-all duration-75 aspect-square`}
+          alt="icon"
+        />
+      </div>
+      <p className={`font-[700] mx-auto rounded-full ${hovered ? 'opacity-[1]' : 'opacity-0'} max-w-[10rem] text-center transition-all duration-700 mt-[.5rem]`}>{icon.text}</p>
+    </div>
+  )
+}
+
 const LoadBalancing = () => {
   return (
-    <div className="sm:mt-[9rem] mb-[5rem] flex flex-col sm:ml-[12rem] items-center">
+    <div className="sm:mt-[9rem] mb-[5rem] flex flex-col sm:ml-[12rem] items-center" data-animation-id='slideIn'>
       <div className="">
-        <h3 className="text-center text-[2.7rem] sm:text-[4rem] w-[23rem] sm:w-[60rem] mb-[1.8rem] font-[400]">
+        <h3 className="text-center text-[3rem] sm:text-[4rem] w-[30rem] sm:w-[60rem] mb-[1.8rem] font-[400]">
           <span className="text-[#FF6600] font-[700]">Message Queue</span>{" "}
-          Management <span className="font-[700]">and Load Balancing</span>
+          Management <span className="font-[700]"> <br></br> and Load Balancing</span>
         </h3>
         <div className="hidden sm:flex">
           <Image
@@ -216,6 +328,7 @@ const PlaceTextBesideImage = ({
 }) => {
   return (
     <div
+      data-animation-id='slideIn'
       className={`sm:flex sm:justify-between ${inverse ? "sm:flex-row-reverse" : "flex-row"
         }  sm:mt-[3rem] sm:mb-[5rem] mb-[7rem] sm:w-[100%] sm:items-center`}
     >
@@ -277,7 +390,7 @@ const Supports = () => {
     [
       {
         header: (
-          <p className="font-[700] sm:text-[2.8rem]">
+          <p className="font-[700] text-[1.1rem] sm:text-[2.8rem]">
             Round-the-Clock <span className="text-[#8FD5CC]">Assistance</span>
           </p>
         ),
@@ -286,7 +399,7 @@ const Supports = () => {
       },
       {
         header: (
-          <p className="font-[700] sm:text-[2.8rem]">
+          <p className="font-[700] text-[1.1rem] sm:text-[2.8rem]">
             Service Level <span className="font-[400]">Agreements</span>{" "}
             <span className="text-[#8FD5CC]">(SLAs)</span>
           </p>
@@ -298,7 +411,7 @@ const Supports = () => {
     [
       {
         header: (
-          <p className="font-[700] sm:text-[2.8rem]">
+          <p className="font-[700] text-[1.1rem] sm:text-[2.8rem]">
             Performance <span className="font-[400]">Optimization</span> and{" "}
             <span className="text-[#8FD5CC]">Proactive</span> Monitoring
           </p>
@@ -308,9 +421,9 @@ const Supports = () => {
       },
       {
         header: (
-          <p className="font-[700] sm:text-[2.8rem]">
+          <p className="font-[700] text-[1.1rem] sm:text-[2.8rem]">
             <span className="text-[#8FD5CC]">Troubleshooting</span> and Root
-            Cause <span className="">Analysis</span>
+            Cause <span className="font-[400]">Analysis</span>
           </p>
         ),
         paragraph:
@@ -320,7 +433,7 @@ const Supports = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center mt-[4rem] sm:mt-[6rem] mb-[5rem] sm:w-[100%]">
+    <div className="flex flex-col items-center mt-[4rem] sm:mt-[6rem] mb-[5rem] sm:w-[100%]" data-animation-id='slideIn'>
       <h2 className="font-[700] text-[3rem] sm:text-[5.7rem] text-center w-[20rem] sm:w-[100%] mb-[2rem] sm:mb-[4rem]">
         Key <span className="font-[400]">Support</span>{" "}
         <span className="text-[#8FD5CC]">Features:</span>
@@ -365,31 +478,53 @@ const Supports = () => {
 
 const Banner2 = () => {
   return (
-    <div className="flex flex-col items-center p-[3rem] sm:pt-[6rem] sm:mt-[6rem] bg-black w-[100%] rounded-[2rem] relative">
-      <img
-        src="/acemq.png"
-        alt="logo"
-        className="absolute top-[-2rem] w-[13rem]"
+    <div className="blue_border sm:mt-[6rem] mt-[4rem] relative">
+      <Image
+        src={'/blue_border.png'}
+        width={1300}
+        height={572}
+        alt="border"
+        className="absolute w-[100%] hidden sm:block h-[100%] inset-0"
       />
-      <h3 className="sm:text-[3.5rem] sm:w-[50%] text-[2.7rem] text-center font-[700]">
-        <span className="font-[400]">Unlock</span> the{" "}
-        <span className="text-[#FF6600]">True Potential</span> of{" "}
-        <span className="text-[#FF6600]">RabbitMQ</span> in Your{" "}
-        <span className="font-[400]">Enterprise.</span>
-      </h3>
-      <p className="sm:w-[90rem] text-center mt-[2rem]">
-        Unlock the full power of RabbitMQ with AceMQ's expert services.
-        Seamlessly integrate RabbitMQ into your environment for optimized
-        performance. Our team ensures high availability and fault tolerance,
-        sets up advanced messaging patterns, and fine-tunes configurations for
-        optimal resource utilization. Experience risk-free upgrades, performance
-        tuning, and world class support. Elevate your messaging architecture
-        with AceMQ.
-      </p>
+      <Image
+        src={'/border_sm.png'}
+        width={375}
+        height={580}
+        alt="border"
+        className="absolute w-[100%] sm:hidden h-[100%] inset-0"
+      />
+      <div className="flex mt-[1rem] sm:ml-[1.2rem] ml-[.5rem] flex-col border-[#929292] items-center p-[1.5rem] sm:p-[3rem] sm:pt-[6rem] bg-black w-[100%] rounded-[2rem] relative">
+        <img
+          src="/acemq.png"
+          alt="logo"
+          className="absolute top-[-3rem] w-[13rem] sm:w-[18rem]"
+        />
+        <h3 className="sm:text-[5rem] sm:w-[70%] text-[3rem] w-[27rem] text-center font-[700]">
+          <span className="font-[400]">Unlock</span> the{" "}
+          <span className="text-[#FF6600]">True Potential</span> of{" "}
+          <span className="text-[#FF6600]">RabbitMQ</span> in Your{" "}
+          <span className="font-[400]">Enterprise.</span>
+        </h3>
+        <p className="sm:w-[85rem] hidden sm:block text-center mt-[2rem]">
+          Unlock the full power of RabbitMQ with AceMQ's expert services.
+          Seamlessly integrate RabbitMQ into your environment for optimized
+          performance. Our team ensures high availability and fault tolerance,
+          sets up advanced messaging patterns, and fine-tunes configurations for
+          optimal resource utilization. Experience risk-free upgrades, performance
+          tuning, and world class support. Elevate your messaging architecture
+          with AceMQ.
+        </p>
 
-      <button className="text-[1.2rem] border mt-[5rem]">
-        Schedule a Free Consultation
-      </button>
+        <p className="sm:hidden sm:w-[85rem] text-center mt-[2rem]">
+          Unlock the full power of RabbitMQ with AceMQ's expert services. Seamlessly integrate RabbitMQ into your environment for optimized performance. Our team ensures high availability and fault tolerance, sets up advanced messaging patterns, and fine-tunes configurations for optimal resource utilization. Experience risk-free upgrades, performance tuning, and world class support.
+        </p>
+
+        <Link href={'/contact-us'} className="mt-[5rem]">
+          <button className="text-[1.2rem] border">
+            Schedule a Free Consultation
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };

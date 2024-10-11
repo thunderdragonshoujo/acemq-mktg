@@ -36,15 +36,20 @@ const FooterMobile = () => {
           <div className="w-[100%]">
             <ul className="mb-[4rem] flex flex-col gap-y-[1.3rem]">
               <li className="flex gap-[1rem] items-center">
-                <img
-                  className="w-[1.9rem]"
-                  src="/footer_message.png"
-                  alt="mail us at"
-                />
+
+                <div className="w-[1.9rem] aspect-square bg-[#8FD5CC] grid place-content-center rounded-full">
+                  <img
+                    className="w-[1.2rem] aspect-square"
+                    src="/mail.png"
+                    alt="mail"
+                  />
+                </div>
+
                 <Link href="mailto:info@ace-8.io" className="text-[1.3rem]">
-                  info@ace-8.io
+                  info@acemq.com
                 </Link>
               </li>
+
               <li className="flex gap-[1rem] items-center">
                 <img
                   className="w-[1.9rem]"
@@ -53,24 +58,31 @@ const FooterMobile = () => {
                 />
                 <p className="text-[1.3rem]">305-981-6475</p>
               </li>
+
               <li className="flex gap-[1rem] items-center">
                 <img
                   className="w-[1.9rem]"
-                  src="/location_footer.svg"
-                  alt="our address"
+                  src="/loc.png"
+                  alt="address"
                 />
+
                 <p className="w-[15rem] text-[1.3rem]">
                   66 W. Flagler St. 9th Floor Miami, FL 33130
                 </p>
               </li>
             </ul>
 
-            <p className="text-[1.5rem] font-[700] mb-[2.8rem]">
-              Connect With Us
-            </p>
+            <div className="mb-[2.8rem]">
+              <p className="text-[1.5rem] font-[700]">
+                Connect With Us
+              </p>
+              <Link href={'https://www.linkedin.com/company/acemq/'}>
+                <img className="mt-[.5rem] w-[2.5rem]" src="/in.svg" alt="" />
+              </Link>
+            </div>
           </div>
 
-          <div className="h-fit">
+          <div className="h-fit translate-y-[-2rem]">
             <h3 className="text-[1.4rem] font-[700] mb-[1.2rem]">Navigate</h3>
             <ul className="">
               <Link href="/" className="">
@@ -79,26 +91,28 @@ const FooterMobile = () => {
               <Link href="/rabbitmq/" className="">
                 <li className="text-[1.3rem] mb-[.5rem]">RabbitMQ</li>
               </Link>
-              <Link href="/fipsmq/" className="">
-                <li className="text-[1.3rem] mb-[.5rem]">FIPS</li>
-              </Link>
               <Link href="/support/" className="">
-                <li className="text-[1.3rem] mb-[.5rem]">Support & Services</li>
+                <li className="text-[1.3rem] mb-[.5rem]">Support Services</li>
               </Link>
               <Link href="/mq-services/" className="">
                 <li className="text-[1.3rem]  mb-[.5rem]">MQ Services</li>
+              </Link>
+              <Link href="/fipsmq/" className="">
+                <li className="text-[1.3rem] mb-[.5rem]">FIPS</li>
               </Link>
             </ul>
           </div>
         </div>
         <div className="w-[100%]">
-          <p className="text-[1.5rem] font-[700] w-[100%]">Newsletter</p>
-          <div className="flex items-center justify-between">
-            <input
-              type="text"
-              placeholder="Enter Your Email"
-              className="h-[2.8rem] w-[60%] mb-[1.5rem] text-black pl-[1.3rem] rounded-[.3rem]"
-            />
+          <div className="flex  items-center justify-between">
+            <div className="">
+              <p className="text-[1.5rem] mb-[1rem]  font-[700] w-[100%]">Newsletter</p>
+              <input
+                type="text"
+                placeholder="Enter Your Email"
+                className="h-[2.8rem] w-[100%] mb-[1.5rem] text-black pl-[1.3rem] rounded-[.3rem]"
+              />
+            </div>
             <button onClick={scrollToTop}>
               <img src="/CTA_button.png" alt="Scroll to top" />
             </button>
@@ -109,7 +123,7 @@ const FooterMobile = () => {
           </button>
         </div>
         <div className="py-[.5rem] bg-black absolute bottom-0 left-0 right-0">
-          <p className="text-center text-[1.2rem]">© CopyRight Ace8.io</p>
+          <p className="text-center text-[1.2rem]">© Copyright AceMQ 2024</p>
         </div>
       </MaxContainer>
     </footer>
@@ -118,7 +132,7 @@ const FooterMobile = () => {
 
 const FooterDesktop = () => {
   return (
-    <footer className="bg-[#0D111C] sm:flex hidden">
+    <footer className="bg-[#0D111C] sm:block hidden">
       <MaxContainer>
         <div className="relative">
           <div className="flex px-[10rem] w-[100%] justify-between py-[10rem]">
@@ -137,13 +151,13 @@ const FooterDesktop = () => {
                     src="/footer_telephone..svg"
                     alt="call us at"
                   />
-                  <p className="text-[1.5rem]">305-981-6475</p>
+                  <p className="text-[1.5rem]">305-204-2607</p>
                 </li>
 
                 <li className="flex gap-[1rem] items-center">
                   <img
                     className="w-[3rem]"
-                    src="/location_footer.svg"
+                    src="/loc.png"
                     alt="address"
                   />
                   <p className="w-[30rem] text-[1.5rem]">
@@ -152,7 +166,7 @@ const FooterDesktop = () => {
                 </li>
 
                 <li className="flex gap-[1rem] items-center">
-                  <div className="w-[2.5rem] aspect-square bg-[#8FD5CC] grid place-content-center rounded-full">
+                  <div className="w-[3rem] aspect-square bg-[#8FD5CC] grid place-content-center rounded-full">
                     <img
                       className="w-[1.7rem] aspect-square"
                       src="/mail.png"
@@ -222,13 +236,14 @@ const FooterDesktop = () => {
               </div>
             </div>
           </div>
-          <div className="absolute left-0 right-0 bottom-0 bg-black">
-            <p className="text-center text-[1.5rem] py-[2rem]">
-              © Copyright AceMQ {new Date().getFullYear()}
-            </p>
-          </div>
         </div>
+
       </MaxContainer>
+      <div className="bg-black">
+        <p className="text-center text-[1.5rem] py-[2rem]">
+          © Copyright AceMQ {new Date().getFullYear()}
+        </p>
+      </div>
     </footer>
   );
 };

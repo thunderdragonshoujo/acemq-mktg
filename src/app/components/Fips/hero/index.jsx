@@ -11,7 +11,7 @@ const Index = () => {
   })
 
   return (
-    <div className="py-[5.5rem] sm:pt-[17rem] sm:pb-[12rem] px-[1.5rem] sm:px-[10rem] relative">
+    <div className="py-[5.5rem] sm:pt-[20rem] pt-[10rem] sm:pb-[12rem] px-[1.5rem] sm:px-[10rem] relative">
       <Image
         src="/wheel_mobile.webp"
         className="absolute inset-0 sm:hidden top-0 w-[100%] h-[100%] multiply"
@@ -41,7 +41,7 @@ const Index = () => {
         />
         <img
           src="/shield.svg"
-          className="absolute left-[0] sm:left-[11rem] top-[9rem] sm:top-[8rem] w-[3.5rem] sm:w-[10rem]"
+          className="absolute left-[0] sm:left-[11rem] top-[9rem] sm:top-[10rem] w-[3.5rem] sm:w-[10rem]"
           alt="arrow"
           data-animation-id="fadeIn"
         />
@@ -53,13 +53,13 @@ const Index = () => {
         />
         <img
           src="/arrow_2_sm.svg"
-          className="absolute sm:block hidden h-[8rem] left-[1rem] sm:left-[10rem] top-[13rem] sm:top-[18rem]"
+          className="absolute sm:block hidden h-[8rem] left-[1rem] sm:left-[10rem] top-[13rem] sm:top-[21rem]"
           alt="arrow"
           data-animation-id="fadeIn"
         />
         <img
           src="/notification.svg"
-          className="absolute left-[0] sm:left-[5rem] bottom-[0] sm:w-[10rem] w-[3.5rem]"
+          className="absolute left-[0] sm:left-[5rem] bottom-[0] sm:bottom-[-4rem] sm:w-[10rem] w-[3.5rem]"
           alt="arrow"
           data-animation-id="fadeIn"
         />
@@ -76,7 +76,7 @@ const Index = () => {
           data-animation-id="fadeIn"
         />
         <img
-          src="/ace.svg"
+          src="/ace.png"
           className="absolute right-[0] top-[8rem] w-[3.5rem] sm:w-[10rem]"
           alt="arrow"
           data-animation-id="fadeIn"
@@ -89,7 +89,7 @@ const Index = () => {
             FIPS-<span className="font-[400]">Compliant</span>{" "}
             <span className="sm:text-[#8FD5CC]">Message Broker</span>
           </h1>
-          <div className="border w-[25rem] sm:w-[48rem] rounded-[.7rem] border-[#3FA4FF] p-[1rem] mt-[.5rem]">
+          <div className="border w-[25rem] sm:w-[48rem] rounded-[1.5rem] drop_shadow border-[#3FA4FF] p-[1rem] mt-[.5rem]">
             <p className="text-center">
               Empowering Secure and Scalable Messaging with FIPSMQ
             </p>
