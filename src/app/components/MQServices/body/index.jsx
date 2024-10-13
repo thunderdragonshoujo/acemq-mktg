@@ -2,7 +2,7 @@
 import Image from "next/image";
 import PlaceTextBesideImage from '../../common/placeTextBesideImage'
 import { useEffect } from "react";
-import { slideIn, fadeIn } from "@/app/Animations/common";
+import { slideIn, fadeIn } from "../../../Animations/common";
 const Index = () => {
     useEffect(() => {
         slideIn()

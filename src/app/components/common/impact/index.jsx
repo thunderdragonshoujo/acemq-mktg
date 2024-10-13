@@ -2,8 +2,8 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import Image from "next/image";
-import split from "@/app/Animations/text";
-import { slideIn } from "@/app/Animations/common";
+import split from "../../../Animations/text";
+import { slideIn } from "../../../Animations/common";
 import MaxContainer from '../../common/maxContainer'
 
 const Index = () => {

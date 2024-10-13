@@ -3,8 +3,10 @@ import Image from "next/image";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { useEffect, useState } from "react";
-import { slideIn } from "@/app/Animations/common";
+import { slideIn } from "../../../Animations/common";
 import MaxContainer from '../../common/maxContainer'
+
+
 const Index = () => {
     useEffect(() => {
         slideIn()

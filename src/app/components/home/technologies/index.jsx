@@ -1,5 +1,5 @@
 'use client';
-import milestone, { slideIn } from "@/app/Animations/common";
+import milestone, { slideIn } from "../../../Animations/common";
 import { useEffect } from "react";
 import Image from "next/image";
 import MaxContainer from '../../common/maxContainer';

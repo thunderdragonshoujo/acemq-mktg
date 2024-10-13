@@ -1,5 +1,5 @@
 'use client'
-import { slideIn } from "@/app/Animations/common";
+import { slideIn } from "../../../Animations/common";
 import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";

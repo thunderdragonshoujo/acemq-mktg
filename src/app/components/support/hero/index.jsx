@@ -1,6 +1,6 @@
 'use client';
 import { useEffect } from "react";
-import { slideIn, fadeIn } from "@/app/Animations/common";
+import { slideIn, fadeIn } from "../../../Animations/common";
 import Image from "next/image";
 const Index = () => {
   useEffect(() => {

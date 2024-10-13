@@ -1,7 +1,7 @@
 'use client';
 import { useEffect } from "react";
 import Image from "next/image";
-import { fadeIn, slideIn } from "@/app/Animations/common";
+import { fadeIn, slideIn } from "../../../Animations/common";
 import MaxContainer from '../../common/maxContainer'
 const Index = () => {
 

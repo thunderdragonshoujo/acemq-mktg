@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
-import milestone, { slideIn } from "@/app/Animations/common";
-import split from "@/app/Animations/text";
+import milestone, { slideIn } from "../../../Animations/common";
+import split from "../../../Animations/text";
 import { useEffect } from "react";
 import MaxContainer from '../../common/maxContainer'
 const Index = () => {

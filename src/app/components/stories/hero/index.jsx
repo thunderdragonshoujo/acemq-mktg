@@ -1,6 +1,6 @@
 import Image from "next/image";
-import storiesBG from "@/images/stories_bg.webp";
-const Index = () => {
+import storiesBG from "../../../../../public/stories_bg.webp";
+const Index = ({title}) => {
   return (
     <section className="sm:py-[5.5rem] py-[8rem] sm:pt-[25rem] pt-[10rem] sm:pb-[18rem] px-[1.5rem] sm:px-[10rem] relative">
       <Image
@@ -19,7 +19,7 @@ const Index = () => {
       />
       <div className="flex flex-col items-center relative">
         <h1 className="header w-[15rem] sm:w-auto text-center">
-          Customer <span className="text-[#8FD5CC]">Stories</span>
+          {title ? title : "Customer"} <span className="text-[#8FD5CC]">{title ? "" : "Stories"}</span>
         </h1>
       </div>
     </section>
