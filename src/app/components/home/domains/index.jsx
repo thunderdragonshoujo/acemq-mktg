@@ -111,7 +111,7 @@ const DomainsDesktop = ({ domains }) => (
     <section className="hidden sm:flex relative px-[3rem] sm:mt-[5.2rem] sm:px-[10rem] gap-x-[4rem]">
         <div className="">
             <div className="absolute hidden sm:block overflow-hidden" data-animation-id='milestone'>
-                <img src="/mille_3.svg" alt="arrow" className="mt-[4.7rem] sm:w-[4.12rem]" />
+                <img src="/mille_3.svg" alt="arrow" className="mt-[4.7rem] sm:w-[4.02rem]" />
             </div>
             <div className="">
                 <div className="flex flex-col sm:ml-[7rem]" >
@@ -206,7 +206,7 @@ const DomainDesktop = ({ domain, id }) => {
 
 const Banner = () => (
     <div className="mt-[5rem]">
-        <div className="border border-[#FF6600] py-[2rem] sm:py-[0] p-[1rem] sm:p-[3rem] rounded-[.8rem]  sm:flex sm:justify-between sm:mt-[9rem]" data-animation-id='slideIn'>
+        <div className="border border-[#FF6600] py-[2rem] sm:pr-[1.5rem] sm:py-[2rem] sm:items-center p-[1rem] sm:p-[3rem] rounded-[.8rem]  sm:flex sm:justify-between sm:mt-[9rem]" data-animation-id='slideIn'>
             <div className="flex flex-col sm:w-[58rem]">
                 <h3 className="font-[400] capitalize text-[1.4rem] sm:text-[2.2rem] text-center sm:mb-[.5rem] sm:text-left mb-[1rem]"><span className="font-[700] text-[#FF6600]">RabbitMQ</span> Enterprise <span className="font-[700]">support</span></h3>
                 <h3 className="text-center text-[2.7rem] sm:text-[3.2rem] leading-[3.3rem] sm:leading-[4rem]  font-[700] sm:text-left">How we <span className="font-[400]">Saved Millions</span> in <span className="text-[#FF6600]">Downtime</span> for a <span className="text-[#FF6600]">Global</span> <span className="font-[400]">Retail Giant</span></h3>
