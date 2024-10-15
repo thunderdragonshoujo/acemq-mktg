@@ -3,6 +3,8 @@ import localFont from "@next/font/local";
 import "./globals.css";
 import MainLayout from "./main-layout"
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { QHome } from "../sanity/lib/query";
+import { client } from "../sanity/lib/client";
 
 const inter = Inter({ subsets: ["latin"] });
 const monaSans = localFont({
@@ -29,6 +31,28 @@ const monaSans = localFont({
     },
   ],
 });
+
+
+export async function generateMetadata() {
+  const res = await client.fetch(QHome);
+  const home = res?.[0]    
+  return {
+    title: home?.meta_title || home?.title,
+    description: home?.meta_description || home?.excerpt,
+    alternates: {
+      canonical: `https://acemq.com/`,
+    },
+    openGraph: {
+      title:home?.meta_title || home?.title,
+      description: home?.meta_description || home?.excerpt,
+      url: `https://acemq.com/`,
+      siteName: "AceMQ Consulting",
+      // Add image URL here if available
+      locale: "en_US",
+      type: "website",
+    },
+  };
+}
 
 export default function RootLayout({ children }) {
   

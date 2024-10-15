@@ -70,3 +70,39 @@ export const QsingleStory = `*[ _type == "customer-stories" && slug.current == $
   nofollow,
   _createdAt
 }`
+
+export const QHome = `*[ _type == "home"]{
+  meta_title,
+  meta_description,
+  meta_tags,
+}`
+
+export const QRabbitmq = `*[ _type == "rabbitmq"]{
+  meta_title,
+  meta_description,
+  meta_tags,
+}`
+
+export const QSupport = `*[ _type == "support"]{
+  meta_title,
+  meta_description,
+  meta_tags,
+}`
+
+export const QServices = `*[ _type == "mq-services"]{
+  meta_title,
+  meta_description,
+  meta_tags,
+}`
+
+export const QFIPS = `*[ _type == "fips"]{
+  meta_title,
+  meta_description,
+  meta_tags,
+}`
+
+export const QContact = `*[ _type == "contact"]{
+  meta_title,
+  meta_description,
+  meta_tags,
+}`
