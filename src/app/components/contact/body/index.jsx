@@ -128,8 +128,9 @@ const Form = () => {
               type="text"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
               className="sm:w-full w-auto text-black focus:outline-none text-[1.2rem]"
-              placeholder="Email Address"
+              placeholder="Email Address*"
             />
           </div>
           <div className="flex py-[.8rem] gap-x-[1rem] border-b border-b-black mb-[3rem] sm:flex-1">
@@ -152,7 +153,7 @@ const Form = () => {
               required
               onChange={(e) => setCompanyName(e.target.value)}
               className="sm:w-full text-black focus:outline-none text-[1.2rem]"
-              placeholder="company*"
+              placeholder="Company*"
             />
           </div>
           <div className="flex py-[.8rem] gap-x-[1rem] border-b border-b-black mb-[3rem] sm:flex-1">
@@ -173,7 +174,8 @@ const Form = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className="sm:w-full text-black focus:outline-none text-[1.2rem] h-[8rem] sm:h-[14rem] resize-none"
-            placeholder="Project Description"
+            placeholder="Project Description*"
+            required
           />
         </div>
 
@@ -184,7 +186,8 @@ const Form = () => {
 
         <button
           onClick={handleSubmit}
-          className="mt-[3rem] self-center sm:self-start px-[3rem] py-[1rem] text-white bg-[#8FD5CC] rounded-[1rem]"
+          disabled={!firstName || !lastName || !email || !message}
+          className="mt-[3rem] disabled:opacity-[.5] self-center sm:self-start px-[3rem] py-[1rem] text-white bg-[#8FD5CC] rounded-[1rem]"
         >
           {loading ? "loading.." : "Submit"}
         </button>
