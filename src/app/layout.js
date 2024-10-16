@@ -3,7 +3,7 @@ import localFont from "@next/font/local";
 import "./globals.css";
 import Footer from "./components/common/footer";
 import Navbar from "./components/common/navbar";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import CookiesConsent from "./components/common/cookiesconsent";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -35,6 +35,7 @@ const monaSans = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-NMKNF7DF" />
       <body className={monaSans.className}>
         <Navbar />
         {children}
