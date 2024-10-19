@@ -1,8 +1,8 @@
-import MaxContainer from '../components/common/maxContainer'
-import Hero from '../components/support/hero'
-import Body from '../components/support/body'
-import Banner from '../components/support/banner'
-import Contact from '../components/common/contact'
+import MaxContainer from "../components/common/maxContainer";
+import Hero from "../components/support/hero";
+import Body from "../components/support/body";
+import Banner from "../components/support/banner";
+import Contact from "../components/common/contact";
 
 export const metadata = {
   title: "RabbitMQ Support Services | Troubleshooting & Maintenance",
@@ -34,10 +34,10 @@ const Services = () => {
       <MaxContainer>
         <Body />
         <Banner />
-        <Contact />
+        <Contact route={"support"} />
       </MaxContainer>
     </>
   );
-}
+};
 
 export default Services;

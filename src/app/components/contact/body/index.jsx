@@ -3,6 +3,7 @@ import PhoneInput from "react-phone-input-2";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ToastContainer, toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 import "react-toastify/dist/ReactToastify.css";
 import "react-phone-input-2/lib/style.css";
 const Index = () => {
@@ -34,6 +35,8 @@ const Form = () => {
   const [role, setRole] = useState("");
   const [message, setMessage] = useState("");
   const EMAIL_REGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+  const router = useRouter();
 
   useEffect(() => {
     setEmailError(EMAIL_REGEX.test(email));
@@ -73,10 +76,10 @@ const Form = () => {
       );
 
       const response = await json.json();
-      console.log(response);
+      // console.log(response);
       if (response) {
         setLoading(false);
-        toast.success("message sent sucessfully");
+        router.push(`/thank-you/?source=contact-us`);
         setFirstName("");
         setLastName("");
         setEmail("");
