@@ -4,6 +4,7 @@ import Body from "../components/Fips/body";
 import Banner from "../components/Fips/banner";
 import Contact from "../components/common/contact";
 import {QFIPS} from "../../sanity/lib/query"
+import { client } from "../../sanity/lib/client";
 
 // export const metadata = {
 //   title: "FIPS Compliance | Secure RabbitMQ Solutions by AceMQ",

@@ -23,6 +23,10 @@ const nextConfig = {
       },
     ],
   },
+  env: {
+    SANITY_STUDIO_DATASET: 'production',
+    SANITY_STUDIO_PROJECT_ID: 'hg0tpkdw',
+  },
 };
 
 export default nextConfig;
