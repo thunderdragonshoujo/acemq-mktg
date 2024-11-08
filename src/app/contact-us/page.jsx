@@ -3,6 +3,7 @@ import Hero from "../components/contact/hero";
 import Body from "../components/contact/body";
 import Brand from '../components/common/brand'
 import {QContact} from "../../sanity/lib/query"
+import { client } from "../../sanity/lib/client";
 
 // export const metadata = {
 //   title: "Contact AceMQ | Expert RabbitMQ Support & Consulting",
