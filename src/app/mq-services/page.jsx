@@ -34,7 +34,7 @@ const MQServices = () => {
       <MaxContainer>
         <Body />
         <Banner />
-        <Contact />
+        <Contact route={"mq-services"} />
       </MaxContainer>
     </>
   );

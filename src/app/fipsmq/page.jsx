@@ -34,7 +34,7 @@ const FIPs = () => {
       <MaxContainer>
         <Body />
         <Banner />
-        <Contact />
+        <Contact route={"fipsmq"} />
       </MaxContainer>
     </>
   );

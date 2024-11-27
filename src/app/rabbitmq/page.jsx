@@ -1,12 +1,12 @@
-import MaxContainer from '../components/common/maxContainer'
-import Hero from '../components/rabbitMQ/hero'
-import Brands from '../components/common/brand'
-import Info from '../components/rabbitMQ/info'
-import Achievement from '../components/rabbitMQ/achievement'
-import Services from '../components/rabbitMQ/services'
-import Impact from '../components/common/impact'
-import Capabilities from '../components/rabbitMQ/capabilities'
-import Contact from '../components/common/contact'
+import MaxContainer from "../components/common/maxContainer";
+import Hero from "../components/rabbitMQ/hero";
+import Brands from "../components/common/brand";
+import Info from "../components/rabbitMQ/info";
+import Achievement from "../components/rabbitMQ/achievement";
+import Services from "../components/rabbitMQ/services";
+import Impact from "../components/common/impact";
+import Capabilities from "../components/rabbitMQ/capabilities";
+import Contact from "../components/common/contact";
 
 export const metadata = {
   title: "RabbitMQ Consulting, Support & Professional Services",
@@ -27,7 +27,6 @@ export const metadata = {
   },
 };
 
-
 const RabbitMQ = () => {
   return (
     <>
@@ -43,10 +42,10 @@ const RabbitMQ = () => {
         <Services />
         <Impact />
         <Capabilities />
-        <Contact />
+        <Contact route={"rabbitmq"} />
       </MaxContainer>
     </>
   );
-}
+};
 
 export default RabbitMQ;
