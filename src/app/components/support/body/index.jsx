@@ -223,32 +223,47 @@ const Technologies = ({ style }) => {
     },
     {
       src: "/redis.png",
-      align: "self-center",
+      align: "self-start",
       text: 'Redis',
     },
     {
       src: "/tech_3.svg",
-      align: "self-start",
+      align: "self-center",
       text: 'Apache Pulsar'
     },
     {
       src: "/tech_4.svg",
-      align: "self-center",
+      align: "self-start",
       text: 'Kafka'
     },
     {
       src: "/tech_5.svg",
-      align: "self-start",
-      text: 'IBM ActiveMQ'
+      align: "self-end",
+      text: 'Apache ActiveMQ'
     },
     {
       src: "/tech_6.svg",
-      align: "self-end",
+      align: "self-center",
       text: 'AWS SQS'
     },
     {
-      src: "/tech_7.svg",
+      src: "/azure_service_bus.png",
+      align: "self-end",
+      text: 'Azure Service Bus'
+    },
+    {
+      src: "/ibm_mq.png",
+      align: "self-start",
+      text: 'IBM MQ'
+    },
+    {
+      src: "/active_mq.png",
       align: "self-center",
+      text: 'ActiveMQ'
+    },
+    {
+      src: "/tech_7.svg",
+      align: "self-end",
       text: 'Others'
     },
   ];
@@ -259,14 +274,14 @@ const Technologies = ({ style }) => {
         <span className="text-[#FF6600]">Technologies</span>
       </h2>
       <Image
-        src="/service_technologies.png"
+        src="/tech_sm.png"
         width={300}
         className="sm:hidden"
         height={216}
         alt="technologies"
       />
 
-      <div className="hidden  sm:flex w-[100%] justify-between mt-[4rem] h-[25rem]">
+      <div className="hidden sm:flex w-[100%] justify-between mt-[4rem] mb-[3rem] h-[20rem]">
         {technologies.map((icon, index) => (<Technology key={index} tech={icon} />))}
       </div>
     </div>
@@ -291,17 +306,17 @@ const Features = () => {
 const Technology = ({ tech }) => {
   const [isHovered, setIshovered] = useState(false)
   return (
-    <div className={`${tech.align} `}>
+    <div className={`${tech.align} relative`}>
       <img
         src={tech.src}
         width={150}
         onMouseEnter={() => setIshovered(true)}
         onMouseLeave={() => setIshovered(false)}
         height={150}
-        className={`cursor-pointer w-[10rem] h-[10rem] service_card_shadow rounded-[2rem] hover:translate-y-[10px] transition-all duration-700`}
+        className={`cursor-pointer w-[9rem] h-[9rem] service_card_shadow rounded-[2rem] hover:translate-y-[10px] transition-all duration-700`}
         alt="tech icon"
       />
-      <p className={`text-center mt-[2rem] max-w-[8rem] mx-auto font-[700] transition-all duration-500 ${isHovered ? 'opacity-1' : 'opacity-0'}`}>{tech.text}</p>
+      <p className={`text-center mt-[2rem] absolute w-[100%] max-w-[8rem] mx-auto font-[700] transition-all duration-500 ${isHovered ? 'opacity-1' : 'opacity-0'}`}>{tech.text}</p>
     </div>
   )
 }
