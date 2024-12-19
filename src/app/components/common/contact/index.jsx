@@ -114,7 +114,7 @@ const Index = ({ route }) => {
         <div className="sm:flex-[.8]">
           <form
             action=""
-            className="bg-white sm:mt-[-7rem] px-[2.3rem] py-[1.5rem] sm:py-[4rem] flex flex-col rounded-[1rem] mt-[3rem]"
+            className="bg-white border border-[#8FD5CC] sm:mt-[-7rem] px-[2.3rem] py-[1.5rem] sm:py-[4rem] flex flex-col rounded-[1rem] mt-[3rem]"
           >
             <div className="sm:flex justify-between gap-[2rem]">
               <div className="flex py-[.8rem] gap-x-[1rem] border-b border-b-black mb-[3rem] sm:flex-1">

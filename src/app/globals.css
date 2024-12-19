@@ -212,3 +212,15 @@ button {
 .drop_shadow {
   box-shadow: 0px 0px 4px 0px #3FA4FF;
 }
+
+.hero_header{
+  @apply text-[3.2rem] sm:text-[6.8rem] sm:leading-[7rem] text-center font-[700] leading-[3.7rem]
+}
+
+.body_subheader{
+  @apply text-[2.8rem] sm:text-[3.4rem] text-center font-[700] leading-[3.5rem];
+}
+
+.body_subheader_ii{
+  @apply text-[2rem] sm:text-[3rem] font-[700] sm:leading-[3.5rem] leading-[2.8rem]
+}
