@@ -17,7 +17,7 @@ const Redis = () => {
             <Expertise />
             <Service />
             <CTA />
-            <div className="mt-[-20rem]">
+            <div className="sm:mt-[-20rem]">
                 <Contact />
             </div>
         </div>
