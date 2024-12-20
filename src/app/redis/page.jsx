@@ -6,6 +6,8 @@ import Expertise from "../components/redis/expertise";
 import Service from "../components/redis/service";
 import CTA from "../components/redis/cta";
 import Contact from "../components/common/contact"
+import MaxContainer from "../components/common/maxContainer/index"
+
 
 const Redis = () => {
     return (
@@ -18,7 +20,9 @@ const Redis = () => {
             <Service />
             <CTA />
             <div className="sm:mt-[-20rem]">
-                <Contact />
+                <MaxContainer>
+                    <Contact />
+                </MaxContainer>
             </div>
         </div>
     );

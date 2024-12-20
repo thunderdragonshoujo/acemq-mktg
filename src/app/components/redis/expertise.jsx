@@ -35,7 +35,7 @@ const Expertise = () => {
     return (
         <section className="bg-white px-[2rem] flex flex-col sm:pt-[4rem] pt-[3rem] pb-[5rem] sm:pb-[7rem] items-center justify-center text-[#000000]">
             <h3 className="mb-[2rem] w-[90%] text-center body_subheader_ii">Why Choose Our <span className="text-[#8FD5CC]">Redis Expertise</span></h3>
-            <div className="max-w-[90rem] mt-[3rem] sm:mt-[6rem] relative flex items-center justify-center sm:h-[70rem] h-[55rem] w-[100%]">
+            <div style={{ width: "min(70%, 100rem)" }} className="mt-[3rem] sm:mt-[6rem] relative flex items-center justify-center sm:h-[70rem] h-[55rem] w-[100%]">
                 <Image
                     src={"/redis_blue.png"}
                     width={300}
@@ -59,8 +59,8 @@ const Card = ({ image, header, paragraph, className = null }) => {
                 width={50}
                 height={50}
                 className="sm:w-[7rem] w-[5rem] aspect-square mx-auto" />
-            <p className="text-center text-[1.4rem] w-[14rem] mx-auto sm:mx-0 sm:w-auto mt-[.8rem] font-[700]">{header}</p>
-            <p className="sm:text-[1.2rem] text-[1.2rem] sm:w-[25rem] w-[15rem] text-center">{paragraph}</p>
+            <p className="text-center text-[1.4rem] sm:text-[1.6rem] w-[14rem] mx-auto sm:mx-0 sm:w-auto mt-[.8rem] font-[700]">{header}</p>
+            <p className="sm:text-[1.45rem] text-[1.2rem] sm:w-[25rem] w-[15rem] text-center">{paragraph}</p>
         </div>
     )
 }

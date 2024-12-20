@@ -1,3 +1,5 @@
+import MaxContainer from "../../components/common/maxContainer/index"
+
 const Service = () => {
     const cards = [
         {
@@ -51,11 +53,11 @@ const Service = () => {
             header: <span className=""><span className="font-[400]">Customized Redis</span> Support</span>,
             listItems: [
                 {
-                    strong: "24/7 Monitoring:",
+                    strong: "24/7 Monitoring",
                     paragraph: "Maintain uptime and prevent disruptions with proactive oversight."
                 },
                 {
-                    strong: "RFlexible SLAs:",
+                    strong: "RFlexible SLAs",
                     paragraph: "Support plans designed to meet your specific operational needs."
                 },
             ]
@@ -66,11 +68,13 @@ const Service = () => {
         <section className="sm:py-[8rem] py-[4rem] sm:px-[10rem] px-[2rem]">
             <h3 className="body_subheader">Our Redis <span className="text-[#FF6600]">Service Offerings</span></h3>
 
-            <div className="grid sm:grid-cols-2 gap-[2rem] mt-[2rem] sm:gap-[0] justify-between">
-                {
-                    cards.map((item, index) => <Card {...item} key={index} />)
-                }
-            </div>
+            <MaxContainer>
+                <div className="grid sm:grid-cols-2 gap-[2rem] mt-[2rem] sm:gap-[0] justify-between">
+                    {
+                        cards.map((item, index) => <Card {...item} key={index} />)
+                    }
+                </div>
+            </MaxContainer>
         </section>
     );
 }
