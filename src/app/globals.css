@@ -224,3 +224,10 @@ button {
 .body_subheader_ii{
   @apply text-[2rem] sm:text-[3rem] font-[700] sm:leading-[3.5rem] leading-[2.8rem]
 }
+
+
+.compare {
+  @media screen and (min-width: 700px){
+    width: min(100%, 100rem);
+  }
+}
