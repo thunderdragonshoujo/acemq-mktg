@@ -41,7 +41,7 @@ const Features = () => {
     return (
         <section className="sm:py-[10rem] py-[5rem] flex flex-col px-[2rem] sm:px-[10rem]">
             <h3 className="body_subheader text-center">Key <span className="font-[400]">Support</span> <span className="text-[#FF6600]">Features:</span></h3>
-            <div className="sm:flex mb-[3rem] flex-col sm:flex-row hidden justify-between h-[35rem]">
+            <div className="sm:flex mb-[3rem] max-w-[140rem] mx-auto flex-col sm:flex-row hidden justify-between h-[35rem]">
                 {
                     features.map((item, idx) => <Feature {...item} key={idx} />)
                 }

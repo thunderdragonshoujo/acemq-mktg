@@ -58,7 +58,7 @@ const Card = ({ image, header, paragraph, className = null }) => {
                 src={image}
                 width={50}
                 height={50}
-                className="sm:w-[7rem] w-[5rem] aspect-square mx-auto" />
+                className="sm:w-auto w-[5rem] aspect-square mx-auto" />
             <p className="text-center text-[1.4rem] sm:text-[1.6rem] w-[14rem] mx-auto sm:mx-0 sm:w-auto mt-[.8rem] font-[700]">{header}</p>
             <p className="sm:text-[1.45rem] text-[1.2rem] sm:w-[25rem] w-[15rem] text-center">{paragraph}</p>
         </div>

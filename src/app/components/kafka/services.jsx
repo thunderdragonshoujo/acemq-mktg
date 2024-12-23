@@ -69,10 +69,10 @@ const Services = () => {
         },
     ]
     return (
-        <section className="px-[2rem] pt-[5rem] sm:px-[10rem]">
+        <section className="px-[2rem] pt-[5rem]  flex flex-col sm:px-[10rem]">
             <h3 className="body_subheader text-center mb-[5rem]">Our Kafka <span className="text-[#FF6600]">Consulting Services</span></h3>
 
-            <div className="grid sm:grid-cols-3 gap-[3rem]">
+            <div className="grid sm:grid-cols-3 max-w-[140rem] self-center gap-[3rem]">
                 {
                     services.map((item, idx) => <Service {...item} key={idx} />)
                 }
