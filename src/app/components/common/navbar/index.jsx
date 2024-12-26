@@ -53,9 +53,11 @@ const Index = () => {
     { name: "RabbitMQ", path: "/rabbitmq/" },
     { name: "Support Services", path: "/support/" },
     { name: "MQ Services", path: "/mq-services/" },
-    { name: "FIPS", path: "/fipsmq/" },
+    // { name: "FIPS", path: "/fipsmq/" },
     { name: "Blog", path: "/blogs/" },
     { name: "Customer Stories", path: "/stories/" },
+    { name: "Kafka", path: "/kafka/" },
+    { name: "Redis", path: "/redis/" },
   ];
 
   return (
