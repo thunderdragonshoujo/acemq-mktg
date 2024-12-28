@@ -44,10 +44,10 @@ const Expert = () => {
         <section className="px-[2rem] sm:px-[10rem] pt-[2rem] flex flex-col pb-[5rem] sm:pt-[5rem]">
             <MaxContainer>
                 <div className="flex flex-col">
-                    <p className="text-center mb-[1.7rem] sm:w-[75%] sm:mx-auto">Apache Kafka powers modern, event-driven architectures with high-throughput, fault-tolerant data streaming. Whether you rely on open-source Apache Kafka or are considering premium offerings like Confluent, our consulting services ensure that your Kafka implementation runs at peak performance while meeting your business goals.</p>
+                    <p className="text-center mb-[1.7rem] sm:w-[75%] sm:mx-auto">Apache Kafka Powers Modern, Event-Driven Architectures with High-Throughput, Fault-Tolerant Data Streaming. Whether you Rely on Open-Source Apache Kafka or are Considering Premium Offerings like Confluent, our Consulting Services Ensure that your Kafka Implementation Runs at Peak Performance while Meeting your Business Goals.</p>
 
                     <ButtonLink
-                        link={""}
+                        link={"#contact"}
                         text={"Connect with Our Kafka Experts"}
                     />
                 </div>

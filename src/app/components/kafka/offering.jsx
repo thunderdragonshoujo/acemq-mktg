@@ -25,7 +25,7 @@ const Offerings = () => {
     ]
     return (
         <section className="px-[2rem] sm:pb-[10rem] pb-[5rem] flex flex-col sm:px-[10rem]">
-            <h3 className="text-center w-[90%] mx-auto body_subheader_ii">Thinking About <span className="text-[#FF6600]">Kafka Offerings</span> Like Confluent?</h3>
+            <h3 className="text-center w-[90%] mx-auto body_subheader_ii">Thinking about <span className="text-[#FF6600]">Kafka Offerings</span> like Confluent?</h3>
             <p className="text-center mx-auto w-[90%] my-[3rem] sm:w-[63rem] sm:mx-auto sm:mt-[2rem]">
                 If you’re considering the Confluent Platform or managed Kafka solutions, we’ll help you unlock their advanced features
             </p>

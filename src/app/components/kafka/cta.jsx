@@ -12,7 +12,7 @@ const CTA = () => {
                     <p className="text-center sm:w-[60rem] w-[90%] mx-auto sm:mx-auto mt-[2rem]">Don’t let Kafka’s complexities slow you down. Whether you’re an open-source advocate or exploring Confluent’s enterprise capabilities, we’ll provide the guidance, optimization, and support you need.</p>
 
                     <ButtonLink
-                        link={""}
+                        link={"#contact"}
                         text={"Schedule a Free Consultation"}
                         className={"border-white"}
                     />

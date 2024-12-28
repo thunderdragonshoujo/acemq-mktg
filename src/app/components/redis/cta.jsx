@@ -12,7 +12,7 @@ const CTA = () => {
                     <p className="text-center sm:w-[60rem] sm:mx-auto mt-[2rem]">Redis doesn’t have to be complex. Let our expert team guide you through every aspect of Redis technology, from setup and scaling to troubleshooting and optimization.</p>
 
                     <ButtonLink
-                        link={""}
+                        link={"#contact"}
                         text={"Contact Our Redis Experts"}
                     />
                 </div>

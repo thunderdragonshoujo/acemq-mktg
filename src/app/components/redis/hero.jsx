@@ -37,7 +37,7 @@ const CTA = () => {
             <p className="text-[1.2rem] sm:leading-[3.2rem] capitalize sm:text-[2rem] text-center font-[500]">Redis, a powerful open-source, in-memory data store, powers high-speed caching, real-time data analytics, and event streaming. Our expert team helps you harness Redis, whether you’re using the Community Edition or exploring Redis Stack’s advanced capabilities.</p>
 
             <ButtonLink 
-                link={"#"}
+                link={"#contact"}
                 text={"Contact our redis expert"} />
         </div>
     )
