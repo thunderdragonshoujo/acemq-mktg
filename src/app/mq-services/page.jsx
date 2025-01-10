@@ -15,7 +15,7 @@ export const metadata = {
     title: "RabbitMQ Services | Comprehensive Messaging & Queuing Support",
     description:
       "Explore AceMQ's RabbitMQ services, including consulting, support, and professional services. Our experts ensure reliable, scalable, and efficient RabbitMQ systems.",
-    url: "https://acemq.com/MQServices",
+    url: "https://acemq.com/mq-services/",
     siteName: "AceMQ Consulting",
     // Add image URL here if available
     locale: "en_US",
