@@ -68,7 +68,8 @@ const Expert = () => {
             </div>
             <ButtonLink
                 text={"Explore Our Open-Source Services"}
-                link={""} />
+                link={"#contact"}
+            />
         </section>
     );
 }

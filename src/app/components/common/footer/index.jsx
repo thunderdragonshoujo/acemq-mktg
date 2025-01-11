@@ -123,7 +123,7 @@ const FooterMobile = () => {
           </button>
         </div>
         <div className="py-[.5rem] bg-black absolute bottom-0 left-0 right-0">
-          <p className="text-center text-[1.2rem]">© Copyright AceMQ 2024</p>
+          <p className="text-center text-[1.2rem]">© Copyright AceMQ {new Date().getFullYear()}</p>
         </div>
       </MaxContainer>
     </footer>

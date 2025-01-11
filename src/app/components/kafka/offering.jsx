@@ -35,7 +35,10 @@ const Offerings = () => {
                 }
             </div>
             <p className="text-center w-[90%] sm:w-[55rem] mx-auto sm:text-[2rem] mt-[6rem]">Discover the advantages of premium Kafka offerings with expert guidance.</p>
-            <ButtonLink text={"Learn About Confluent Support"} link={""} />
+            <ButtonLink
+                text={"Learn About Confluent Support"}
+                link={"/#contact"}
+            />
         </section>
     );
 }

@@ -57,7 +57,7 @@ const RedisSolutions = () => {
                             }
                         </div>
                         <ButtonLink
-                            link={""}
+                            link={"#contact"}
                             className={"pl-[1.5rem] pr-[1.5rem]"}
                             text={"Explore Open-Source Redis Consulting"} />
                     </div>
@@ -83,7 +83,7 @@ const RedisSolutions = () => {
                             }
                         </div>
                         <ButtonLink
-                            link={""}
+                            link={"#contact"}
                             className={"pl-[1.5rem] pr-[1.5rem]"}
                             text={"Learn More About Redis Stack Consulting"} />
                     </div>

@@ -53,7 +53,7 @@ const Features = () => {
             </div>
             <ButtonLink
                 text={"Learn More"}
-                link={""}
+                link={"#contact"}
                 className={"sm:px-[8rem]"}
             />
         </section>
