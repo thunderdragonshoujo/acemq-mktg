@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import PlaceTextBesideImage from '../../common/placeTextBesideImage'
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { slideIn, fadeIn } from "@/app/Animations/common";
 const Index = () => {
     useEffect(() => {
@@ -11,6 +11,7 @@ const Index = () => {
     return (
         <section className="px-[3rem] sm:px-[10rem]">
             <Info />
+            <Technologies style={'hidden sm:flex'} />
             <Services />
             <SevicesItems />
             <Values />
@@ -70,6 +71,89 @@ const SevicesItems = () => {
     )
 }
 
+const Technologies = ({ style }) => {
+    const technologies = [
+        {
+            src: "/tech_1.svg",
+            align: "self-center",
+            text: 'AWS SQS'
+        },
+        {
+            src: "/tech_2.svg",
+            align: "self-end",
+            text: 'Google PubSub'
+        },
+        {
+            src: "/redis.png",
+            align: "self-start",
+            text: 'Redis',
+        },
+        {
+            src: "/tech_3.svg",
+            align: "self-center",
+            text: 'Apache Pulsar'
+        },
+        {
+            src: "/tech_4.svg",
+            align: "self-start",
+            text: 'Kafka'
+        },
+        {
+            src: "/tech_5.svg",
+            align: "self-end",
+            text: 'Apache ActiveMQ'
+        },
+        {
+            src: "/tech_6.svg",
+            align: "self-center",
+            text: 'AWS SQS'
+        },
+        {
+            src: "/azure_service_bus.png",
+            align: "self-end",
+            text: 'Azure Service Bus'
+        },
+        {
+            src: "/ibm_mq.png",
+            align: "self-start",
+            text: 'IBM MQ'
+        },
+        {
+            src: "/active_mq.png",
+            align: "self-center",
+            text: 'ActiveMQ'
+        },
+        {
+            src: "/tech_7.svg",
+            align: "self-end",
+            text: 'Others'
+        },
+    ];
+    return (
+        <div className={`flex flex-col sm:mt-[5rem] my-[3rem] ${style} items-center sm:mb-[8rem]`} data-animation-id='slideIn'>
+            <h2 className="sm:text-[5.3rem] text-[3rem] font-[700] text-center mb-[2rem]">
+                Our
+                <span className="text-[#FF6600]"> Technologies</span>
+            </h2>
+            <Image
+                src="/tech_sm.png"
+                width={300}
+                className="sm:hidden"
+                height={216}
+                alt="technologies"
+            />
+
+            <div className="hidden sm:flex w-[100%] justify-between mt-[4rem] mb-[3rem] h-[20rem]">
+                {technologies.map((icon, index) => (
+                    <Technology
+                        key={index}
+                        tech={icon}
+                    />))}
+            </div>
+        </div>
+    );
+};
+
 const Values = () => {
     return (
         <div className="sm:mt-[10rem] mt-[5rem] flex flex-col items-center" data-animation-id='slideIn'>
@@ -87,6 +171,24 @@ const Assesment = () => {
             <Image src="/MQ_assesment.svg" width={1000} height={900} className="w-[120rem]  hidden sm:block" alt="tree" />
             <h4 className="text-[3.5rem] sm:text-[4.5rem] font-[700] sm:hidden text-center w-[25rem]"><span className="font-[400]">Consulting</span> & Assessment</h4>
             <Image src="/MQ_assessment_sm.svg" width={340} height={620} className="w-[35rem]  sm:hidden" alt="tree" />
+        </div>
+    )
+}
+
+const Technology = ({ tech }) => {
+    const [isHovered, setIshovered] = useState(false)
+    return (
+        <div className={`${tech.align} relative`}>
+            <img
+                src={tech.src}
+                width={150}
+                onMouseEnter={() => setIshovered(true)}
+                onMouseLeave={() => setIshovered(false)}
+                height={150}
+                className={`cursor-pointer w-[9rem] h-[9rem] service_card_shadow rounded-[2rem] hover:translate-y-[10px] transition-all duration-700`}
+                alt="tech icon"
+            />
+            <p className={`text-center mt-[2rem] absolute w-[100%] max-w-[8rem] mx-auto font-[700] transition-all duration-500 ${isHovered ? 'opacity-1' : 'opacity-0'}`}>{tech.text}</p>
         </div>
     )
 }
