@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
         <CookiesConsent />
         <Footer />
       </body>
-      <GoogleAnalytics gaId="G-PGY6QL9T4H" />
+      <GoogleAnalytics gaId="G-5N8GVXK7YK" />
     </html>
   );
 }
