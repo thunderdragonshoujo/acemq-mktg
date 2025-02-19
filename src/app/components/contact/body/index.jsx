@@ -6,6 +6,8 @@ import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import "react-toastify/dist/ReactToastify.css";
 import "react-phone-input-2/lib/style.css";
+import { usePathname } from "next/navigation";
+
 const Index = () => {
   return (
     <section className="bg-white relative px-[3rem] sm:px-[0] pt-[3rem] sm:pt-[0] sm:flex sm:pb-[10rem] pb-[5rem] sm:pr-[10rem]  justify-between">
@@ -37,6 +39,7 @@ const Form = () => {
   const EMAIL_REGEX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
   const router = useRouter();
+  const PathName = usePathname();
 
   useEffect(() => {
     setEmailError(EMAIL_REGEX.test(email));
@@ -52,7 +55,7 @@ const Form = () => {
     }
     try {
       const json = await fetch(
-        "https://76h86gyo24.execute-api.us-west-2.amazonaws.com/prod/contactUs",
+        "https://formspree.io/f/mzzdypza",
         {
           method: "POST",
           headers: {
@@ -60,23 +63,18 @@ const Form = () => {
           },
           body: JSON.stringify({
             subject: "This is a ContactUS email from ACEMQ",
-            message: {
-              firstName,
-              lastName,
-              phoneNumber,
-              email,
-              description: message,
-              role,
-              companyName,
-            },
-            toaddress: "randall.mcclure@acemq.com",
-            toaddress2: "info@acemq.com",
+            "Full Name": firstName + " " + lastName,
+            Email: email,
+            Description: message,
+            Role: role,
+            "Company's Name": companyName,
+            Page: PathName,
+            Phone: phoneNumber,
           }),
         }
       );
 
       const response = await json.json();
-      // console.log(response);
       if (response) {
         setLoading(false);
         router.push(`/thank-you/?source=contact-us`);

@@ -29,7 +29,7 @@ const Index = ({ route }) => {
     }
     try {
       const json = await fetch(
-        "https://76h86gyo24.execute-api.us-west-2.amazonaws.com/prod/contactUs",
+        "https://formspree.io/f/mzzdypza",
         {
           method: "POST",
           headers: {
@@ -37,9 +37,10 @@ const Index = ({ route }) => {
           },
           body: JSON.stringify({
             subject: "This is a ContactUS email from ACEMQ",
-            message: { fullName: name, email, description: message },
-            toaddress: "randall.mcclure@acemq.com",
-            toaddress2: "info@acemq.com",
+            "Full Name": name,
+            Email: email,
+            Description: message,
+            Page: pathName,
           }),
         }
       );
