@@ -29,7 +29,7 @@ const Index = ({ route }) => {
     }
     try {
       const json = await fetch(
-        "https://formspree.io/f/mzzdypza",
+        "https://formspree.io/f/xqaejgbp",
         {
           method: "POST",
           headers: {
