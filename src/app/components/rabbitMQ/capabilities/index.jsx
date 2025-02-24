@@ -42,6 +42,8 @@ const Index = () => {
             <span className="text-[#8FD5CC]">Integration</span> and
             Configuration
           </h3>
+
+          
         }
         firstParagraph={
           "We ensure seamless integration of RabbitMQ into your existing infrastructure, whether it's on-premises or in the cloud."
